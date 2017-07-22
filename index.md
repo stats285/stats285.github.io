@@ -2,7 +2,7 @@
 layout: titlepage
 ---
 
-These are notes for STATS 285 **Massive Computational Experiments, Painlessly (MCEP)**. For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) or [David Donoho](https://profiles.stanford.edu/david-donoho).
+These are notes for Stanford course STATS 285 **Massive Computational Experiments, Painlessly (MCEP)**. For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) or [David Donoho](https://profiles.stanford.edu/david-donoho).
 
 # [](#hw)Assignments
 TBA

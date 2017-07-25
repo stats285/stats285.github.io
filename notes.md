@@ -5,9 +5,9 @@ layout: default
 # [](#notes)Notes
 
 1.  Basics
-    - [x] [Bash Tutorial](bash-tutorial)
-    - [ ] Perl Tutorial
-    - [ ] Git
+    - [Bash Tutorial](bash-tutorial)
+    - Perl Tutorial
+    - Git
 1.  [Course Readings](readings)
 1.  Cluster Computing Resources
     - Stanford

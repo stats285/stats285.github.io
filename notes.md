@@ -5,7 +5,7 @@ layout: default
 # [](#notes)Notes
 
 1.  Basics
-    - [Bash Tutorial](bash-tutorial)
+    - [Bash Tutorial](bash-tutorial/bash-tutorial)
     - Perl Tutorial
     - Git
 1.  [Course Readings](readings)

@@ -27,12 +27,14 @@ Here is how a Bash script may look like:
 ```bash
 #!/bin/bash
 # File: bashMain.sh
+# STATS 285, 2017
 
 # Write some commands to be executed
-cd ~
-ls -lt 
 echo "I am bash scripting"
-
+echo "I am currently in:"
+pwd
+echo "Here is a list of the contents of this directory:"
+ls -lt
 ```
 
 As you may have noticed, you are already familiar with these commands and perhaps have typed 

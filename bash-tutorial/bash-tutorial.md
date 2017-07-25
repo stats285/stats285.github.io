@@ -10,10 +10,10 @@ using frequently in this class.
 
 # Table of Contents
 - [Bash](#bash)
-- [Variables](#variable) 
+- [Variables](#variables) 
 - [If statement](#if-statement)
 - [For loop](#for-loop)
-- [Changing file contents](#change-file-content)
+- [Changing file contents](#change-file-contents)
 - ...
 
 ## Bash

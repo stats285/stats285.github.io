@@ -16,7 +16,7 @@ using frequently in this class.
 - [Changing file contents](#change-file-content)
 - ...
 
-## [](#bash) Bash
+## Bash
 
 Bash scripting is a great way to automate your computational tasks
 and is used regularly by System Admins, Programmers, Data Scientists and many others to 
@@ -43,13 +43,13 @@ so you don't have to type them each time. Instead, you just execute all the comm
 writing `./bashMain.sh` or `bash bashMain.sh` in a terminal.
 
 
-## [](#variables) Variables
+## Variables
 
-## [](#if-statement) If statement
+## If statement
 
-## [](#for-loop) For loop
+## For loop
 
-## [](#change-file-content) Changing file content
+## Changing file content
 
 
 

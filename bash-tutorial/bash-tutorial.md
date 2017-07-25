@@ -53,4 +53,4 @@ writing `./bashMain.sh` or `bash bashMain.sh` in a terminal.
 
 
 
-[back](./)
+[back](../)

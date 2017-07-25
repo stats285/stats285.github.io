@@ -13,7 +13,7 @@ using frequently in this class.
 - [Variables](#variables) 
 - [If statement](#if-statement)
 - [For loop](#for-loop)
-- [Changing file contents](#change-file-contents)
+- [Changing file content](#changing-file-content)
 - ...
 
 ## Bash

@@ -19,7 +19,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
         <img src="assets/img/travis_oliphant.jpg">
     </div>
     <div class="card">
-        <a class="speaker" href="./travis_lecture">Travis Oliphant (Monday, 30/10/2017)</a>
+        <a class="speaker" href="./travis_lecture">Travis Oliphant (Monday, 30/10/2017)</a> <br>
         <span class="speakerposition">President, Chief Data Scientist & Co-Founder of Continuum Analytics</span>
     </div>
 </div>

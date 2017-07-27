@@ -7,9 +7,9 @@ layout: titlepage
 For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) (@monajemi on GitHub) or [David Donoho](https://profiles.stanford.edu/david-donoho).
 
 
-# [](#announcements)Announcements
+## [](#announcements)Announcements
 
-# [](#guest_lectures) Guest Lectures
+## [](#guest_lectures) Guest Lectures
 
 
 ---
@@ -26,9 +26,9 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 ---
 
 
-# [](#hw)Assignments
+## [](#hw)Assignments
 
-# [Notes](notes)
+## [Notes](notes)
 
 
 

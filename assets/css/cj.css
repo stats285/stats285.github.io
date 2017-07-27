@@ -116,14 +116,19 @@
 }
 
 
+.talkdate {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 .speaker {
     margin-left: 10px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .speakerposition {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 

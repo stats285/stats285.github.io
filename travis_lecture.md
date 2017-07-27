@@ -4,7 +4,8 @@
 
 
 
-![Travis Oliphant](/assets/img/travis_oliphant.jpg) Travis Oliphant holds a PhD from the Mayo Clinic and BS and MS degrees in mathematics and electrical engineering from Brigham Young University. Since 1997, he has worked extensively with Python for numerical and scientific programming, most notably as the primary developer of the NumPy package, and as a founding contributor of the SciPy package. He is also the author of the definitive Guide to NumPy.
+![Travis Oliphant](/assets/img/travis_oliphant.jpg) 
+Travis Oliphant holds a PhD from the Mayo Clinic and BS and MS degrees in mathematics and electrical engineering from Brigham Young University. Since 1997, he has worked extensively with Python for numerical and scientific programming, most notably as the primary developer of the NumPy package, and as a founding contributor of the SciPy package. He is also the author of the definitive Guide to NumPy.
 
 Travis was an assistant professor of electrical and computer engineering at BYU from 2001-2007, where he taught courses in probability theory, electromagnetics, inverse problems and signal processing. He also served as Director of the Biomedical Imaging Lab, where he researched satellite remote sensing, MRI, ultrasound, elastography and scanning impedance imaging.
 

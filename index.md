@@ -16,7 +16,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 <div class="speaker-wrap">
     <div class="speakerphoto">
-        <img src="assets/img/travis_oliphant.jpg">
+    <img style="vertical-align:center;" src="assets/img/travis_oliphant.jpg">
     </div>
     <div class="card">
         <a class="speaker" href="./travis_lecture">Travis Oliphant (Monday, 30/10/2017)</a> <br>

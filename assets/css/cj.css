@@ -67,11 +67,6 @@
     display: inline-block;
     vertical-align: middle
 }
-img {
-    display: block
-    /* remove gap*/
-}
-
 
 
 .speakerphoto img {
@@ -80,6 +75,7 @@ img {
     border-radius: 90px;
     margin-bottom: 0px;
     margin-left: 40px;
+    margin-right: 10px;
     display: inline-block;
     float:left;
 }

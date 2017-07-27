@@ -16,15 +16,16 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 <div class="speaker-wrap">
     <div class="speakerphoto">
-        <img src="//0.gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=120">
+        <img src="assets/img/travis_oliphant.jpg">
     </div>
     <div class="card">
-        <p class="title">Title</p>
-        <a class="name" href="#">Name</a>
+        <a class="title" href="./travis_lecture">Travis Oliphant (Monday, 30/10/2017)</a>
+        <p class="name">President, Chief Data Scientist & Co-Founder of Continuum Analytics</p>
     </div>
 </div>
 
 ---
+
 
 # [](#hw)Assignments
 

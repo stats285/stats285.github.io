@@ -58,9 +58,8 @@
 
 
 .speaker-wrap {
-    width: 33%;
+    width: 100%;
     display: inline-block;
-    border: red solid
 }
 .speakerphoto,
 .card {

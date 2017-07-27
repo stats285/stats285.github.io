@@ -122,6 +122,11 @@
     float:left;
 }
 
+.speakerposition {
+    margin-left: 10px;
+    font-size: 18px;
+    float:left;
+}
 
 
 .navbar-brand {

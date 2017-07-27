@@ -12,14 +12,14 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 # [](#guest_lectures) Guest Lectures
 
 ---
-<div class="speakerphoto">
+<p class="speakerphoto">
 <img style="vertical-align:middle" src="assets/img/travis_oliphant.jpg">
     <div class="speaker"> <a href="./travis_lecture"> Travis Oliphant (Monday, 30/10/2017) </a> 
     <br> 
     President, Chief Data Scientist & Co-Founder of Continuum Analytics 
     </div>
 
-</div>
+</p>
 ---
 
 # [](#hw)Assignments

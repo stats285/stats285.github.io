@@ -13,7 +13,6 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 
 ---
-
 <div class="speaker-wrap">
     <div class="speakerphoto">
     <img src="assets/img/travis_oliphant.jpg">
@@ -24,7 +23,6 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
         <span class="speakerposition">President, Chief Data Scientist & Co-Founder of Continuum Analytics</span>
     </div>
 </div>
-
 ---
 
 

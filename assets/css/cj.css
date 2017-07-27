@@ -54,7 +54,7 @@
 }
 
 
-.speakerphoto {
+.speakerphoto p {
     text-align: center;
     display: block;
 }
@@ -66,25 +66,8 @@
     margin-bottom: 0px;
     margin-left: 40px;
     display: inline-block;
+    float:left;
 }
-
-
-.speaker span {
-    margin-left: 10px;
-    font-size: 22px;
-    vertical-align:top;
-}
-
-
-.speakerposition span {
-    margin-left: 10px;
-    font-size: 22px;
-    vertical-align:top;
-}
-
-
-
-
 
 .instructor {
   display: inline-block;
@@ -93,6 +76,12 @@
   margin-right: 20px;
 }
 
+
+.speaker {
+    margin-left: 10px;
+    font-size: 22px;
+    float:left;
+}
 
 
 

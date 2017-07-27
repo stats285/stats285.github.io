@@ -54,6 +54,10 @@
 }
 
 
+.speakerphoto {
+    text-align: center;
+    display: block;
+}
 
 .speakerphoto img {
     width: 90px;
@@ -64,6 +68,24 @@
     display: inline-block;
 }
 
+
+.speaker span {
+    margin-left: 10px;
+    font-size: 22px;
+    vertical-align:top;
+}
+
+
+.speakerposition span {
+    margin-left: 10px;
+    font-size: 22px;
+    vertical-align:top;
+}
+
+
+
+
+
 .instructor {
   display: inline-block;
   width: 120px;
@@ -72,10 +94,7 @@
 }
 
 
-.speaker {
-    margin-left: 10px;
-    font-size: 22px;
-}
+
 
 .navbar-brand {
     float: left;

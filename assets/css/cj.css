@@ -54,10 +54,25 @@
 }
 
 
-.speakerphoto {
-    float: left;
+
+
+
+.speaker-wrap {
+    width: 33%;
     display: inline-block;
+    border: red solid
 }
+.speakerphoto,
+.card {
+    display: inline-block;
+    vertical-align: middle
+}
+img {
+    display: block
+    /* remove gap*/
+}
+
+
 
 .speakerphoto img {
     width: 90px;
@@ -68,6 +83,35 @@
     display: inline-block;
     float:left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.speakerphoto {
+    float: left;
+    display: inline-block;
+}
+
 
 .instructor {
   display: inline-block;

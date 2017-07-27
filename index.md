@@ -10,7 +10,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 # [](#announcements)Announcements
 
 # [](#guest_lectures) Guest Lectures
-    > * [**Travis Oliphant**](travis_lecture) (Monday, 30/10/2017) 
+> * [**Travis Oliphant**](travis_lecture) (Monday, 30/10/2017) 
 
 # [](#hw)Assignments
 

@@ -56,7 +56,7 @@
 
 .speakerphoto {
     float: left;
-    display: block;
+    display: inline-block;
 }
 
 .speakerphoto img {

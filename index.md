@@ -11,6 +11,8 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 # [](#guest_lectures) Guest Lectures
 
+<div class="instructorphoto"><img src="assets/img/travis_oliphant.jpg">Travis Oliphant (Monday, 30/10/2017)</div>
+
 ---
 * [**Travis Oliphant**](travis_lecture) (Monday, 30/10/2017) 
 ---

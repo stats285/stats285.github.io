@@ -52,6 +52,15 @@
   border-radius: 120px;
   margin-bottom: 10px;
 }
+
+
+
+.speakerphoto img {
+    width: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
 .instructor {
   display: inline-block;
   width: 120px;

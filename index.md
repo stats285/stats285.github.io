@@ -12,6 +12,19 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 ## [](#guest_lectures) Guest Lectures
 
+---
+<div class="speaker-wrap">
+    <div class="speakerphoto">
+    <img src="assets/img/vcs.jpg">
+    </div>
+    <div class="card">
+        <a class="talkdate" href="./vcs_lecture.md"> Monday, --/--/2017</a> <br>
+        <span class="speaker">Victoria Stodden</span> <br>
+        <span class="speakerposition">iSchool, UIUC</span>
+    </div>
+</div>
+---
+
 
 ---
 <div class="speaker-wrap">

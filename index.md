@@ -24,9 +24,6 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     </div>
 </div>
 ---
-
-
----
 <div class="speaker-wrap">
     <div class="speakerphoto">
     <img src="assets/img/travis_oliphant.jpg">

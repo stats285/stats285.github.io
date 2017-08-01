@@ -1,6 +1,5 @@
-# Title of the lecture
 
-    Abstract
+    Topics covered in this lecture
 
 
 

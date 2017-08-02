@@ -30,7 +30,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     <img src="assets/img/vcs.jpg">
     </div>
     <div class="card">
-        <a class="talkdate" href="./vcs_lecture"> Monday, --/--/2017</a> <br>
+        <a class="talkdate" href="./vcs_lecture"> Monday, 16/10/2017</a> <br>
         <span class="speaker">Victoria Stodden</span> <br>
         <span class="speakerposition">iSchool, UIUC</span>
     </div>

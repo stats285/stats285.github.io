@@ -21,7 +21,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     <div class="card">
         <a class="talkdate" href="./vanessa_lecture"> Monday, --/--/2017</a> <br>
         <span class="speaker">Vanessa Sochat</span> <br>
-        <span class="speakerposition">SRCC,Stanford</span>
+        <span class="speakerposition">SRCC, Stanford</span>
     </div>
 </div>
 ---

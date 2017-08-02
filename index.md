@@ -16,21 +16,10 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 ---
 <div class="speaker-wrap">
     <div class="speakerphoto">
-    <img src="assets/img/vanessasochat.jpg">
-    </div>
-    <div class="card">
-        <a class="talkdate" href="./vanessa_lecture"> Monday, --/--/2017</a> <br>
-        <span class="speaker">Vanessa Sochat</span> <br>
-        <span class="speakerposition">SRCC, Stanford</span>
-    </div>
-</div>
----
-<div class="speaker-wrap">
-    <div class="speakerphoto">
     <img src="assets/img/vcs.jpg">
     </div>
     <div class="card">
-        <a class="talkdate" href="./vcs_lecture"> Monday, 16/10/2017</a> <br>
+        <a class="talkdate" href="./vcs_lecture"> Monday, 10/16/2017</a> <br>
         <span class="speaker">Victoria Stodden</span> <br>
         <span class="speakerposition">iSchool, UIUC</span>
     </div>
@@ -38,10 +27,22 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 ---
 <div class="speaker-wrap">
     <div class="speakerphoto">
+    <img src="assets/img/vanessasochat.jpg">
+    </div>
+    <div class="card">
+        <a class="talkdate" href="./vanessa_lecture"> Monday, 10/23/2017</a> <br>
+        <span class="speaker">Vanessa Sochat</span> <br>
+        <span class="speakerposition">SRCC, Stanford</span>
+    </div>
+</div>
+---
+
+<div class="speaker-wrap">
+    <div class="speakerphoto">
     <img src="assets/img/travis_oliphant.jpg">
     </div>
     <div class="card">
-        <a class="talkdate" href="./travis_lecture"> Monday, 30/10/2017</a> <br>
+        <a class="talkdate" href="./travis_lecture"> Monday, 10/30/2017</a> <br>
         <span class="speaker">Travis Oliphant</span> <br>
         <span class="speakerposition">Continuum Analytics</span>
     </div>

@@ -8,14 +8,14 @@ Department of Statisics will arrange your lodging. Any questions regaridng hotel
 
 
 ## Instruction for reimbursement
-Please make sure you review [Reimbursement policies](#policy)
+Please make sure you review [Reimbursement policies](#reimbursement_policies)
 
      Instruction to be added. 
  
 
 
 
-## [](#policy)Reimbursement Policies
+## [](#reimbursement_policies) Reimbursement Policies
 To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements.
 
 1. **Airfair** 

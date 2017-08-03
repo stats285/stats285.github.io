@@ -50,7 +50,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 ---
 
 
-## [](#hw)Assignments
+## Assignments
 
 ## [Notes](notes)
 

@@ -4,7 +4,7 @@
 
 
 ## Accomedation
-Department of Statisics will arrange your lodging. Any questions regaridng hotel reservation shall be directed to Ms. Emily Lauderdale (elauderd AT stanford.edu)
+Department of Statisics will arrange your lodging. Any questions regaridng hotel reservation shall be directed to [Ms. Emily Lauderdale](https://statistics.stanford.edu/people/emily-lauderdale) ( Email: elauderd AT stanford.edu).
 
 ## Reimbursement Policies
 To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements.

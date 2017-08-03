@@ -4,9 +4,18 @@
 
 
 ## Accomedation
-Department of Statisics will arrange your lodging. Any questions regaridng hotel reservation shall be directed to [Ms. Emily Lauderdale](https://statistics.stanford.edu/people/emily-lauderdale) ( Email: elauderd AT stanford.edu).
+Department of Statisics will arrange your lodging. Any questions regaridng hotel reservation shall be directed to [Ms. Emily Lauderdale](https://statistics.stanford.edu/people/emily-lauderdale) (Email: elauderd AT stanford.edu).
 
-## Reimbursement Policies
+
+## Instruction for reimbursement
+Please make sure you review [Reimbursement policies](#policy)
+
+     Instruction to be added. 
+ 
+
+
+
+## [](#policy)Reimbursement Policies
 To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements.
 
 1. **Airfair** 
@@ -25,3 +34,7 @@ To make sure that you will receive full reimbursement for your travel expenses, 
     |  `$12 - $20`|`$18-$35`|`$36-$80` |  
 
     Alcohol is not reimbursable.
+
+
+
+

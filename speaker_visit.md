@@ -8,7 +8,7 @@ Department of Statisics will arrange your lodging. Any questions regaridng hotel
 
 
 ## Instruction for reimbursement
-Please make sure you review [reimbursement policies](#reimbursement_policies)
+Please make sure you review [reimbursement policies](#reimbursement-policies)
 
      Instruction to be added. 
  

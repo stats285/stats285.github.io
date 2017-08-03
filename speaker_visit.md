@@ -18,12 +18,12 @@ To make sure that you will receive full reimbursement for your travel expenses, 
 
 2. **Meals**  
 
-    Meal limits per person are (includes food, tax and tip): 
+    Meal limits per person are (includes food, tax and tip):  
 
-| Breakfast   |  Lunch  | Dinner   |
-| :---------: |:-------:|:--------:|
-|  `$12 - $20`|`$18-$35`|`$36-$80` |  
+    | Breakfast   |  Lunch  | Dinner   |
+    | :---------: |:-------:|:--------:|
+    |  `$12 - $20`|`$18-$35`|`$36-$80` |  
 
-   Alcohol is not reimbursable
+    Alcohol is not reimbursable
 
 

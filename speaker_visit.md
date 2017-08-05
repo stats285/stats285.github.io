@@ -3,16 +3,16 @@
 
 
 ## Accomedation
-Department of Statisics will arrange your lodging. Any questions regaridng hotel reservation shall be directed to [Ms. Emily Lauderdale](https://statistics.stanford.edu/people/emily-lauderdale) <elauderd@ stanford.edu>. 
+Department of Statisics will arrange your lodging. Any questions regaridng hotel reservation shall be directed to [Ms. Emily Lauderdale](https://statistics.stanford.edu/people/emily-lauderdale) at <elauderd@stanford.edu>. 
 
 
 ## Instruction for reimbursement
 Please make sure you review [reimbursement policies](#reimbursement-policies) before you arrange your trip. 
-To be reimbursed, you should submit receipts to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) (Email: ncobb AT stanford.edu). We would recommed that you infor STATS 285 team by carbon copying our email <stats285.stanford@gmail.com> while submitting your reimbursement request. 
+To be reimbursed, you should submit receipts to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) at <ncobb@stanford.edu>. We would recommed that you infor STATS 285 team by carbon copying our email <stats285.stanford@gmail.com> while submitting your reimbursement request. 
 
 
 ## Reimbursement policies
-To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements. Any question or concerns regarding these policies must be directed to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) <ncobb@stanford.edu>
+To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements. Any question or concerns regarding these policies must be directed to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) at <ncobb@stanford.edu>
 
 
 1. **Airfare** 

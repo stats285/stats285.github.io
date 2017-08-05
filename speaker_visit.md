@@ -12,7 +12,7 @@ To be reimbursed, you should submit receipts to [Ms. Nicole Cobb](https://statis
 
 
 ## Reimbursement policies
-To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements. Any question or concerns regarding these policies must be directed to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) at <ncobb@stanford.edu>
+To make sure that you will receive full reimbursement for your travel expenses, please review the following policies before you make arrangements. Any question or concerns regarding these policies must be directed to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) at <ncobb@stanford.edu>.
 
 
 1. **Airfare** 

@@ -8,7 +8,7 @@ Department of Statisics will arrange your lodging. Any questions regaridng hotel
 
 ## Instruction for reimbursement
 Please make sure you review [reimbursement policies](#reimbursement-policies) before you arrange your trip. 
-To be reimbursed, you should submit receipts to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) (Email: ncobb AT stanford.edu). We would recommed that you infor STATS 285 team by carbon copying our email [stats285.stanford AT gmail.com](stats285.stanford@gmail.com) while submitting your reimbursement request. 
+To be reimbursed, you should submit receipts to [Ms. Nicole Cobb](https://statistics.stanford.edu/people/nicole-cobb) (Email: ncobb AT stanford.edu). We would recommed that you infor STATS 285 team by carbon copying our email <stats285.stanford@gmail.com> while submitting your reimbursement request. 
 
 
 ## Reimbursement policies

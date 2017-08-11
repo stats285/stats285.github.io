@@ -78,7 +78,7 @@ else
 fi
 ```
 
-Note that we have places a `space` after `[` and before `]`. If you do not add this space, bash will produce an error.  
+Note that we have placed a `space` after `[` and before `]`. If you do not add this space, bash will produce an error.  
 
 As an example, I can check whether file `bashMain.sh` exist.
 

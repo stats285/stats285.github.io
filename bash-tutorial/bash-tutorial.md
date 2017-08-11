@@ -78,6 +78,17 @@ else
 fi
 ```
 
+Note that we have places a `space` after `[` and before `]`. If you do not add this space, bash will produce an error.  
+
+As an example, I can check whether file `bashMain.sh` exist.
+
+FILE="bashMain.sh"
+if [ -f  $FILE ]; then
+    echo "$FILE exists."
+else
+    echo "$FILE does not exist."
+fi
+
 
 
 

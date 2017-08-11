@@ -9,7 +9,7 @@ We will review the core elements of Bash scripting that you will be
 using frequently in this class.  
 
 # Table of Contents
-- [Bash](#bash)
+- [Bash script](#bash-script)
 - [Variables](#variables) 
 - [If statement](#if-statement)
 - [Loops](#loops)
@@ -17,7 +17,7 @@ using frequently in this class.
     - [Read/Write](#readwrite) 
     - [Changing file content](#changing-file-content)
     
-## Bash
+## Bash script
 
 Bash scripting is a great way to automate your computational tasks
 and is used regularly by System Admins, Programmers, Data Scientists and many others to 

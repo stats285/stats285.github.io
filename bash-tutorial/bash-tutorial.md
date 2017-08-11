@@ -14,10 +14,9 @@ using frequently in this class.
 - [If statement](#if-statement)
 - [Loops](#loops)
 - [File manipulation](#file-manipulation)
-    - [Reading](#reading) 
+    - [Reading](#read-write) 
     - [Changing file content](#changing-file-content)
-    - [Writing](#writing)
-
+    
 ## Bash
 
 Bash scripting is a great way to automate your computational tasks
@@ -119,11 +118,9 @@ done;
 
 ## File manipulation
 
-### Reading
+### Read/Write
 
 ### Changing file content
-
-### Writing
 
 
 [back](../notes)

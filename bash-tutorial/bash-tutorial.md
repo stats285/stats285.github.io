@@ -71,7 +71,7 @@ fi
 ```bash
 if [ condition 1 ]; then
     excecute expression 1
-else if [ condition 2 ]
+else if [ condition 2 ]; then
     excecute expression 2
 else
     excecute expression 3

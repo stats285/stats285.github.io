@@ -69,9 +69,9 @@ fi
 ```
 
 ```bash
-if [ condition1 ]; then
+if [ condition 1 ]; then
     excecute expression 1
-else if [ condition2 ]
+else if [ condition 2 ]
     excecute expression 2
 else
     excecute expression 3

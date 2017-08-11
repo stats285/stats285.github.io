@@ -20,8 +20,8 @@ using frequently in this class.
 ## Bash script
 
 Bash scripting is a great way to automate your computational tasks
-and is used regularly by System Admins, Programmers, Data Scientists and many others to 
-reduce the pain of having to do certain task manually many times.
+and is used regularly by system admins, programmers, data scientists 
+and many others to reduce the pain of having to do certain tasks many times manually.
 
 Here is how a Bash script may look like:
 

@@ -14,7 +14,7 @@ using frequently in this class.
 - [If statement](#if-statement)
 - [Loops](#loops)
 - [File manipulation](#file-manipulation)
-    - [Reading](#read-write) 
+    - [Read/Write](#read-write) 
     - [Changing file content](#changing-file-content)
     
 ## Bash

@@ -90,12 +90,13 @@ else
 fi
 ```
 
-## loops
+## Loops
 Bash uses the following syntax for the `for` and `while` loops:
 
 
 ```bash
 EMAIL_LIST=(
+'Stats285 Stanford <stats285.stanford@gmail.com>'
 'Hatef Monajemi <monajemi@stanfxxx.edu>'
 'David Donoho <donoho@stanfxxx.edu>'
 'Vardan Papayan <vardanp91@gmail.com>'

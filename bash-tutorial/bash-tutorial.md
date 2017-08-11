@@ -13,8 +13,10 @@ using frequently in this class.
 - [Variables](#variables) 
 - [If statement](#if-statement)
 - [Loops](#loops)
-- [Changing file content](#changing-file-content)
-- ...
+- [File manipulation](#file-manipulation)
+    - [Reading](#reading) 
+    - [Changing file content](#changing-file-content)
+    - [Writing](#writing)
 
 ## Bash
 
@@ -115,9 +117,13 @@ done;
 
 ```
 
+## File manipulation
 
-## Changing file content
+### Reading
 
+### Changing file content
+
+### Writing
 
 
 [back](../notes)

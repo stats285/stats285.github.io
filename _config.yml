@@ -3,4 +3,6 @@ show_downloads: false
 google_analytics:
 theme:
 gems:
-  - jekyll-mentions 
+  - jekyll-mentions
+plugins:
+  - jekyll-seo-tag   

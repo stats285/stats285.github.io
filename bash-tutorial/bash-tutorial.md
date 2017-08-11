@@ -117,6 +117,7 @@ done;
 ```
 
 ## File manipulation
+Bash provides many tools to manipulate files. Here we review how you can read, modify and write files. 
 
 ### Read/Write
 

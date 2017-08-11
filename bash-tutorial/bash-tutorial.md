@@ -53,6 +53,39 @@ Here, we have defined a bash variable named STR, which contains *"The value of a
 Note that we have used `printf` function instead of `echo` to print. This is another way of prining in bash specially when you need a formatted output.  
 
 ## If statement
+Often times, one needs to check that certain criteria is valid before proceeding; for example, you may want to check whether certain directory or file exists before creating a new one. Bash conditional statement can handle such tasks. The following sturtures are availble in Bash:
+```bash
+if [ condition ]; then
+        excecute some expression
+fi
+```
+
+```bash
+if [ condition ]; then
+        excecute expression 1
+else
+        excecute expression 2
+fi
+```
+
+```bash
+if [ condition1 ]; then
+    excecute expression 1
+else if [ condition2 ]
+    excecute expression 2
+else
+    excecute expression 3
+fi
+```
+
+
+
+
+
+
+
+
+
 
 ## For loop
 

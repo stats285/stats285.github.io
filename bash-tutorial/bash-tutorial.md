@@ -108,7 +108,7 @@ done;
 
 
 COUNTER=0;
-while [ $COUNTER -lt 1 ] ; do
+while [ $COUNTER -lt 3 ] ; do
 echo "${EMAIL_LIST[$COUNTER]}"
 let COUNTER+=1;
 done;

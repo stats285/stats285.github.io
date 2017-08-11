@@ -12,7 +12,7 @@ using frequently in this class.
 - [Bash](#bash)
 - [Variables](#variables) 
 - [If statement](#if-statement)
-- [For loop](#for-loop)
+- [Loops](#loops)
 - [Changing file content](#changing-file-content)
 - ...
 
@@ -46,7 +46,7 @@ them in your terminal before. A bash script is just a text file (`bashMain.sh` i
 You can define variables in bash by assigning a value to its reference:
 
 ```bash
-STR="The value of a bash variable";
+STR="The value of a bash variable can be any data type.";
 printf "%s\n" "$STR"
 ```
 Here, we have defined a bash variable named STR, which contains *"The value of a bash variable"* as its value. We can use this variable by attaching a `$` to the beginning of it, hence in the second line `$STR` will be replaced by the value of STR variable.  
@@ -90,16 +90,30 @@ else
 fi
 ```
 
+## loops
+Bash uses the following syntax for the `for` and `while` loops:
 
 
+```bash
+EMAIL_LIST=(
+'Hatef Monajemi <monajemi@stanfxxx.edu>'
+'David Donoho <donoho@stanfxxx.edu>'
+'Vardan Papayan <vardanp91@gmail.com>'
+)
+
+for EMAIL in "${EMAIL_LIST[@]}" ; do
+echo "$EMAIL"
+done;
 
 
+COUNTER=0;
+while [ $COUNTER -lt 1 ] ; do
+echo "${EMAIL_LIST[$COUNTER]}"
+let COUNTER+=1;
+done;
 
+```
 
-
-
-
-## For loop
 
 ## Changing file content
 

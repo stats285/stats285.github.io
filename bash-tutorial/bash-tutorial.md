@@ -49,7 +49,7 @@ You can define variables in bash by assigning a value to its reference:
 STR="The value of a bash variable";
 printf "%s\n" "$STR"
 ```
-Here, we have defined a bash variable named STR, which contains *This is a bash variable* as its value. We can use this variable by attaching a `$` to the beginning of it, hence in the second line `$STR` will be replaced by the value of STR variable.  
+Here, we have defined a bash variable named STR, which contains *"The value of a bash variable"* as its value. We can use this variable by attaching a `$` to the beginning of it, hence in the second line `$STR` will be replaced by the value of STR variable.  
 Note also that I have used `printf` function instead of `echo` to print. This is another way of prining in bash specially when you need a formatted output.  
 
 ## If statement

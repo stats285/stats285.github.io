@@ -66,21 +66,19 @@ $tweets      = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' =>
 # print to a tab-separated TXT file with UTF-8 encoding for non-ascii characters
 my $filepath = "${screen_name}_tweets.txt";
 open(my $fh, '>:encoding(UTF-8)' , "$filepath") or die "can't create file $filepath $!";
+
 # write header
 my $header = join "\t" , ("id","datetime","screen_name","text");
 print $fh "$header\n";
 
 foreach (@all_tweets){
-
-my $created_at      = '"' . $_->{'created_at'} . '"';     #add quotes when written to TXT
-my $id              = '"' . $_->{'id'} . '"';
-my $user_screenname = '"' . $_->{'user'}{'screen_name'} . '"';
-my $text            = '"' . $_->{'text'} . '"';
-$text =~ s/[\n\r\t]/ /g;                  #replace new lines/tabs in text with space.
-
-my $record = join "\t" , ($id,$created_at,$user_screenname,$text);
-
-print $fh "$record\n";    # print to $fh
+    my $created_at      = '"' . $_->{'created_at'} . '"';     #add quotes when written to TXT
+    my $id              = '"' . $_->{'id'} . '"';
+    my $user_screenname = '"' . $_->{'user'}{'screen_name'} . '"';
+    my $text            = '"' . $_->{'text'} . '"';
+    $text =~ s/[\n\r\t]/ /g;                  #replace new lines/tabs in text with space.
+    my $record = join "\t" , ($id,$created_at,$user_screenname,$text);
+    print $fh "$record\n";    # print to $fh
 }
 
 close $fh;

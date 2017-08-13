@@ -5,4 +5,9 @@ theme:
 gems:
   - jekyll-mentions
 plugins:
-  - jekyll-seo-tag   
+  - jekyll-seo-tag 
+markdown: redcarpet
+highlighter: pygments
+
+
+  

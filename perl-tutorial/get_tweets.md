@@ -1,8 +1,8 @@
 ---
-layout:default
+layout: default
 ---
 
-```bash
+```perl
 
 #!/usr/bin/perl
 # usage:

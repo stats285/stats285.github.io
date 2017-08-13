@@ -2,7 +2,7 @@
 layout: default
 ---
 
-For report bugs to @monajemi or <monajemi@stanford.edu>  
+Please report bugs to @monajemi or <monajemi@stanford.edu>  
 
 ```perl
 #!/usr/bin/perl

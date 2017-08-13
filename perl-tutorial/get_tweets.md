@@ -18,7 +18,7 @@ layout: default
 #
 ###################################################################################
 #  NOTES:
-#  This CSV file can be read in R for analysis:
+#  Produced TXT file can be read in R for analysis:
 #       > data = read.table("realDonaldTrump_tweets.txt", header=TRUE,
 #                            sep="\t", encoding="UTF-8", colClasses=c('character'))
 #
@@ -72,7 +72,7 @@ print $fh "$header\n";
 
 foreach (@all_tweets){
 
-my $created_at      = '"' . $_->{'created_at'} . '"';     #add quotes when written to CSV
+my $created_at      = '"' . $_->{'created_at'} . '"';     #add quotes when written to TXT
 my $id              = '"' . $_->{'id'} . '"';
 my $user_screenname = '"' . $_->{'user'}{'screen_name'} . '"';
 my $text            = '"' . $_->{'text'} . '"';

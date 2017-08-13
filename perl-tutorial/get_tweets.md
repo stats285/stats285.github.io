@@ -52,13 +52,13 @@ access_token_secret => '****************'
 # use method user_timeline and
 # loop until you get all 3200 tweets allowed
 my @all_tweets;
-my $count       = $number_of_tweets < 200 ?  $number_of_tweets : 200;
-my $tweets      = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' => $count});  #arrayRef
+my $count     = $number_of_tweets < 200 ?  $number_of_tweets : 200;
+my $tweets    = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' => $count});  #arrayRef
 while( ($#{$tweets} ge 0) and  (1+$#all_tweets)<$number_of_tweets ){
-push @all_tweets, @$tweets;
-printf "%-5s tweets downloaded...\n", 1+$#all_tweets;
-my $oldest = @$tweets[$#{$tweets}]->{'id'}-1;
-$tweets      = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' => $count , 'max_id'=>$oldest});
+    push @all_tweets, @$tweets;
+    printf "%-5s tweets downloaded...\n", 1+$#all_tweets;
+    my $oldest= @$tweets[$#{$tweets}]->{'id'}-1;
+    $tweets   = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' => $count , 'max_id'=>$oldest});
 }
 
 
@@ -68,7 +68,7 @@ my $filepath = "${screen_name}_tweets.txt";
 open(my $fh, '>:encoding(UTF-8)' , "$filepath") or die "can't create file $filepath $!";
 
 # write header
-my $header = join "\t" , ("id","datetime","screen_name","text");
+my $header   = join "\t" , ("id","datetime","screen_name","text");
 print $fh "$header\n";
 
 foreach (@all_tweets){

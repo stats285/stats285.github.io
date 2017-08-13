@@ -14,7 +14,7 @@
 #  NOTES:
 #  Produced TXT file can be read in R for analysis:
 #       > data = read.table("realDonaldTrump_tweets.txt", header=TRUE,
-#                            sep="\t", encoding="UTF-8", colClasses=c('character'))
+#                            sep="\t", encoding="UTF-8", quote="", colClasses = "character")
 #
 #  To convert twitter datetime column to that of R:
 #       > data$datetime <- strptime(data$datetime, "%a %b %d %H:%M:%S %z %Y")
@@ -34,12 +34,13 @@ my $number_of_tweets= $ARGV[1] // 3200;    # default to 3200
 
 # Define credentials from https://apps.twitter.com
 my $twitter = Net::Twitter->new(
-    traits   => [qw/API::RESTv1_1/],
-    consumer_key        => '****************',
-    consumer_secret     => '****************',
-    access_token        => '****************',
-    access_token_secret => '****************'
+                            traits   => [qw/API::RESTv1_1/],
+                            consumer_key        => '***************',
+                            consumer_secret     => '***************',
+                            access_token        => '***************',
+                            access_token_secret => '***************'
 );
+
 
 
 
@@ -50,7 +51,7 @@ my $count       = $number_of_tweets < 200 ?  $number_of_tweets : 200;
 my $tweets      = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' => $count});  #arrayRef
 while( ($#{$tweets} ge 0) and  (1+$#all_tweets)<$number_of_tweets ){
     push @all_tweets, @$tweets;
-    printf "%-5s tweets downloaded...\n", 1+$#all_tweets;
+    printf "%-5s tweets downloaded...\n", 1+$#all_tweets ;
     my $oldest = @$tweets[$#{$tweets}]->{'id'}-1;
     $tweets      = $twitter->user_timeline({'screen_name'=>$screen_name , 'count' => $count , 'max_id'=>$oldest});
 }
@@ -65,19 +66,15 @@ my $header = join "\t" , ("id","datetime","screen_name","text");
 print $fh "$header\n";
 
 foreach (@all_tweets){
-    
-    my $created_at      = '"' . $_->{'created_at'} . '"';     #add quotes when written to TXT
-    my $id              = '"' . $_->{'id'} . '"';
-    my $user_screenname = '"' . $_->{'user'}{'screen_name'} . '"';
-    my $text            = '"' . $_->{'text'} . '"';
+    my $created_at      = $_->{'created_at'};
+    my $id              = $_->{'id'};
+    my $user_screenname = $_->{'user'}{'screen_name'};
+    my $text            = $_->{'text'};
        $text =~ s/[\n\r\t]/ /g;                  #replace new lines/tabs in text with space.
-    
     my $record = join "\t" , ($id,$created_at,$user_screenname,$text);
-
     print $fh "$record\n";    # print to $fh
 }
 
 close $fh;
-
 
 1;

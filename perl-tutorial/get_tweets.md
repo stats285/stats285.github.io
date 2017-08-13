@@ -2,6 +2,8 @@
 layout: default
 ---
 
+For report bugs to @monajemi or <monajemi@stanford.edu>  
+
 ```perl
 #!/usr/bin/perl
 # usage:

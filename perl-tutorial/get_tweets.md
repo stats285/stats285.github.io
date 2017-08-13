@@ -2,7 +2,7 @@
 layout:default
 ---
 
-{% highlight perl6 %}
+```bash
 
 #!/usr/bin/perl
 # usage:
@@ -88,9 +88,7 @@ close $fh;
 
 1;
 
-{% endhighlight %}
+```bash
 
 [Download file](perl-tutorial-files/get_tweets.pl)
-
-
 

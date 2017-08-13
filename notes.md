@@ -6,7 +6,7 @@ layout: default
 
 1.  Basics
     - [Bash Tutorial](bash-tutorial/bash-tutorial)
-    - Perl Tutorial
+    - [Perl Tutorial](perl-tutorial/perl-tutorial)
     - Git
 1.  [Course Readings](readings)
 1.  Cluster Computing Resources

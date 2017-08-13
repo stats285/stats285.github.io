@@ -2,7 +2,8 @@
 layout:default
 ---
 
-```perl 
+{% highlight perl6 %}
+
 #!/usr/bin/perl
 # usage:
 #        perl get_tweets.pl <screen_name> [number_tweets]
@@ -86,7 +87,8 @@ close $fh;
 
 
 1;
-```
+
+{% endhighlight %}
 
 [Download file](perl-tutorial-files/get_tweets.pl)
 

@@ -41,11 +41,11 @@ my $number_of_tweets= $ARGV[1] // 3200;    # default to 3200
 
 # Define credentials from https://apps.twitter.com
 my $twitter = Net::Twitter->new(
-                            traits   => [qw/API::RESTv1_1/],
-                            consumer_key        => '***************',
-                            consumer_secret     => '***************',
-                            access_token        => '***************',
-                            access_token_secret => '***************'
+    traits   => [qw/API::RESTv1_1/],
+    consumer_key        => '***************',
+    consumer_secret     => '***************',
+    access_token        => '***************',
+    access_token_secret => '***************'
 );
 
 

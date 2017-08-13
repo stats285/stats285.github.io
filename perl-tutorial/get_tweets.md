@@ -88,7 +88,7 @@ close $fh;
 
 1;
 
-```bash
+```
 
 [Download file](perl-tutorial-files/get_tweets.pl)
 

@@ -30,6 +30,6 @@ using frequently in this class.
 ### Changing file content
 
 ## Examples
-   - [Downloading tweets from twitter account](perl-tutorial-files/get_tweets.pl)  
+   - [Downloading tweets from a twitter account](perl-tutorial-files/get_tweets.pl)  
 
 [back](../notes)

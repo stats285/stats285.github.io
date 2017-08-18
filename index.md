@@ -4,8 +4,7 @@ layout: titlepage
 
 
 **Massive Computational Experiments, Painlessly (MCEP)**  
-For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) (@monajemi on GitHub) or [David Donoho](https://profiles.stanford.edu/david-donoho). This course meets Mondays 3:00-4:20 PM at [Thornt110](https://campus-map.stanford.edu/?srch=Thornt110)
-.
+For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) (@monajemi on GitHub) or [David Donoho](https://profiles.stanford.edu/david-donoho). This course meets Mondays 3:00-4:20 PM at [Thornt110](https://campus-map.stanford.edu/?srch=Thornt110). If you are a guest speaker for this course, please read [travel section](#plan-your-visit) to plan your visit. 
 
 <!--
 ## [](#announcements)Announcements
@@ -53,6 +52,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 ## Assignments
 
 ## [Notes](notes)
+## [Plan your visit](speaker_visit)
 
 
 

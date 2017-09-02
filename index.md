@@ -29,7 +29,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     <img src="assets/img/Percy_liang.jpg">
     </div>
     <div class="card">
-        <a class="talkdate" href="./vcs_lecture"> Monday, 10/23/2017</a> <br>
+        <a class="talkdate" href="./percy_lecture"> Monday, 10/23/2017</a> <br>
         <span class="speaker">Percy Liang</span> <br>
         <span class="speakerposition">Stanford</span>
     </div>

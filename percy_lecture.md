@@ -1,19 +1,14 @@
 <div class="abstract">   
-
-<strong>Abstract/Topics</strong>
-<p>TBW</p>
-
+<strong>Title</strong>
+<p align="justify">Abstract/Topics</p>  
 <strong>Readings for this lecture</strong>  
 <ol>
-    <li>
-    <a href=""> Reading 1 </a>
-    </li>
-    
-    <li>
-    <a href=""> Reading 2 </a>
-    </li>
+<li>
+<a href=""> Reading 1 </a>
+</li>
 </ol>
 </div>
+
 
 ![Percy Liang](/assets/img/Percy_liang.jpg)  
 

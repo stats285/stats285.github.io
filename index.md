@@ -24,6 +24,17 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     </div>
 </div>
 ---
+<div class="speaker-wrap">
+    <div class="speakerphoto">
+    <img src="assets/img/Percy_liang.jpg">
+    </div>
+    <div class="card">
+        <a class="talkdate" href="./vcs_lecture"> Monday, 10/23/2017</a> <br>
+        <span class="speaker">Percy Liang</span> <br>
+        <span class="speakerposition">Stanford</span>
+    </div>
+</div>
+---
 
 <div class="speaker-wrap">
     <div class="speakerphoto">
@@ -32,7 +43,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     <div class="card">
         <a class="talkdate" href="./travis_lecture"> Monday, 10/30/2017</a> <br>
         <span class="speaker">Travis Oliphant</span> <br>
-        <span class="speakerposition">Continuum Analytics</span>
+        <span class="speakerposition">Anaconda</span>
     </div>
 </div>
 ---

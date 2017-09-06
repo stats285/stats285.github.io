@@ -47,6 +47,19 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
     </div>
 </div>
 ---
+<div class="speaker-wrap">
+<div class="speakerphoto">
+<img src="assets/img/riccardo_murri.jpg">
+</div>
+<div class="card">
+<a class="talkdate" href="./murri_lecture"> Monday, 11/06/2017</a> <br>
+<span class="speaker">Riccardo Murri</span> <br>
+<span class="speakerposition">University of Zurich</span>
+</div>
+</div>
+---
+
+
 
 
 ## Assignments

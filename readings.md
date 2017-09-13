@@ -7,5 +7,8 @@ layout: default
 * [Making Massive Computational Experiments Painless](http://ieeexplore.ieee.org/document/7840870/) 
 * [50 years of Data Science](http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf)
 * [The vision of autonomic computing](http://ieeexplore.ieee.org/document/1160055/)
+* [Globus platform-as-a-service for collaborative science applications](http://onlinelibrary.wiley.com/store/10.1002/cpe.3262/asset/cpe3262.pdf;jsessionid=71A536E61802602504267A297CD9013D.f01t02?v=1&t=j7ibd43o&s=7b0187f4b50262c75d9d6b5422294cfad6451edf)
+* [Occupy the Cloud: Distributed Computing for the 99%](https://arxiv.org/pdf/1702.04024.pdf)
+
  
 [back](./)

@@ -63,7 +63,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 <img src="assets/img/Andy_konwinski.png">
 </div>
 <div class="card">
-<a class="talkdate" href="./Konwinski_lecture"> Monday, 11/13/2017</a> <br>
+<a class="talkdate" href="./konwinski_lecture"> Monday, 11/13/2017</a> <br>
 <span class="speaker">Andy Konwinski</span> <br>
 <span class="speakerposition">Databricks</span>
 </div>

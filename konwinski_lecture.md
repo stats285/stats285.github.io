@@ -1,6 +1,6 @@
 <div class="abstract">   
 
-<strong>Title</strong>
+<strong>Data Engineering and Data Science with Databricks and Apache Spark</strong>
 <p align="justify">Abstract/Topics</p>  
 <strong>Readings for this lecture</strong>  
 <ol>

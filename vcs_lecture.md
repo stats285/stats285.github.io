@@ -1,6 +1,6 @@
 <div class="abstract">   
 
-<strong>Title</strong>
+<strong>Reproducibility in Scientific Research</strong>
 <p align="justify">Abstract/Topics</p>  
 <strong>Readings for this lecture</strong>  
 <ol>

@@ -11,7 +11,17 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 -->
 
 ## [](#guest_lectures) Guest Lectures
-
+---
+<div class="speaker-wrap">
+<div class="speakerphoto">
+<img src="assets/img/EricJonas.png">
+</div>
+<div class="card">
+<a class="talkdate" href="./jonas_lecture"> Monday, 10/9/2017</a> <br>
+<span class="speaker">Eric Jonas</span> <br>
+<span class="speakerposition">UC Berkeley</span>
+</div>
+</div>
 ---
 <div class="speaker-wrap">
     <div class="speakerphoto">

@@ -5,8 +5,24 @@
 <strong>Readings for this lecture</strong>  
 <ol>
 <li>
-<a href=""> Reading 1 </a>
+<a href="http://stanford.edu/~vcs/papers/RRCiSE-STODDEN2009.pdf"> Reproducible Research in Computational Harmonic Analysis </a>
 </li>
+
+<li>
+<a href="http://stanford.edu/~vcs/papers/Legal-STODDEN2009.pdf"> The Legal Framework
+for Reproducible Scienti c Research </a>
+</li>
+
+
+<li>
+<a href="http://science.sciencemag.org/content/343/6168/229"> Reproducibility </a>
+</li>
+
+
+<li>
+<a href="http://science.sciencemag.org/content/354/6317/1240"> Enhancing Reproducibility for Computational Methods </a>
+</li>
+
 </ol>
 </div>
 

@@ -30,11 +30,15 @@ Joint work with Shivaram Venkataraman, Qifan Pu, Vaishaal Shankar, Allan Peng, I
 <li>
 <a href="http://pywren.io/pywren_s3.html"> Microservices and terabits [blog]</a>
 </li>
-
 </ol>
-
-Note that for students with an Amazon Web Services account, instructions for [installing pywren and trying it out can be found here](http://pywren.io/pages/gettingstarted.html). There exist a large number of examples available as Jupyter notebooks in the [PyWren Examples repostiory](https://github.com/pywren/examples/)  and an [excellent step-by-step tutorial](https://github.com/ucbrise/risecamp/blob/master/pywren/pywren-intro.ipynb)  as part of the RISECamp Pywren section. 
 </div>
+
+Note that for students with an Amazon Web Services account, instructions for 
+[installing pywren and trying it out can be found here](http://pywren.io/pages/gettingstarted.html). 
+There exist a large number of examples available as Jupyter notebooks 
+in the [PyWren Examples repostiory](https://github.com/pywren/examples/)  and 
+an [excellent step-by-step tutorial](https://github.com/ucbrise/risecamp/blob/master/pywren/pywren-intro.ipynb) 
+as part of the RISECamp Pywren section. 
 
 ![Eric Jonas](/assets/img/EricJonas.png)  
 

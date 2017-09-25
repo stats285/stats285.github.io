@@ -33,12 +33,7 @@ Joint work with Shivaram Venkataraman, Qifan Pu, Vaishaal Shankar, Allan Peng, I
 </ol>
 </div>
 
-Note that for students with an Amazon Web Services account, instructions for 
-[installing pywren and trying it out can be found here](http://pywren.io/pages/gettingstarted.html). 
-There exist a large number of examples available as Jupyter notebooks 
-in the [PyWren Examples repostiory](https://github.com/pywren/examples/)  and 
-an [excellent step-by-step tutorial](https://github.com/ucbrise/risecamp/blob/master/pywren/pywren-intro.ipynb) 
-as part of the RISECamp Pywren section. 
+    Note that for students with an Amazon Web Services account, instructions for [installing pywren and trying it out can be found here](http://pywren.io/pages/gettingstarted.html). There exist a large number of examples available as Jupyter notebooks in the [PyWren Examples repostiory](https://github.com/pywren/examples/)  and an [excellent step-by-step tutorial](https://github.com/ucbrise/risecamp/blob/master/pywren/pywren-intro.ipynb) as part of the RISECamp Pywren section. 
 
 ![Eric Jonas](/assets/img/EricJonas.png)  
 

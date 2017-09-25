@@ -1,8 +1,7 @@
 <div class="abstract">   
 
 <strong>PyWren: Pushing Microservices to Teraflops</strong>
-<p align="justify">Abstract/Topics</p>  
-
+<p align="justify">
 Much of cloud computing infrastructure remains hard to use, in spite
 of decades of both academic research and commercialization.
 Fortunately, recent technologies developed for web services and
@@ -18,6 +17,7 @@ will demo applications built on our framework and seek user input into
 next directions.
 
 Joint work with Shivaram Venkataraman, Qifan Pu, Vaishaal Shankar, Allan Peng, Ion Stoica, and Ben Recht. 
+</p>  
 
 <strong>Readings for this lecture</strong>  
 <ol>

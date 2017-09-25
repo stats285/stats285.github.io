@@ -22,8 +22,12 @@ Joint work with Shivaram Venkataraman, Qifan Pu, Vaishaal Shankar, Allan Peng, I
 <strong>Readings for this lecture</strong>  
 <ol>
 <li>
-<a href="https://arxiv.org/abs/1702.04024"> Occupy the Cloud: Distributed Computing for the 99% </a>
+<a href="https://arxiv.org/abs/1702.04024"> Occupy the Cloud: Distributed Computing for the 99% </a> 
+</li>
+<li>
 <a href="http://pywren.io/pywren.html"> Microservices and teraflops [blog]</a>
+</li>
+<li>
 <a href="http://pywren.io/pywren_s3.html"> Microservices and terabits [blog]</a>
 </li>
 

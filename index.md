@@ -84,7 +84,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 
 ## Assignments
-
+## [Lecture slides](lecture_slides)
 ## [Notes](notes)
 ## [Plan your visit](speaker_visit)
 

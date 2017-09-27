@@ -10,6 +10,12 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 ## [](#announcements)Announcements
 -->
 
+## AI news
+[http://www.independent.co.uk/life-style/gadgets-and-tech/news/ai-robots-artificial-intelligence-racism-sexism-prejudice-bias-language-learn-from-humans-a7683161.html](AI robots learning racism...)
+[https://www.theguardian.com/technology/2017/aug/10/faceapp-forced-to-pull-racist-filters-digital-blackface](FaceApp forced to pull 'racist' filters...)
+
+
+
 ## [](#guest_lectures) Guest Lectures
 ---
 <div class="speaker-wrap">

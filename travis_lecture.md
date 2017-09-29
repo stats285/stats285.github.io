@@ -1,5 +1,5 @@
 <div class="abstract">   
-<strong>Title</strong>
+<strong>Scaling Python to GPUs and Clusters: Dask and Numba and ideas for future work</strong>
 <p align="justify">Abstract/Topics</p>  
 <strong>Readings for this lecture</strong>  
 <ol>

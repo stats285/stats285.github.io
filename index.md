@@ -86,8 +86,6 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 
 ## [Assignments](assignments)
-* [Assignment 01](./assets/assignments/01/Stats285-Assignment01.tar.gz)
-
 ## [Lecture slides](lecture_slides)
 ## [Notes](notes)
 ## [Plan your visit](speaker_visit)

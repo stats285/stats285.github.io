@@ -1,7 +1,7 @@
 <div class="abstract">   
 
-<strong>Reproducibility in Scientific Research</strong>
-<p align="justify">Abstract/Topics</p>  
+<strong>Reproducibility in Computational Science</strong>
+<p align="justify">This talk considers the implications from viewing computation as an instrument in scientific discovery. How do we bring greater transparency and verifiability to data-driven research? How can we reasonably compare computational methods that purport to answer the same research question, but give different conclusions? How might variability in software or hardware impact the finding? More fundamentally, what makes computational results trustable? And what do the answers to these questions imply for the dissemination of computational research? How best should data and code be shared, licensed, and made legally reusable? I will present frameworks and examples for addressing these questions, using concepts from statistical inference, cyberinfrastructure, and software engineering.</p>  
 <strong>Readings for this lecture</strong>  
 <ol>
 <li>

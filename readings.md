@@ -13,5 +13,6 @@ layout: default
 * [Reproducibility](http://science.sciencemag.org/content/343/6168/229)
 * [Enhancing Reproducibility for Computational Methods](http://science.sciencemag.org/content/354/6317/1240)
 * [The Legal Framework for Reproducible Scientic Research](http://stanford.edu/~vcs/papers/Legal-STODDEN2009.pdf) 
+* [Data Age 2025, IDC](https://www.seagate.com/files/www-content/our-story/trends/files/Seagate-WP-DataAge2025-March-2017.pdf)
 
 [back](./)

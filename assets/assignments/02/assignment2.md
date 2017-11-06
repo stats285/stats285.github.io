@@ -71,7 +71,9 @@ Please follow the following step to setup your cluster and run experiments. This
 
     6. **Enable** Google Compute for your project by visiting  [Enable Compute Engine](https://console.developers.google.com/apis/api/compute.googleapis.com)
     7. **Enable** Billing for your project by visiting [Enable Billing](https://console.developers.google.com/projectselector/billing/enable?redirect=https:%2F%2Fdevelopers.google.com%2Fplaces%2Fweb-service%2Fusage%3FdialogOnLoad%3Dbilling-enabled)
-    > If you do not enable billing and compute engine in 6 and 7, your instances will not start and you get errors. Make sure you enable these.
+    8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google.
+
+    > If you fail to satisfy 6,7, and 8 above, your instances will not start and you get errors. Make sure you enable these.
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
 
@@ -103,11 +105,11 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     gce_client_id=<CLIENT>
     gce_client_secret=<SECRET>
     gce_project_id=<PROJECT>
-    zone=us-west1-a
+    #zone=us-west1-a
 
 
     [login/google]
-    image_user=<GMAIL_ID>   # DO NOT include @gmail.com 
+    image_user=<GMAIL_ID>
     image_user_sudo=root
     image_sudo=True
     user_key_name=elasticluster
@@ -126,7 +128,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     setup=ansible-slurm
     security_group=default
     image_id=debian-8-jessie-v20170717
-    flavor=n1-standard-1     # use n1-standard-4 for nodes with 4vCPUs
+    flavor=n1-standard-1
     frontend_nodes=1
     compute_nodes=2
     image_userdata=
@@ -136,7 +138,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 
     #[cluster/gce-slurm/compute]
     #boot_disk_type=pd-standard
-    #boot_disk_size=100                     # 100G
+    #boot_disk_size=100
     ```
 
     > `gcloud` provides useful commands to see the available options, for example:   

@@ -22,7 +22,33 @@ Please follow the following step to setup your cluster and run experiments. This
     ```
 
 
-We will be using `stats285/elasticluster` image to build a container later in Part-3.
+* We will be using `stats285/elasticluster` image to build a container later in Part-3. So, go ahead and pull this image to your local machine (laptop).
+
+    ```bash
+    $ docker image pull stats285/elasticluster
+
+    Using default tag: latest
+    latest: Pulling from stats285/elasticluster
+    ad74af05f5a2: Pull complete 
+    8812637047e3: Pull complete 
+    be169522399f: Pull complete 
+    286703095347: Pull complete 
+    7569e65661da: Pull complete 
+    1fe58099e1f7: Pull complete 
+    cc8443bb6f8d: Pull complete 
+    1bfaf64fe8de: Pull complete 
+    80558ad3afe5: Pull complete 
+    Digest: sha256:f915c4bfb924678506b311ed9ee374b538bcfe1d2247e49c3ce521b0b8103606
+    Status: Downloaded newer image for stats285/elasticluster:latest
+    ```
+
+* You should now be able to see the image downloaded to your machine:
+
+    ```
+    $ docker image ls
+    REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+    stats285/elasticluster   latest              2e629115eb9b        3 months ago        625MB
+    ```
 
 
 ## Part-2: Google Cloud
@@ -45,6 +71,12 @@ We will be using `stats285/elasticluster` image to build a container later in Pa
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
 
 
+## Part-3: Run ElastiCluster
+
+* make a folder in your $HOME directory  
+    ```bash
+    mkdir elasticluster
+    ```
 
 
 [Go back](https://stats285.github.io/assignments)

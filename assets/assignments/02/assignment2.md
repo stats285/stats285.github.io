@@ -89,7 +89,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
         * <CLIENT>
         * <SECRET>
         * <PROJECT>
-        * <GMAIL_ID>
+        * <GMAIL_ID>   
     ```bash
     # Elasticluster Configuration Template
     # ====================================

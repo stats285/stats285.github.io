@@ -10,7 +10,24 @@ in Deep Learning. In particular, each of you will build your own SLURM cluster o
 and then run massive computational experiments. We then collect and analyse all the results you will generate.
 Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works. Once this step is completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course as credit. 
 
-## Part-1: Google Cloud
+## Part-1: Install Docker
+* Visit [Docker Website](https://www.docker.com/community-edition#/download) and install it for your operating system
+* Once docker installation is complete, Check your installation by searching docker repositories for `elasticluster`:   
+
+```bash
+$ docker search elasticluster
+
+artifacts/elasticluster                Elasticluster with custom tools to fully m...   1                                       
+artifacts/elasticluster-config-tools                                                   0                                       
+stats285/elasticluster                 Dockerized elasticluster for Stanford cour...   0
+
+```
+
+
+We will be using `stats285/elasticluster` later in Part-3.
+
+
+## Part-2: Google Cloud
 
 * Claim your $50 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558)
 * Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient)
@@ -29,7 +46,6 @@ Please follow the following step to setup your cluster and run experiments. This
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
 
-## Part-2: Install Docker
 
 
 

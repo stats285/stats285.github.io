@@ -78,7 +78,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     ```bash
     docker run -v ~/.ssh:/root/.ssh -P -it stats285/elasticluster
     ```
-* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials  
+* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources.
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
     1. Update the contents of `~/.elasticluster/config`    

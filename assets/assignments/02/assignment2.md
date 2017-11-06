@@ -86,10 +86,11 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
     1. Update the contents of `~/.elasticluster/config`  
-        * <CLIENT>
-        * <SECRET>
-        * <PROJECT>
-        * <GMAIL_ID>   
+        * `<CLIENT>`
+        * `<SECRET>`
+        * `<PROJECT>`
+        * `<GMAIL_ID>`   
+    
     ```bash
     # Elasticluster Configuration Template
     # ====================================

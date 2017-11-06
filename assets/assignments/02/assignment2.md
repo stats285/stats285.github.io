@@ -79,4 +79,13 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     ```
 * 
 
+
+
+> `gcloud` provides useful commands to see the avaiable options for example   
+> `gcloud compute machine-types list --zones us-west1-a`
+
+
+
+
+
 [Go back](https://stats285.github.io/assignments)

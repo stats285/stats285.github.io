@@ -49,4 +49,4 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 
 
 
-[Go back to home](./)
+[Go back](https://stats285.github.io/assignments)

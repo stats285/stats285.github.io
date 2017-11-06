@@ -54,7 +54,7 @@ Please follow the following step to setup your cluster and run experiments. This
 
 ## Part-2: Google Cloud
 
-* Claim your $50 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
+* Claim your $50 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
 * <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.
 
 * <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
@@ -66,8 +66,12 @@ Please follow the following step to setup your cluster and run experiments. This
         * choose a name for your application (say `elasticluster`)
    5. select **Create** 
 
-> Once successful, the interface will show your `client_id`  and `client_secret`.
-> These values appear at the Credentials tab and you may retrive them at a later time by clicking on your application name (step 4).
+        > Once successful, the interface will show your `client_id`  and `client_secret`.
+        > These values appear at the Credentials tab and you may retrive them at a later time by clicking on your application name (step 4).
+
+    6. **Enable** Google Compute for your project by visiting  [Enable Compute Engine](https://console.developers.google.com/apis/api/compute.googleapis.com)
+    7. **Enable** Billing for your project by visiting [Enable Billing](https://console.developers.google.com/projectselector/billing/enable?redirect=https:%2F%2Fdevelopers.google.com%2Fplaces%2Fweb-service%2Fusage%3FdialogOnLoad%3Dbilling-enabled)
+    > If you do not enable billing and compute engine in 6 and 7, your instances will not start and you get errors. Make sure you eanble these.
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
 
@@ -81,8 +85,11 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 * Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources.
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
-    1. Update the contents of `~/.elasticluster/config`    
-   
+    1. Update the contents of `~/.elasticluster/config`  
+        * <CLIENT>
+        * <SECRET>
+        * <PROJECT>
+        * <GMAIL_ID>
     ```bash
     # Elasticluster Configuration Template
     # ====================================
@@ -131,13 +138,20 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     #boot_disk_size=100                     # 100G
     ```
 
-> `gcloud` provides useful commands to see the available options, for example:   
-> `gcloud compute machine-types list --zones us-west1-a`    
-> lists all the machine types that are availbale in zone us-west1-a     
-> This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
-> Also,  
-> `gcloud compute images list`  
-> list all the available images.    
+    > `gcloud` provides useful commands to see the available options, for example:   
+    > `gcloud compute machine-types list --zones us-west1-a`    
+    > lists all the machine types that are availbale in zone us-west1-a     
+    > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
+    > Also,  
+    > `gcloud compute images list`  
+    > list all the available images.    
+
+* Start your cluster (This step takes 30-60 min):
+    ```bash
+    elasticluster start gce-slurm
+    ```
+    
+* You can chek the progress at: https://console.cloud.google.com/
 
 
 

@@ -12,7 +12,7 @@ Please follow the following step to setup your cluster and run experiments. This
 
 ## Part-1: Google Cloud
 
-* Claim your $50 Google Compute Credit
+* Claim your $50 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558)
 * Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient)
 
 * Creat your credentials `client_id`, `client_secret`, and `project_id`

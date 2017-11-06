@@ -24,7 +24,7 @@ stats285/elasticluster                 Dockerized elasticluster for Stanford cou
 ```
 
 
-We will be using `stats285/elasticluster` later in Part-3.
+We will be using `stats285/elasticluster` image to build a container later in Part-3.
 
 
 ## Part-2: Google Cloud

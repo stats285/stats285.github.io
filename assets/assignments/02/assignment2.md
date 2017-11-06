@@ -12,16 +12,14 @@ Please follow the following step to setup your cluster and run experiments. This
 
 ## Part-1: Install Docker
 * Visit [Docker Website](https://www.docker.com/community-edition#/download) and install it for your operating system
-* Once docker installation is complete, Check your installation by searching docker repositories for `elasticluster`:   
+* Once docker installation is complete, Check your installation by searching docker repositories for `elasticluster`:    
+    ```bash
+    $ docker search elasticluster
 
-```bash
-$ docker search elasticluster
-
-artifacts/elasticluster                Elasticluster with custom tools to fully m...   1                                       
-artifacts/elasticluster-config-tools                                                   0                                       
-stats285/elasticluster                 Dockerized elasticluster for Stanford cour...   0
-
-```
+    artifacts/elasticluster                Elasticluster with custom tools to fully m...   1                                       
+    artifacts/elasticluster-config-tools                                                   0                                       
+    stats285/elasticluster                 Dockerized elasticluster for Stanford cour...   0
+    ```
 
 
 We will be using `stats285/elasticluster` image to build a container later in Part-3.

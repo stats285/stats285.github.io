@@ -27,7 +27,7 @@ Please follow the following step to setup your cluster and run experiments. This
 > Once successful, the interface will show your `client_id`  and `client_secret`.
 > These values appear at the Credentials tab and you may retrive them at a later time by clicking on your application name (step 4).
 
-For more info on obtaining your Google credentials, you may check [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
+For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
 
 ## Part-2: Install Docker
 

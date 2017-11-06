@@ -15,8 +15,8 @@ layout: default
    1. select **Create credentials**
    2. select **OAuth client ID**
    3. selct  **Configure conset screen** -- give your project a name and save
-   4. If prompted for **Application Type** choose **Other** 
-        ** choose a name for your application (say `elasticluster`)
+   4. If prompted for **Application Type** choose **Other**    
+        * choose a name for your application (say `elasticluster`)
    5. select **Create** 
 
 > Once successful, the interface will show your `client_id`  and `client_secret`.

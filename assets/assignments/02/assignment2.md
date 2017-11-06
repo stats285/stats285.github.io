@@ -29,25 +29,25 @@ Please follow the following step to setup your cluster and run experiments. This
 
     Using default tag: latest
     latest: Pulling from stats285/elasticluster
-    ad74af05f5a2: Pull complete 
-    8812637047e3: Pull complete 
-    be169522399f: Pull complete 
-    286703095347: Pull complete 
-    7569e65661da: Pull complete 
-    1fe58099e1f7: Pull complete 
-    cc8443bb6f8d: Pull complete 
-    1bfaf64fe8de: Pull complete 
-    80558ad3afe5: Pull complete 
-    Digest: sha256:f915c4bfb924678506b311ed9ee374b538bcfe1d2247e49c3ce521b0b8103606
+    d13d02fa248d: Pull complete 
+    a2c103c31b60: Pull complete 
+    33bfff8f2f5e: Pull complete 
+    5b66f3cbc9f3: Pull complete 
+    97f64282b4c0: Pull complete 
+    5ca087b288c4: Pull complete 
+    48ef25846431: Pull complete 
+    62e22c801e94: Pull complete 
+    d427e5f4c11a: Pull complete 
+    Digest: sha256:552e1dd64f0c65a2430de6a517dc546f539c3fcddd48aea7d401fb3a6b810330
     Status: Downloaded newer image for stats285/elasticluster:latest
     ```
 
 * You should now be able to see the image downloaded to your machine:
 
     ```
-    $ docker image ls
+    $ docker images
     REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
-    stats285/elasticluster   latest              2e629115eb9b        3 months ago        625MB
+    stats285/elasticluster   latest              6e06d575a49e        15 minutes ago      555MB
     ```
 
 

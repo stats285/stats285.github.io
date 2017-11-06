@@ -81,8 +81,9 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 * Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials  
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
-    1. Update the contents of `~/.elasticluster/config`
-    ```
+    1. Update the contents of `~/.elasticluster/config`    
+   
+    ```bash
     # Elasticluster Configuration Template
     # ====================================
     # Author: Hatef Monajemi (July 18)

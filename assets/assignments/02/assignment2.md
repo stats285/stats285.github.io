@@ -20,7 +20,7 @@ Please follow the following step to setup your cluster and run experiments. This
     artifacts/elasticluster-config-tools                                                   0                                       
     stats285/elasticluster                 Dockerized elasticluster for Stanford cour...   0
     ```
-
+    The image can also be found at [Docker Hub](https://hub.docker.com/r/stats285/elasticluster/)
 
 * We will be using `stats285/elasticluster` image to build a container later in Part-3. So, go ahead and pull this image to your local machine (laptop).
 
@@ -75,8 +75,8 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 
 * make a folder in your $HOME directory  
     ```bash
-    mkdir elasticluster
+    mkdir ~/elasticluster
     ```
-
+* 
 
 [Go back](https://stats285.github.io/assignments)

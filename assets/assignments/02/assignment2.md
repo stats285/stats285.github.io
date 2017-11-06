@@ -7,7 +7,8 @@ layout: default
 
 In this assignment, we will conduct a collaborative project testing certain theoretical hypotheses
 in Deep Learning. In particular, each of you will build your own SLURM cluster on Google Compute Engine (GCE)
-and then run massive computational experiments. We then collect and analyse all the results you will generate.
+and then run massive computational experiments. We then collect and analyse all the results you will generate and document
+our observations.
 Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works. Once this step is completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course as credit. 
 
 ## Part-1: Install Docker

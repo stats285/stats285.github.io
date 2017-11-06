@@ -56,7 +56,7 @@ Please follow the following step to setup your cluster and run experiments. This
 * Claim your $50 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558)
 * Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient)
 
-* Creat your credentials `client_id`, `client_secret`, and `project_id`
+* <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
    1. select **Create credentials**
    2. select **OAuth client ID**
    3. selct  **Configure conset screen**    
@@ -73,12 +73,12 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 
 ## Part-3: Run ElastiCluster
 
-* make a folder in your $HOME directory  
+* Create a  docker container from `stats285/elasticluster` image   
     ```bash
-    mkdir ~/elasticluster
+    docker run -v ~/.ssh:/root/.ssh -P -it stats285/elasticluster
     ```
-* 
-
+* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials    
+    1. retrive your credentials as explained [above](#gce-cred)
 
 
 > `gcloud` provides useful commands to see the avaiable options for example:   

@@ -82,7 +82,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 
 
 > `gcloud` provides useful commands to see the avaiable options for example:   
-> `gcloud compute machine-types list --zones us-west1-a`
+> `gcloud compute machine-types list --zones us-west1-a`    
 > lists all the machine types that are availbale in zone us-west1-a
 > The same infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)
 

@@ -71,7 +71,7 @@ Please follow the following step to setup your cluster and run experiments. This
 
     6. **Enable** Google Compute for your project by visiting  [Enable Compute Engine](https://console.developers.google.com/apis/api/compute.googleapis.com)
     7. **Enable** Billing for your project by visiting [Enable Billing](https://console.developers.google.com/projectselector/billing/enable?redirect=https:%2F%2Fdevelopers.google.com%2Fplaces%2Fweb-service%2Fusage%3FdialogOnLoad%3Dbilling-enabled)
-    > If you do not enable billing and compute engine in 6 and 7, your instances will not start and you get errors. Make sure you eanble these.
+    > If you do not enable billing and compute engine in 6 and 7, your instances will not start and you get errors. Make sure you enable these.
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
 

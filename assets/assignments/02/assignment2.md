@@ -80,7 +80,54 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 * Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials  
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
+    1. Update the contents of `~/.elasticluster/config`
+    ```
+    # Elasticluster Configuration Template
+    # ====================================
+    # Author: Hatef Monajemi (July 18)
+    #
 
+    [cloud/google]
+    provider=google
+    noauth_local_webserver=True
+    gce_client_id=<CLIENT>
+    gce_client_secret=<SECRET>
+    gce_project_id=<PROJECT>
+    zone=us-west1-a
+
+
+    [login/google]
+    image_user=<GMAIL_ID>   # DO NOT include @gmail.com 
+    image_user_sudo=root
+    image_sudo=True
+    user_key_name=elasticluster
+    user_key_private=~/.ssh/id_rsa
+    user_key_public=~/.ssh/id_rsa.pub
+
+    [setup/ansible-slurm]
+    provider=ansible
+    frontend_groups=slurm_master
+    compute_groups=slurm_worker
+
+
+    [cluster/gce-slurm]
+    cloud=google
+    login=google
+    setup=ansible-slurm
+    security_group=default
+    image_id=debian-8-jessie-v20170717
+    flavor=n1-standard-1     # use n1-standard-4 for nodes with 4vCPUs
+    frontend_nodes=1
+    compute_nodes=2
+    image_userdata=
+    ssh_to=frontend
+
+    # Uncomment below to get more permanent disk. Default is 10G
+
+    #[cluster/gce-slurm/compute]
+    #boot_disk_type=pd-standard
+    #boot_disk_size=100                     # 100G
+    ```
 
 > `gcloud` provides useful commands to see the avaiable options for example:   
 > `gcloud compute machine-types list --zones us-west1-a`    

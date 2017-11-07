@@ -84,7 +84,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     ```bash
     docker run -v ~/.ssh:/root/.ssh -P -it stats285/elasticluster
     ```
-* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources.
+* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources. use `vim`
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
     1. Update the contents of `~/.elasticluster/config`  
@@ -92,6 +92,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
         * `<SECRET>`
         * `<PROJECT>`
         * `<GMAIL_ID>`   
+            > Do not icnlude @gmail.com
     
     ```bash
     # Elasticluster Configuration Template
@@ -154,9 +155,12 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     elasticluster start gce-slurm
     ```
     
-* You can chek the progress at: https://console.cloud.google.com/
+* You can monitor the progress at: https://console.cloud.google.com/
 
-
+* To stop your cluster:
+    ```bash
+    elasticluster stop gce-slurm
+    ```
 
 
 [Go back](https://stats285.github.io/assignments)

@@ -135,7 +135,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     image_userdata=
     ssh_to=frontend
 
-    # Uncomment below to get more permanent disk. Default is 10G
+    # Uncomment below to get more disk space. Default is 10G
 
     #[cluster/gce-slurm/compute]
     #boot_disk_type=pd-standard
@@ -154,8 +154,18 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     ```bash
     elasticluster start gce-slurm
     ```
+
+
+```
+elasticluster setup gce-slurm
+```
     
 * You can monitor the progress at: https://console.cloud.google.com/
+
+* Get frontend node IP address.
+```
+elasticluster list-nodes gce-slurm
+```
 
 * To stop your cluster:
     ```bash

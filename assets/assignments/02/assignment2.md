@@ -154,23 +154,25 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     ```bash
     elasticluster start gce-slurm
     ```
-
-
-```
-elasticluster setup gce-slurm
-```
+if you run into error, and asked to run the setup again, please do so.
+    ```bash
+    elasticluster setup gce-slurm
+    ```
     
-* You can monitor the progress at: https://console.cloud.google.com/
+* You can also monitor the progress at: https://console.cloud.google.com/
 
 * Get frontend node IP address.
 ```
 elasticluster list-nodes gce-slurm
 ```
 
-* To stop your cluster:
+
+
+* To destroy your cluster:
     ```bash
     elasticluster stop gce-slurm
     ```
+> Please note that this command will destroy your cluster and you lose all the data on it. Make sure you get your data to a safe storage place before you destroy your cluster.
 
 
 [Go back](https://stats285.github.io/assignments)

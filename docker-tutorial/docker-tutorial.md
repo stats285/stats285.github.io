@@ -12,10 +12,6 @@ and using it.
 - [What id Docker](#what-is-docker)
 - [How to build a docker image](#how-to-build-docker-a-image) 
 - [Using Docker](#using-docker)
-- [Loops](#loops)
-- [File manipulation](#file-manipulation)
-    - [Read/Write](#readwrite) 
-    - [Changing file content](#changing-file-content)
     
 ## What is Docker 
 

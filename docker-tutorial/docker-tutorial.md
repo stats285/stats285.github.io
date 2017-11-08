@@ -25,5 +25,28 @@ and using it.
 
 You can 
 
+* To see a list of your local docker images:
+```bash
+docker images 
+```
+
+* To see a list of your containers:
+```bash
+docker ps -a 
+```
+
+* To reattach your exited conatainer: 
+
+```bash
+docker start  <IMAGE_ID>
+docker attach <IMAGE_ID>
+```
+or simply,
+```bash
+docker start -a -i <IMAGE_ID>
+```
+
+> This is a great command to remember, since you may exit your terminal, but this command allows you to start the exited containers and attach to the terminal again. 
+
 
 [back](../notes)

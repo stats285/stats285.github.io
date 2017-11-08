@@ -9,13 +9,13 @@ and using it.
 
 
 # Table of Contents
-- [What id Docker](#what-is-docker)
+- [What is Docker](#what-is-docker)
 - [How to build a docker image](#how-to-build-docker-a-image) 
 - [Using Docker](#using-docker)
     
 ## What is Docker 
 
-## How to build a docker image
+## How to build a Docker image
 
 ## Using Docker
 

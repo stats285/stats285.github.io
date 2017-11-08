@@ -15,7 +15,7 @@ layout: default
 1.  Cloud Computing
     - Building a cluster
 1.  Containers
-    - Docker
+    - [Docker Tutorial](docker-tutorial/docker-tutorial)
     - Singularity
 1.  CodaLab
 1.  [ClusterJob (CJ)](http://clusterjob.org)

@@ -5,7 +5,7 @@
 processing. Since it was created in 2009 at UC Berkeley, Spark has
 become the most popular open source data analytics framework today:
 over 1000 developers from over 200 companies have contributed to Spark
-and its committers represent 19 organizations.
+and its committers represent 19 organizations.    
 
 In 2013 the creators of Apache Spark spun out of UC Berkeley to create
 Databricks, a company that  provides a cloud hosted unified analytics
@@ -13,7 +13,7 @@ platform for Data Engineers, Data Scientists and Business specialists
 such as analysts, managers and executives. Databricks also fosters the
 Apache Spark community, donating millions of dollars each year via
 open source code contributions and community stewardship efforts such
-as meetup and conference planning.
+as meetup and conference planning.   
 
 Andy Konwinski is a cofounder of Databricks and a member of the team
 that created Spark at UC Berkeley. He graduated from Berkeley in 2012

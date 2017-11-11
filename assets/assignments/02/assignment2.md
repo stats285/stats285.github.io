@@ -103,6 +103,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
             > Do not icnlude @gmail.com
     
 <details>
+<p>
 <summary>ElastiCluster Config File Example</summary>
 
 
@@ -153,7 +154,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     #boot_disk_type=pd-standard
     #boot_disk_size=100
     ```
-
+</p>
 </details>
 
     > `gcloud` provides useful commands to see the available options, for example:   

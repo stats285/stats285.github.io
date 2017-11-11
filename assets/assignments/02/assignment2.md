@@ -74,13 +74,11 @@ Please follow the following step to setup your cluster and run experiments. This
     8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google.
     > If you fail to satisfy 6,7, and 8 above, your instances will not start and you get errors. Make sure you enable these.
 
+    9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, the **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. 
+
+
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
     
-
-### GPU quota request from Google Compute 
-* Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, the **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelarator. The default GPU quota is zero. 
-    
-
 ## Part-3: Create your cluster using ElastiCluster
 
 * Create a  docker container from `stats285/elasticluster` image   

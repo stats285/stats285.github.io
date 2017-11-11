@@ -60,7 +60,7 @@ Please follow the following step to setup your cluster and run experiments. This
 * <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
    1. select **Create credentials**
    2. select **OAuth client ID**
-   3. selct  **Configure conset screen**    
+   3. select  **Configure conset screen**    
         * Choose your **project name** and **save**
    4. If prompted for **Application Type** choose **Other**    
         * choose a name for your application (say `elasticluster`)
@@ -77,8 +77,8 @@ Please follow the following step to setup your cluster and run experiments. This
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
     
 
-    ### GPU quota request from Google Compute 
-    * Go to [Quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, the **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelarator. The default GPU quota is zero. 
+### GPU quota request from Google Compute 
+* Go to [Quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, the **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelarator. The default GPU quota is zero. 
     
 
 ## Part-3: Run ElastiCluster

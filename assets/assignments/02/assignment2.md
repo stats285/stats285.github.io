@@ -50,11 +50,11 @@ Please follow the following step to setup your cluster and run experiments. This
     REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
     stats285/elasticluster   latest              6e06d575a49e        15 minutes ago      555MB
     ```
-
+* for more docker commands, visit [docker tutorial](../../../docker-tutorial/docker-tutorial)  
 
 ## Part-2: Google Cloud
 
-* Claim your $50 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
+* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
 * <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.
 
 * <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
@@ -72,11 +72,14 @@ Please follow the following step to setup your cluster and run experiments. This
     6. **Enable** Google Compute for your project by visiting  [Enable Compute Engine](https://console.developers.google.com/apis/api/compute.googleapis.com)
     7. **Enable** Billing for your project by visiting [Enable Billing](https://console.developers.google.com/projectselector/billing/enable?redirect=https:%2F%2Fdevelopers.google.com%2Fplaces%2Fweb-service%2Fusage%3FdialogOnLoad%3Dbilling-enabled)
     8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google.
-
     > If you fail to satisfy 6,7, and 8 above, your instances will not start and you get errors. Make sure you enable these.
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
+    
 
+    ### GPU quota request from Google Compute 
+    * Go to [Quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, and ask for 8 GPUs at `us-west1` zone. You will need this to use GPU accelarator. The default GPU quota is zero. 
+    
 
 ## Part-3: Run ElastiCluster
 

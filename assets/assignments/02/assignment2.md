@@ -170,9 +170,9 @@ if you run into error, and asked to run the setup again, please do so.
 * You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)
 
 * Get frontend node IP address.
-```
-elasticluster list-nodes gce-slurm
-```
+    ```
+    elasticluster list-nodes gce-slurm
+    ```
 
 
 

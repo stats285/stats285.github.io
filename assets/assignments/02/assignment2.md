@@ -13,9 +13,9 @@ Please follow the following step to setup your cluster and run experiments. This
 
 To create your own cluster on Google Compute Engine, you should take three steps as follows:
 
-1. [Install Docker](#part-1:-install-docker)   
-2. [Setup Google Compute Engine](#part-2:-setup-google-compute-engine)      
-3. [Create your cluster using ElastiCluster](#part-3:-create-your-cluster-using-elasticluster)      
+1. [Install Docker](#part-1-install-docker)   
+2. [Setup Google Compute Engine](#part-2-setup-google-compute-engine)      
+3. [Create your cluster using ElastiCluster](#part-3-create-your-cluster-using-elasticluster)      
 
 
 ## Part-1: Install Docker

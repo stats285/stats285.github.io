@@ -167,7 +167,7 @@ if you run into error, and asked to run the setup again, please do so.
     elasticluster setup gce-slurm
     ```
     
-* You can also monitor the progress at: https://console.cloud.google.com/
+* You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)
 
 * Get frontend node IP address.
 ```

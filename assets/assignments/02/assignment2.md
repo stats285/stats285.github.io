@@ -180,7 +180,8 @@ elasticluster list-nodes gce-slurm
     ```bash
     elasticluster stop gce-slurm
     ```
-> Please note that this command will destroy your cluster and you lose all the data on it. Make sure you get your data to a safe storage place before you destroy your cluster.
+> Please note that this command will destroy your cluster and you lose all the data on it. Make sure you get your data to a safe storage place before you destroy your cluster. 
+> Alternatively, you can shut-off your cluster and re-start it by logging to your (https://console.cloud.google.com/). Currently ElastiCluster does not have this capability.
 
 
 [Go back](https://stats285.github.io/assignments)

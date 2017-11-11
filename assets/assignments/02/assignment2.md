@@ -102,9 +102,6 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
         * `<GMAIL_ID>`   
             > Do not icnlude @gmail.com
     
-    <details><p>
-    <summary>ElastiCluster Config File Example</summary>   
-    
     ```
     # Elasticluster Configuration Template
     # ====================================
@@ -152,7 +149,6 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     #boot_disk_type=pd-standard
     #boot_disk_size=100
     ```    
-    </p></details>
 
     > `gcloud` provides useful commands to see the available options, for example:   
     > `gcloud compute machine-types list --zones us-west1-a`    

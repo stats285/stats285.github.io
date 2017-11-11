@@ -81,7 +81,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
 * Go to [Quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, the **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelarator. The default GPU quota is zero. 
     
 
-## Part-3: Run ElastiCluster
+## Part-3: Create your cluster using ElastiCluster
 
 * Create a  docker container from `stats285/elasticluster` image   
     ```bash

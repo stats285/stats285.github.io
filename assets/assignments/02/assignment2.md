@@ -107,7 +107,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     gce_client_id=<CLIENT>
     gce_client_secret=<SECRET>
     gce_project_id=<PROJECT>
-    #zone=us-west1-a
+    zone=us-west1-b
 
 
     [login/google]

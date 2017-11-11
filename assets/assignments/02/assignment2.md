@@ -184,4 +184,4 @@ elasticluster list-nodes gce-slurm
 > Alternatively, you can shut-off your cluster and reinitiate at a later time by logging to your [consol](https://console.cloud.google.com/). Currently ElastiCluster does not have this capability.
 
 
-[Go back](https://stats285.github.io/assignments)
+[Go back](../../../assignments)

@@ -151,7 +151,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     > `gcloud compute images list`  
     > list all the available images.    
 
-* Start your cluster (This step takes 30-60 min):
+* Start your cluster (This step takes 10-60 min):
     ```bash
     elasticluster start gce-slurm
     ```

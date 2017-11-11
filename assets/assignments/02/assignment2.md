@@ -14,8 +14,9 @@ Please follow the following step to setup your cluster and run experiments. This
 To create your own cluster on Google Compute Engine, you should take three steps as follows:
 
 1. [Install Docker](#part-1:-install-docker)
-2.
-3
+2. [Setup Google Cloud](#part-2:-setup-google-cloud)
+3. [Create your cluster using ElastiCluster](#part-3:-create-your-cluster-using-elasticluster)   
+
 
 ## Part-1: Install Docker
 * Visit [Docker Website](https://www.docker.com/community-edition#/download) and install it for your operating system
@@ -58,7 +59,7 @@ To create your own cluster on Google Compute Engine, you should take three steps
     ```
 * for more docker commands, visit [docker tutorial](../../../docker-tutorial/docker-tutorial)  
 
-## Part-2: Google Cloud
+## Part-2: Setup Google Cloud
 
 * Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
 * <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.

@@ -8,7 +8,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 
 ## Data Science News
 * [Envisioning the Data Science Discipline (NAS)](https://www.nap.edu/read/24886/chapter/1)
-
+* [The State of Data Science (Kaggle)](https://www.kaggle.com/surveys/2017)
 
 
 ## [](#guest_lectures) Guest Lectures

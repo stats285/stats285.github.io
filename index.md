@@ -5,6 +5,8 @@ layout: titlepage
 
 **Massive Computational Experiments, Painlessly (MCEP)**  
 For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) (@monajemi on GitHub) or [David Donoho](https://profiles.stanford.edu/david-donoho). This course meets Mondays 3:00-4:20 PM at [Thornt110](https://campus-map.stanford.edu/?srch=Thornt110). If you are a guest speaker for this course, please read [travel section](#plan-your-visit) to plan your visit. 
+    * [Follows Stat285 on Twitter](https://twitter.com/stats285?lang=en)  
+    * [Follows Stat285 on ResearchGate (Videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)  
 
 ## Data Science News
 * [Envisioning the Data Science Discipline (NAS)](https://www.nap.edu/read/24886/chapter/1)

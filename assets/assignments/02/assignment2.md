@@ -167,10 +167,10 @@ installed for easy use. Follow the following steps to launch your own cluster.
     ```bash
     elasticluster -vvvv start gce-slurm
     ```   
-	if you run into error, and asked to run the setup again, please do so using.    
+	if you run into error, and asked to run the setup again, please do so using,       
     ```bash
     elasticluster -vvvv setup gce-slurm
-    ```    
+    ```       
     **if everything goes well, you will see** `your cluster is ready!`. **This is perhaps the moment you should shout** *Yay!* **and congratulate yourself. You now have your own cluster!**
 	
 * You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)

@@ -218,6 +218,9 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 
 * go to `~/CJ_install/example/Python` and run `simpleExample` on your cluster:   
 	```
+	$ # install conda
+	$ cj install miniconda gce
+	$ # test CJ run
 	$ cj run simpleExample.py gce -m "test"
 	$ cj state
 	$ cj ls

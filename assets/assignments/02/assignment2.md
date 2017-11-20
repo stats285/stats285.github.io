@@ -155,7 +155,7 @@ installed for easy use. Follow the following steps to launch your own cluster.
     #boot_disk_size=100
     ```    
 
-    > `gcloud` provides useful commands to see the available options, for example:   
+    > [`gcloud`](https://cloud.google.com/sdk/gcloud/) provides useful commands to see the available options, for example:   
     > `gcloud compute machine-types list --zones us-west1-a`    
     > lists all the machine types that are availbale in zone us-west1-a     
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   

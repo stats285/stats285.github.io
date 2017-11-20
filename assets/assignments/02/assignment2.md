@@ -90,6 +90,8 @@ which comes with elasticluster installed. To use this image on your personal com
 * for more docker commands, visit [docker tutorial](../../../docker-tutorial/docker-tutorial)  
     
 ## Part-3: Create your cluster using ElastiCluster
+In this part, you will make a container out of the image you pulled in Part 2. This container has in itself `elasticluster`
+installed for easy use. Follow the following steps to launch your own cluster.   
 
 * Create a  docker container from `stats285/elasticluster` image   
     ```bash
@@ -169,13 +171,16 @@ which comes with elasticluster installed. To use this image on your personal com
     	```bash
     	elasticluster setup gce-slurm
     	```
-    
+    if everything goes well, you will see `your cluster is ready!`. This is perhaps the moment 
+	you should shout *Yay!* and congratulate yourself. You now have your own cluster!
+	
 * You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)
 
-* Get frontend node IP address using:
+* Get `frontend` node IP address using:
     ```
     elasticluster list-nodes gce-slurm
     ```
+	example: `35.199.171.137`
 
 * To destroy your cluster:
     ```bash
@@ -183,6 +188,28 @@ which comes with elasticluster installed. To use this image on your personal com
     ```
 > Please note that this command will destroy your cluster and you lose all the data on it. Make sure you get your data to a safe storage place before you destroy your cluster.        
 > Alternatively, you can shut-off your cluster and reinitiate at a later time by logging to your [consol](https://console.cloud.google.com/). Currently ElastiCluster does not have this capability.
+
+
+## Part-4: Test your cluster with ClusterJob
+After you have launched your cluster successfully, it is time to test it by running a small job
+using **ClusterJob** on it. Follow the instructions below to test your cluster:
+
+* add your cluster info to `~/CJ_install/ssh_config`. Here is an example:
+	```
+	[gce]
+	Host	    35.199.171.137
+	User		hatefmonajemi
+	Bqs		    SLURM
+	Repo		/home/hatefmonajemi/CJRepo_Remote
+	MAT     	""
+	MATlib		""
+	Python		python3.4
+	Pythonlib	pytorch:torchvision:cuda80:scipy:matplotlib:-c soumith
+	[gce]
+	```
+	> note that `Host` is the IP address of your frontend node (e.g., `35.199.171.137`)
+
+
 
 
 [Go back](../../../assignments)

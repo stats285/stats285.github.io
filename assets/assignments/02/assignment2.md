@@ -177,7 +177,7 @@ installed for easy use. Follow the following steps to launch your own cluster.
     **if everything goes well, you will see** `your cluster is ready!`. **This is perhaps the moment you should shout** *Yay!* **and congratulate yourself. You now have your own cluster!**
 	
 
-* Get `frontend` node IP address using:
+* Get the IP address of the `frontend` node using:
     ```
     elasticluster list-nodes gce-slurm
     ```    

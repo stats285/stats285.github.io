@@ -16,7 +16,7 @@ To create your own cluster on Google Compute Engine, you should take three steps
 1. [Setup Google Compute Engine](#part-1-setup-google-compute-engine)      
 2. [Install Docker](#part-2-install-docker)   
 3. [Create your cluster using dockerized ElastiCluster](#part-3-create-your-cluster-using-elasticluster)      
-4. [Test your cluster with ClusterJob](#Part-4-test-your-cluster-with-clusterjob)
+4. [Test your cluster with ClusterJob](#part-4-test-your-cluster-with-clusterjob)
 ## Part-1: Setup Google Compute Engine
 
 * Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).

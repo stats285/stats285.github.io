@@ -203,15 +203,16 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 * add your cluster info to `~/CJ_install/ssh_config`. Here is an example:
 	```
 	[gce]
-	Host	    35.199.171.137
+	Host	        35.199.171.137
 	User		hatefmonajemi
-	Bqs		    SLURM
+	Bqs		SLURM
 	Repo		/home/hatefmonajemi/CJRepo_Remote
 	MAT     	""
 	MATlib		""
 	Python		python3.4
-	Pythonlib	pytorch:torchvision:cuda80:scipy:matplotlib:-c soumith
+	Pythonlib	pytorch:torchvision:cuda80:scipy:matplotlib:torchvision:-c soumith
 	[gce]
+	
 	```
 	> note that `Host` is the IP address of your frontend node (e.g., `35.199.171.137`)
 

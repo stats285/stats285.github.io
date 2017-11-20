@@ -13,12 +13,42 @@ Please follow the following step to setup your cluster and run experiments. This
 
 To create your own cluster on Google Compute Engine, you should take three steps as follows:
 
-1. [Install Docker](#part-1-install-docker)   
-2. [Setup Google Compute Engine](#part-2-setup-google-compute-engine)      
-3. [Create your cluster using ElastiCluster](#part-3-create-your-cluster-using-elasticluster)      
+1. [Setup Google Compute Engine](#part-1-setup-google-compute-engine)      
+2. [Install Docker](#part-2-install-docker)   
+3. [Create your cluster using dockerized ElastiCluster](#part-3-create-your-cluster-using-elasticluster)      
 
+## Part-1: Setup Google Compute Engine
 
-## Part-1: Install Docker
+* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
+* <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.
+
+* <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
+   1. select **Create credentials**
+   2. select **OAuth client ID**
+   3. select  **Configure conset screen**    
+        * Choose your **project name** and **save**
+   4. If prompted for **Application Type** choose **Other**    
+        * choose a name for your application (say `elasticluster`)
+   5. select **Create** 
+
+        > Once successful, the interface will show your `client_id`  and `client_secret`.
+        > These values appear at the Credentials tab and you may retrive them at a later time by clicking on your application name (step 4).
+
+    6. **Enable** Google Compute for your project by visiting  [Enable Compute Engine](https://console.developers.google.com/apis/api/compute.googleapis.com)
+    7. **Enable** Billing for your project by visiting [Enable Billing](https://console.developers.google.com/projectselector/billing/enable?redirect=https:%2F%2Fdevelopers.google.com%2Fplaces%2Fweb-service%2Fusage%3FdialogOnLoad%3Dbilling-enabled)
+    8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google.
+    > If you fail to satisfy 6,7, and 8 above, your instances will not start and you get errors. Make sure you enable these.
+
+    9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. 
+    > ** DO NOT REQUEST MORE THAN 8 **, otherwise you will have to pay $1500 deposit in advance.
+
+For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
+
+## Part-2: Install Docker    
+Docker containers provide an easy way for us to use elasticluster. In fact, we have already 
+dockerized elasticluster for Stats285 and so we will use [this docker images](https://hub.docker.com/r/stats285/elasticluster/)
+which comes with elasticluster installed. To use this image on your personal computer, follow the following steps:
+ 
 * Visit [Docker Website](https://www.docker.com/community-edition#/download) and install it for your operating system
 * Once docker installation is complete, Check your installation by searching docker repositories for `elasticluster`:    
     ```bash
@@ -30,7 +60,7 @@ To create your own cluster on Google Compute Engine, you should take three steps
     ```
     The image can also be found at [Docker Hub](https://hub.docker.com/r/stats285/elasticluster/)
 
-* We will be using `stats285/elasticluster` image to build a container later in Part-3. So, go ahead and pull this image to your local machine (laptop).
+* We will be using `stats285/elasticluster` image to build a container in Part-3. Please go ahead and pull this image to your local machine (laptop).
 
     ```bash
     $ docker image pull stats285/elasticluster
@@ -58,33 +88,6 @@ To create your own cluster on Google Compute Engine, you should take three steps
     stats285/elasticluster   latest              6e06d575a49e        15 minutes ago      555MB
     ```
 * for more docker commands, visit [docker tutorial](../../../docker-tutorial/docker-tutorial)  
-
-## Part-2: Setup Google Compute Engine
-
-* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
-* <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.
-
-* <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
-   1. select **Create credentials**
-   2. select **OAuth client ID**
-   3. select  **Configure conset screen**    
-        * Choose your **project name** and **save**
-   4. If prompted for **Application Type** choose **Other**    
-        * choose a name for your application (say `elasticluster`)
-   5. select **Create** 
-
-        > Once successful, the interface will show your `client_id`  and `client_secret`.
-        > These values appear at the Credentials tab and you may retrive them at a later time by clicking on your application name (step 4).
-
-    6. **Enable** Google Compute for your project by visiting  [Enable Compute Engine](https://console.developers.google.com/apis/api/compute.googleapis.com)
-    7. **Enable** Billing for your project by visiting [Enable Billing](https://console.developers.google.com/projectselector/billing/enable?redirect=https:%2F%2Fdevelopers.google.com%2Fplaces%2Fweb-service%2Fusage%3FdialogOnLoad%3Dbilling-enabled)
-    8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google.
-    > If you fail to satisfy 6,7, and 8 above, your instances will not start and you get errors. Make sure you enable these.
-
-    9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. 
-
-
-For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
     
 ## Part-3: Create your cluster using ElastiCluster
 
@@ -100,7 +103,7 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
         * `<SECRET>`
         * `<PROJECT>`
         * `<GMAIL_ID>`   
-            > Do not icnlude @gmail.com
+            > Do not icnlude @gmail.com (e.g., email address `stats285@gmail.com` -> use `stats285`)
     
     ```
     # Elasticluster Configuration Template
@@ -162,19 +165,17 @@ For more info on obtaining your Google credentials, you may visit [googlegenomic
     ```bash
     elasticluster start gce-slurm
     ```
-if you run into error, and asked to run the setup again, please do so.
-    ```bash
-    elasticluster setup gce-slurm
-    ```
+	if you run into error, and asked to run the setup again, please do so.
+    	```bash
+    	elasticluster setup gce-slurm
+    	```
     
 * You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)
 
-* Get frontend node IP address.
+* Get frontend node IP address using:
     ```
     elasticluster list-nodes gce-slurm
     ```
-
-
 
 * To destroy your cluster:
     ```bash

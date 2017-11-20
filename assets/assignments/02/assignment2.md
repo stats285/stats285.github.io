@@ -216,6 +216,14 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 	> note that `Host` is the IP address of your frontend node (e.g., `35.199.171.137`)
 
 
-
+* go to `~/CJ_install/example/Python` and run `simpleExample` on your cluster:   
+	```
+	$ cj run simpleExample.py gce -m "test"
+	$ cj state
+	$ cj ls
+	```
+* [Add PyTorch test]    
+	
+If everything makes sense, move on to running your assigned Deep Learning experiments.
 
 [Go back](../../../assignments)

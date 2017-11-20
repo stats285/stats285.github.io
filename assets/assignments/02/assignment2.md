@@ -165,12 +165,12 @@ installed for easy use. Follow the following steps to launch your own cluster.
 
 * Start your cluster (This step takes 10-60 min):
     ```bash
-    elasticluster start gce-slurm
-    ```
-	if you run into error, and asked to run the setup again, please do so.
-    	```bash
-    	elasticluster setup gce-slurm
+    elasticluster -vvvv start gce-slurm
+    ```   
+	if you run into error, and asked to run the setup again, please do so using.    
     	```
+    	elasticluster -vvvv setup gce-slurm
+    	```    
     if everything goes well, you will see `your cluster is ready!`. This is perhaps the moment 
 	you should shout *Yay!* and congratulate yourself. You now have your own cluster!
 	

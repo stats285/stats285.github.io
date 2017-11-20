@@ -170,10 +170,12 @@ installed for easy use. Follow the following steps to launch your own cluster.
 	if you run into error, and asked to run the setup again, please do so using,       
     ```bash
     elasticluster -vvvv setup gce-slurm
-    ```       
+    ```    
+
+* You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)   
+	   
     **if everything goes well, you will see** `your cluster is ready!`. **This is perhaps the moment you should shout** *Yay!* **and congratulate yourself. You now have your own cluster!**
 	
-* You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)
 
 * Get `frontend` node IP address using:
     ```

@@ -6,7 +6,7 @@ layout: default
 # Assignment 02
 
 In this assignment, we will conduct a collaborative project testing certain theoretical hypotheses
-in Deep Learning. In particular, each of you will build your own SLURM cluster on Google Compute Engine (GCE) using [elasticluster](https://gc3-uzh-ch.github.io/elasticluster/)
+in Deep Learning. In particular, each of you will build **your own personal SLURM cluster** on Google Compute Engine (GCE) using [elasticluster](https://gc3-uzh-ch.github.io/elasticluster/)
 and then run massive computational experiments using [clusterjob](http://clusterjob.org). We then collect and analyse all the results you will generate and document
 our observations.
 Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works properly with GPUs. Once these steps are completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course for credit.    

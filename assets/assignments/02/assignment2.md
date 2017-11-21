@@ -50,42 +50,27 @@ dockerized elasticluster for Stats285 and so we will use [this docker images](ht
 which comes with elasticluster installed. To use this image on your personal computer, follow the following steps:
  
 * Visit [Docker Website](https://www.docker.com/community-edition#/download) and install it for your operating system
-* Once docker installation is complete, Check your installation by searching docker repositories for `elasticluster`:    
+* Once docker installation is complete, Check your installation by searching docker repositories for `stats285`:    
     ```bash
-    $ docker search elasticluster
-
-    artifacts/elasticluster                Elasticluster with custom tools to fully m...   1                                       
-    artifacts/elasticluster-config-tools                                                   0                                       
-    stats285/elasticluster                 Dockerized elasticluster for Stanford cour...   0
+    $ docker search stats285
+    NAME                                DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+    stats285/elasticluster              Dockerized elasticluster for Stanford cour...   0                                       
+    stats285/elasticluster-gpu          Dockerized elasticluster with GPU function...   0                                       [OK]
     ```
-    The image can also be found at [Docker Hub](https://hub.docker.com/r/stats285/elasticluster/)
+    we will be using `stats285/elasticluster-gpu`, which is the GPU-enabled version of elasticluster and can be found at [Docker Hub](https://hub.docker.com/r/stats285/elasticluster-gpu/)
 
-* We will be using `stats285/elasticluster` image to build a container in Part-3. Please go ahead and pull this image to your local machine (laptop).
+* Go ahead and pull `stats285/elasticluster-gpu` image to your local machine (laptop), which we will be using in Part-3.
 
     ```bash
     $ docker image pull stats285/elasticluster
-
-    Using default tag: latest
-    latest: Pulling from stats285/elasticluster
-    d13d02fa248d: Pull complete 
-    a2c103c31b60: Pull complete 
-    33bfff8f2f5e: Pull complete 
-    5b66f3cbc9f3: Pull complete 
-    97f64282b4c0: Pull complete 
-    5ca087b288c4: Pull complete 
-    48ef25846431: Pull complete 
-    62e22c801e94: Pull complete 
-    d427e5f4c11a: Pull complete 
-    Digest: sha256:552e1dd64f0c65a2430de6a517dc546f539c3fcddd48aea7d401fb3a6b810330
-    Status: Downloaded newer image for stats285/elasticluster:latest
     ```
 
 * You should now be able to see the image downloaded to your machine:
 
     ```
     $ docker images
-    REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
-    stats285/elasticluster   latest              6e06d575a49e        15 minutes ago      555MB
+    REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
+    stats285/elasticluster-gpu   latest              39e63c2b22d2        8 minutes ago       551MB
     ```
 * for more docker commands, visit [docker tutorial](../../../docker-tutorial/docker-tutorial)  
     
@@ -95,9 +80,11 @@ installed for easy use. Follow the following steps to launch your own cluster.
 
 * Create a  docker container from `stats285/elasticluster` image   
     ```bash
-    docker run -v ~/.ssh:/root/.ssh -P -it stats285/elasticluster
+    docker run -v ~/.ssh:/root/.ssh -P -it stats285/elasticluster-gpu
     ```
-* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources. use `vim`
+* Change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources. use `vim` or `nano`
+(example: `vim ~/.elasticluster/config`)    
+
     1. retrive your `project_id` as explained [above](#gce-cred)
     1. retrive your `client_id` and `client_secret` as explained [above](#gce-cred)
     1. Update the contents of `~/.elasticluster/config`  
@@ -105,14 +92,16 @@ installed for easy use. Follow the following steps to launch your own cluster.
         * `<SECRET>`
         * `<PROJECT>`
         * `<GMAIL_ID>`   
-            > Do not icnlude @gmail.com (e.g., email address `stats285@gmail.com` -> use `stats285`)
+            > Do not icnlude @gmail.com (e.g., email address `stats285@gmail.com` -> use `stats285`)     
     
-    ```
+    ```    
     # Elasticluster Configuration Template
     # ====================================
     # Author: Hatef Monajemi (July 18)
-    #
+    # Stats285 Stanford 
 
+
+    # Create a cloud provider (call it "google-cloud")
     [cloud/google]
     provider=google
     noauth_local_webserver=True
@@ -123,6 +112,7 @@ installed for easy use. Follow the following steps to launch your own cluster.
 
 
     [login/google]
+    # Do not include @gmail (example: monajemi@gmail.com -> monajemi)
     image_user=<GMAIL_ID>
     image_user_sudo=root
     image_sudo=True
@@ -136,24 +126,33 @@ installed for easy use. Follow the following steps to launch your own cluster.
     compute_groups=slurm_worker
 
 
-    [cluster/gce-slurm]
+    [cluster/gce]
     cloud=google
     login=google
     setup=ansible-slurm
     security_group=default
-    image_id=debian-8-jessie-v20170717
-    flavor=n1-standard-1
+    image_id=ubuntu-1604-xenial-v20171107b
     frontend_nodes=1
     compute_nodes=2
-    image_userdata=
     ssh_to=frontend
+    # Ask for 500G of disk
+    boot_disk_type=pd-standard
+    boot_disk_size=500
 
-    # Uncomment below to get more disk space. Default is 10G
 
-    #[cluster/gce-slurm/compute]
-    #boot_disk_type=pd-standard
-    #boot_disk_size=100
-    ```    
+    [cluster/gce/frontend]
+    flavor=n1-standard-8
+
+    # add 1x GPUs (NVidia Tesla K80) to the compute nodes
+    # note that as of Nov. 2017, GPU-enabled VMs are available only in few zones
+    # use `gcloud compute accelerator-types list` to see what is available
+
+    [cluster/gce/compute]
+    flavor=n1-standard-8
+    accelerator_count=1
+    accelerator_type=nvidia-tesla-k80
+    ```         
+    [See source on GitHub](https://github.com/stats285/docker-elasticluster-gpu/blob/master/elasticluster-feature-gpus-on-google-cloud/config-template-gce-gpu)
 
     > [`gcloud`](https://cloud.google.com/sdk/gcloud/) provides useful commands to see the available options, for example:   
     > `gcloud compute machine-types list --zones us-west1-a`    
@@ -161,13 +160,13 @@ installed for easy use. Follow the following steps to launch your own cluster.
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
     > Also,  `gcloud compute images list` list all the available images.
 
-* Start your cluster (This step takes 10-60 min):
+* Start your cluster (This step takes 10-60 min depending on the number of nodes you request):
     ```bash
-    elasticluster -vvvv start gce-slurm
+    elasticluster -vvvv start gce
     ```   
 	if you run into error, and asked to run the setup again, please do so using,       
     ```bash
-    elasticluster -vvvv setup gce-slurm
+    elasticluster -vvvv setup gce
     ```    
 
 * You can also monitor the progress at [Google Cloud Consol](https://console.cloud.google.com/)   

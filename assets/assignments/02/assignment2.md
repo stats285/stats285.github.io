@@ -6,10 +6,10 @@ layout: default
 # Assignment 02
 
 In this assignment, we will conduct a collaborative project testing certain theoretical hypotheses
-in Deep Learning. In particular, each of you will build your own SLURM cluster on Google Compute Engine (GCE)
+in Deep Learning. In particular, each of you will build your own SLURM cluster on Google Compute Engine (GCE) using [elasticluster](https://gc3-uzh-ch.github.io/elasticluster/)
 and then run massive computational experiments. We then collect and analyse all the results you will generate and document
 our observations.
-Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works. Once this step is completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course for credit.    
+Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works properly with GPUs. Once these steps are completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course for credit.    
 
 To create your own cluster on Google Compute Engine, you should take three steps as follows:
 
@@ -100,7 +100,6 @@ installed for easy use. Follow the following steps to launch your own cluster.
     # Author: Hatef Monajemi (July 18)
     # Stats285 Stanford 
 
-
     # Create a cloud provider (call it "google-cloud")
     [cloud/google]
     provider=google
@@ -109,7 +108,6 @@ installed for easy use. Follow the following steps to launch your own cluster.
     gce_client_secret=<SECRET>
     gce_project_id=<PROJECT>
     zone=us-west1-b
-
 
     [login/google]
     # Do not include @gmail (example: monajemi@gmail.com -> monajemi)
@@ -125,7 +123,6 @@ installed for easy use. Follow the following steps to launch your own cluster.
     frontend_groups=slurm_master
     compute_groups=slurm_worker
 
-
     [cluster/gce]
     cloud=google
     login=google
@@ -138,7 +135,6 @@ installed for easy use. Follow the following steps to launch your own cluster.
     # Ask for 500G of disk
     boot_disk_type=pd-standard
     boot_disk_size=500
-
 
     [cluster/gce/frontend]
     flavor=n1-standard-8
@@ -160,7 +156,8 @@ installed for easy use. Follow the following steps to launch your own cluster.
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
     > Also,  `gcloud compute images list` list all the available images.
 
-* Start your cluster (This step takes 10-60 min depending on the number of nodes you request):
+* Start your cluster (This step takes 10-60 min depending on the number of nodes you request):    
+
     ```bash
     elasticluster -vvvv start gce
     ```   

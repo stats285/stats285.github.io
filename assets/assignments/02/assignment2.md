@@ -173,7 +173,7 @@ installed for easy use. Follow the following steps to launch your own cluster.
 
 * Get the IP address of the `frontend` node using:
     ```
-    elasticluster list-nodes gce-slurm
+    elasticluster list-nodes gce
     ```    
 	example: `35.199.171.137`
 
@@ -185,7 +185,7 @@ installed for easy use. Follow the following steps to launch your own cluster.
 	
 * To destroy your cluster:
     ```bash
-    elasticluster stop gce-slurm
+    elasticluster stop gce
     ```
 <span style="color:red"> Note that this command will destroy your cluster and you lose all the data on it. Make sure you get your data to a safe storage place before you destroy your cluster. </span>        
 > You can shut-off your cluster and reinitiate at a later time by logging to your [consol](https://console.cloud.google.com/). Currently ElastiCluster does not have this capability.
@@ -217,11 +217,14 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 	# install conda
 	cj install miniconda gce
 	# test CJ run
-	cj run simpleExample.py gce -m "test"
+	cj run simpleExample.py gce -m "Python on CPU test"
 	cj state
 	cj ls
 	```
-* [Add PyTorch test]    
+* go to `~/CJ_install/example/pytorch/mnist` and run `mnist.py` on your cluster using GPU:
+    ```
+     cj run mnist.py gce -alloc "--gres=gpu:1" -m "Pytorch on GPU test"
+    ```
 	
 If everything makes sense, move on to running your assigned Deep Learning experiments.
 

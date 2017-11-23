@@ -62,7 +62,7 @@ which comes with elasticluster installed. To use this image on your personal com
 * Go ahead and pull `stats285/elasticluster-gpu` image to your local machine (laptop), which we will be using in Part-3.
 
     ```bash
-    $ docker image pull stats285/elasticluster
+    $ docker image pull stats285/elasticluster-gpu
     ```
 
 * You should now be able to see the image downloaded to your machine:

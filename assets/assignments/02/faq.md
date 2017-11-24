@@ -27,7 +27,7 @@ item 9 of [Setup GCE](https://stats285.github.io/assets/assignments/02/assignmen
 3. **It is taking more than 30 min to build a cluster**   
    Have you edited your GPU quota before you run `elasticluster -vvv start gce` as stated above in item 2?
 
-4. **I have two tickets which created two billing accounts. How can I use both for my project?**    
+4. **I have received two credits from Google Education grants that created two billing accounts. How can I use both for my project?**    
    You can change your project's billing account by going to [Billing Page](https://console.cloud.google.com/billing). You can associate a different billing account to your project as shown below.   
 
    ![GCE Billing](../../img/billing-change.png) 

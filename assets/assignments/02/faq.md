@@ -9,14 +9,14 @@ layout: default
 
    When you close the terminal, the container is still running in the background. There are two ways you can stop your cluster:  
 
-    1. re-attach container to your terminal:    
+    - re-attach container to your terminal:    
     ```
     # find your container-id    
     docker ps -a    
     docker start -a -i <container-id>   
     elasticluster stop gce
     ```     
-    2. login to [google compute consol](https://console.cloud.google.com/compute) and delete your instances.
+    - login to [google compute consol](https://console.cloud.google.com/compute) and delete your instances.
 
 
 2. **I have set up my cluster, but there is no GPU accelators that I can use.**

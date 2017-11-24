@@ -13,7 +13,7 @@ Please follow the following step to setup your cluster and run experiments. This
 
 ## Acknowledgements
 * We would like to thank Google Cloud Education team for their generosity and kindness in providing Stats285 course with [Google Cloud Platform Education Grant](https://cloud.google.com/edu/).
-* We would like to thank [ElastiCluster](http://elasticluster.readthedocs.io/en/latest/) team specially [Dr. Riccardo Murri](https://www.gc3.uzh.ch/people/rm/) for their help and collaboration on this project.
+* We would like to thank [ElastiCluster](http://elasticluster.readthedocs.io/en/latest/) team especially [Dr. Riccardo Murri](https://www.gc3.uzh.ch/people/rm/) for their help and collaboration on this project.
 
 
 

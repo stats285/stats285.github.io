@@ -26,7 +26,10 @@ To create your own cluster on Google Compute Engine, you should take three steps
 1. [Setup Google Compute Engine](#part-1-setup-google-compute-engine)      
 2. [Install Docker](#part-2-install-docker)   
 3. [Create your cluster using dockerized ElastiCluster](#part-3-create-your-cluster-using-elasticluster)      
-4. [Test your cluster with ClusterJob](#part-4-test-your-cluster-with-clusterjob)
+4. [Test your cluster with ClusterJob](#part-4-test-your-cluster-with-clusterjob)    
+
+
+
 ## Part-1: Setup Google Compute Engine
 
 * Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). Please note that you received two tickets ($50+$150) from Google Cloud. Please check the `comment` section of the [canvas link](https://canvas.stanford.edu/courses/73102/discussion_topics/160558) for the $150 ticket. You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
@@ -52,7 +55,7 @@ To create your own cluster on Google Compute Engine, you should take three steps
     9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. 
     > ** DO NOT REQUEST MORE THAN 8 **, otherwise you will have to pay $1500 deposit in advance.
 
-For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)
+For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)     
 
 ## Part-2: Install Docker    
 Docker containers provide an easy way for us to use elasticluster. In fact, we have already 

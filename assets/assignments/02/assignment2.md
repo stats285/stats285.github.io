@@ -11,6 +11,11 @@ and then run massive computational experiments using [clusterjob](http://cluster
 our observations.
 Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works properly with GPUs. Once these steps are completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course for credit.    
 
+
+## FAQ 
+please visit the [frequently asked questions](faq) before you submit a question on our [Google group](https://groups.google.com/forum/#!forum/clusterjob).
+
+
 To create your own cluster on Google Compute Engine, you should take three steps as follows:
 
 1. [Setup Google Compute Engine](#part-1-setup-google-compute-engine)      
@@ -19,7 +24,7 @@ To create your own cluster on Google Compute Engine, you should take three steps
 4. [Test your cluster with ClusterJob](#part-4-test-your-cluster-with-clusterjob)
 ## Part-1: Setup Google Compute Engine
 
-* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
+* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). Please note that you received two tickets ($50+$150) from Google Cloud. Please check the `comment` section of the [canvas link](https://canvas.stanford.edu/courses/73102/discussion_topics/160558) for the $150 ticket. You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
 * <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.
 
 * <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
@@ -216,6 +221,8 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 * go to `~/CJ_install/example/Python` and run `simpleExample` on your cluster:      
 
 	```
+    # update cj
+    cj update
 	# install conda
 	cj install miniconda gce
 	# test CJ run
@@ -223,7 +230,7 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 	cj state
 	cj ls
 	```
-* go to `~/CJ_install/example/pytorch/mnist` and run `mnist.py` on your cluster using GPU:   
+* go to `~/CJ_install/example/Python/pytorch/mnist` and run `mnist.py` on your cluster using GPU:   
 
     ```
      cj run mnist.py gce -alloc "--gres=gpu:1" -m "Pytorch on GPU test"

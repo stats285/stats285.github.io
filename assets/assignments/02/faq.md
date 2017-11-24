@@ -7,9 +7,9 @@ layout: default
 
 **I do not know how to stop my `gce` cluster now that I accidentally closed the terminal with the original docker container.**   
 
-There are two ways you can stop your cluster:  
+When you close the terminal, the container is still running in the background. There are two ways you can stop your cluster:  
 
- 1. reattach container to your terminal:    
+ 1. re-attach container to your terminal:    
     ```
     # find your container-id    
     docker ps -a    

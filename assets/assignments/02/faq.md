@@ -21,8 +21,8 @@ layout: default
 
 2. **I have set up my cluster, but there is no GPU accelators that I can use.**
 
-Perhaps you did not edit your GCE qouta for GPU. You need to request an increase in GPU quota as stated in 
+   Perhaps you did not edit your GCE qouta for GPU. You need to request an increase in GPU quota as stated in 
 item 9 of [Setup GCE](https://stats285.github.io/assets/assignments/02/assignment2#part-1-setup-google-compute-engine)
 
 3. **It is taking more than 30 min to build a cluster**   
-Have you edited your GPU quota before you run `elasticluster -vvv start gce` as stated above in item 2?
+   Have you edited your GPU quota before you run `elasticluster -vvv start gce` as stated above in item 2?

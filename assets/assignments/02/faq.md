@@ -9,7 +9,7 @@ layout: default
 
 There are two ways you can stop your cluster:  
 
-    1. reattach container to your terminal:    
+ 1. reattach container to your terminal:    
             
         ```
         # find your container-id    
@@ -17,4 +17,4 @@ There are two ways you can stop your cluster:
         docker start -a -i <container-id>   
         elasticluster stop gce
         ```     
-    2. login to [google consol](https://console.cloud.google.com) and delete your instances.
+ 2. login to [google consol](https://console.cloud.google.com) and delete your instances.

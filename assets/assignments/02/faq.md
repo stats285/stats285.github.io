@@ -16,4 +16,4 @@ When you close the terminal, the container is still running in the background. T
     docker start -a -i <container-id>   
     elasticluster stop gce
     ```     
- 2. login to [google consol](https://console.cloud.google.com) and delete your instances.
+ 2. login to [google compute consol](https://console.cloud.google.com/compute) and delete your instances.

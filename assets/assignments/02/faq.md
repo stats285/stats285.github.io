@@ -5,7 +5,7 @@ layout: default
 # Frequently Asked Questions (FAQ)
 
 
-**I do not know how to stop my `gce` cluster now that I accidentally closed the terminal with the original docker image.**   
+**I do not know how to stop my `gce` cluster now that I accidentally closed the terminal with the original docker container.**   
 
 There are two ways you can stop your cluster:  
 

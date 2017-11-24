@@ -30,4 +30,4 @@ item 9 of [Setup GCE](https://stats285.github.io/assets/assignments/02/assignmen
 4. **I have two tickets which created two billing accounts. How can I use both for my project**    
    you can change your project's billing account by going to [Billing Page](https://console.cloud.google.com/billing). You can associate a different billing account to your project as shown below.   
 
-   ![GCE Billing][../../img/billing-change.png] 
+   ![GCE Billing](../../img/billing-change.png) 

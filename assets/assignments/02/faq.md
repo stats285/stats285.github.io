@@ -19,7 +19,10 @@ When you close the terminal, the container is still running in the background. T
  2. login to [google compute consol](https://console.cloud.google.com/compute) and delete your instances.
 
 
-**I have set up my cluster, but there is no GPU accelators on it that I can use.**
+**I have set up my cluster, but there is no GPU accelators that I can use.**
 
 Perhaps you did not edited your GCE qouta for GPU. You need to request GPU quota increase as stated in 
 item 9 of [Setup GCE](https://stats285.github.io/assets/assignments/02/assignment2#part-1-setup-google-compute-engine)
+
+**It is taking more than 30 min to build a cluster**   
+Have you edited your GPU quota as stated above?

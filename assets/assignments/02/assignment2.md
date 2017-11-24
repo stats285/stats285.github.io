@@ -24,7 +24,7 @@ Please visit the [frequently asked questions](faq) before you submit a question 
 
 # Building your cluster on Google Cloud Platform
 
-To create your own cluster on Google Compute Engine, you should take three steps as follows:
+To create your own cluster on Google Compute Engine, you should take the following 4 steps:
 
 1. [Setup Google Compute Engine](#part-1-setup-google-compute-engine)      
 2. [Install Docker](#part-2-install-docker)   

@@ -11,6 +11,11 @@ and then run massive computational experiments using [clusterjob](http://cluster
 our observations.
 Please follow the following step to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works properly with GPUs. Once these steps are completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will **only** be available via Stanford Canvas website to students who are taking this course for credit.    
 
+## Acknowledgements
+* We would like to thank Google Cloud Education team for their generosity and kindness in providing Stats285 course with [Google Cloud Platform Education Grant](https://cloud.google.com/edu/).
+* We would like to thank [ElastiCluster](http://elasticluster.readthedocs.io/en/latest/) team specially [Dr. Riccardo Murri](https://www.gc3.uzh.ch/people/rm/) for their help and collaboration on this project.
+
+
 
 ## FAQ 
 Please visit the [frequently asked questions](faq) before you submit a question on our [Google group](https://groups.google.com/forum/#!forum/clusterjob).

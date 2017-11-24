@@ -13,7 +13,7 @@ Please follow the following step to setup your cluster and run experiments. This
 
 
 ## FAQ 
-please visit the [frequently asked questions](faq) before you submit a question on our [Google group](https://groups.google.com/forum/#!forum/clusterjob).
+Please visit the [frequently asked questions](faq) before you submit a question on our [Google group](https://groups.google.com/forum/#!forum/clusterjob).
 
 
 To create your own cluster on Google Compute Engine, you should take three steps as follows:

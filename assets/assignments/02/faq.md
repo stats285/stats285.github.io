@@ -25,4 +25,4 @@ Perhaps you did not edit your GCE qouta for GPU. You need to request an increase
 item 9 of [Setup GCE](https://stats285.github.io/assets/assignments/02/assignment2#part-1-setup-google-compute-engine)
 
 **It is taking more than 30 min to build a cluster**   
-Have you edited your GPU quota as stated above?
+Have you edited your GPU quota before you run `elasticluster -vvv start gce` as stated above?

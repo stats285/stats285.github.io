@@ -206,9 +206,7 @@ installed for easy use. Follow the following steps to launch your own cluster.
     elasticluster stop gce
     ```
 <span style="color:red"> Note that this command will destroy your cluster and you lose all the data on it. Make sure you get your data to a safe storage place before you destroy your cluster. </span>        
-<!---
-> You can shut-off your cluster and reinitiate at a later time by logging to your [consol](https://console.cloud.google.com/). Currently ElastiCluster does not have this capability. For more info please visit [stopping-or-deleting-an-instance](https://cloud.google.com/compute/docs/instances/stopping-or-deleting-an-instance)    
---->
+[//]: #> You can shut-off your cluster and reinitiate at a later time by logging to your [consol](https://console.cloud.google.com/). Currently ElastiCluster does not have this capability. For more info please visit [stopping-or-deleting-an-instance](https://cloud.google.com/compute/docs/instances/stopping-or-deleting-an-instance)
 
 ## Part-4: Test your cluster with ClusterJob
 After you have launched your cluster successfully, it is time to test it by running a small job

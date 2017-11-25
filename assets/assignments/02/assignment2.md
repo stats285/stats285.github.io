@@ -57,9 +57,8 @@ To create your own cluster on Google Compute Engine, you should take the followi
 
     9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 NVIDIA K80 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. For “justification” write “stats285”.
 
-    If you are unable to choose the GPU service, then the billing account associated with your project is incorrect. In this case, change the billing account to one of the STATS285 credits you have recived as shown in [FAQ item 4](faq).     
-
-    > ** DO NOT REQUEST MORE THAN 8 **, otherwise you will have to pay $1500 deposit in advance.
+    If you are unable to choose the GPU service, then the billing account associated with your project is incorrect. In this case, change the billing account to one of the STATS285 credits you have recived as shown in [FAQ item 4](faq).        
+    <span style="color:red"> ** DO NOT REQUEST MORE THAN 8 **, otherwise you will have to pay $1500 deposit in advance. </span>
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)     
 

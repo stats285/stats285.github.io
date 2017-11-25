@@ -35,7 +35,7 @@ To create your own cluster on Google Compute Engine, you should take the followi
 
 ## Part-1: Setup Google Compute Engine
 
-* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). Please note that you received two tickets ($50+$150) from Google Cloud. Please check the `comment` section of the [canvas link](https://canvas.stanford.edu/courses/73102/discussion_topics/160558) for the $150 ticket. You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing).
+* Claim your $200 Google Compute [Credit](https://canvas.stanford.edu/courses/73102/discussion_topics/160558). Please note that you received two tickets ($50+$150) from Google Cloud. Please check the `comment` section of the [canvas link](https://canvas.stanford.edu/courses/73102/discussion_topics/160558) for the $150 ticket. You will also get $300 free credit from Google Cloud as a first time user by setting up your [Billing Account](https://console.cloud.google.com/billing). However, these 300$ allows only very limited CPU computations.
 * <a id="proj-id"></a> Create a Google Project by Visiting [Manage resources](https://console.cloud.google.com/cloud-resource-manager?_ga=2.13784503.-1419916998.1496658742) (This may take some time, be patient). You may find your project ID here which will be needed later.
 
 * <a id="gce-cred"></a>Visit [Google Credential page](https://console.cloud.google.com/project/_/apiui/credential), and creat your credentials `client_id`, `client_secret`
@@ -55,7 +55,9 @@ To create your own cluster on Google Compute Engine, you should take the followi
     8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google.
     > If you fail to satisfy 6,7, and 8 above, your instances will not start and you get errors. Make sure you enable these.
 
-    9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. 
+    9. Go to [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 NVIDIA K80 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. For “justification” write “stats285”.
+
+If you are unable to choose the GPU service then the billing account associated with your project is incorrect. In that case, go to the FAQ item 4 and change the billing account to one of the STATS285.
     > ** DO NOT REQUEST MORE THAN 8 **, otherwise you will have to pay $1500 deposit in advance.
 
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)     

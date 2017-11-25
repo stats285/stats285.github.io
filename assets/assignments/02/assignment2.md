@@ -222,9 +222,9 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 	User		hatefmonajemi
 	Bqs		SLURM
 	Repo		/home/hatefmonajemi/CJRepo_Remote
-	MAT     ""
+	MAT         ""
 	MATlib	""
-	Python		python3.4
+	Python	python3.4
 	Pythonlib	pytorch:torchvision:cuda80:scipy:matplotlib:-c soumith
 	[gce]
 	

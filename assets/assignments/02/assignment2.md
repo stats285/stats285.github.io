@@ -225,7 +225,7 @@ using **ClusterJob** on it. Follow the instructions below to test your cluster:
 	MAT           ""
 	MATlib	""
 	Python	python3.4
-	Pythonlib	pytorch:torchvision:cuda80:scipy:matplotlib:-c soumith
+	Pythonlib	pytorch:torchvision:cuda80:pandas:matplotlib:-c soumith
 	[gce]
 	
 	```

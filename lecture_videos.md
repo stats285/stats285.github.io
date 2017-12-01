@@ -9,6 +9,8 @@
 ### [Lecture05: CodaLab (Percy Liang)](https://www.youtube.com/watch?v=BPSoy9ZJbhU&feature=youtu.be)
 ### [Lecture06: Scaling Python to GPUs and clusters: Dask and Numba and ideas for future work (Travis Oliphant)](https://www.youtube.com/watch?v=bsbl70d2d1U&feature=youtu.be)
 ### [Lecture07: IT for research: a journey from in-house HPC clusters to public cloud infrastructures (Riccardo Murri)](https://www.youtube.com/watch?v=_jjzi43Bekg&feature=youtu.be)
+### [Lecture08: Data Engineering and Data Science with Databricks and Apache Spark (Andy Konwinski)]()   
+### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)]()
 
 
 [Go back to home](./)

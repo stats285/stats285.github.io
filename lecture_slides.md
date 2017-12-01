@@ -9,7 +9,7 @@
 ### [Lecture05: CodaLab (Percy Liang)](./assets/lectures/StanfordStats285-20171023-Lecture05-PercyLiang.pdf)
 ### [Lecture06: Scaling Python to CPUs and GPUs (Travis Oliphant)](https://www.slideshare.net/teoliphant/scaling-python-to-cpus-and-gpus-81607883)
 ### [Lecture07: IT for Research: a Journey from In-House HPC Clusters to Public Cloud Infrastructure (Riccardo Murri)](./assets/lectures/StanfordStats285-20171106-Lecture07-RiccardoMurri.pdf)    
-### [Lecture08: Apache Spark and Databricks (Andy Konwinski)](./assets/lectures/)   
+### [Lecture08: Data Engineering and Data Science with Databricks and Apache Spark (Andy Konwinski)](./assets/lectures/)   
 ### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)](./assets/lectures/StanfordStats285-20171027-Lecture09-MonajemiDonoho.pdf)
 
 

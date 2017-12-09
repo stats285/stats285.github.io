@@ -11,6 +11,7 @@
 ### [Lecture07: IT for research: a journey from in-house HPC clusters to public cloud infrastructures (Riccardo Murri)](https://www.youtube.com/watch?v=_jjzi43Bekg&feature=youtu.be)
 ### [Lecture08: Data Engineering and Data Science with Databricks and Apache Spark (Andy Konwinski)]()   
 ### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)]()
+### [Lecture10: Looking Back/Looking Ahead (Donoho/Monajemi)](https://www.youtube.com/watch?v=e5dkUuY77JI&feature=youtu.be&app=desktop)
 
 
 [Go back to home](./)

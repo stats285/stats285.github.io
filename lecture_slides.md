@@ -11,7 +11,7 @@
 ### [Lecture07: IT for Research: a Journey from In-House HPC Clusters to Public Cloud Infrastructure (Riccardo Murri)](./assets/lectures/StanfordStats285-20171106-Lecture07-RiccardoMurri.pdf)    
 ### [Lecture08: Data Engineering and Data Science with Databricks and Apache Spark (Andy Konwinski)](./assets/lectures/)   
 ### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)](./assets/lectures/StanfordStats285-20171027-Lecture09-MonajemiDonoho.pdf)
-
+### [Lecture10: Looking Back/Looking Ahead (Donoho/Monajemi)](./assets/lectures/Lecture10_DonohoMonajemi.pdf)
 
 
 

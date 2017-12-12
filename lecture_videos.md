@@ -10,7 +10,7 @@
 ### [Lecture06: Scaling Python to GPUs and clusters: Dask and Numba and ideas for future work (Travis Oliphant)](https://www.youtube.com/watch?v=bsbl70d2d1U&feature=youtu.be)
 ### [Lecture07: IT for research: a journey from in-house HPC clusters to public cloud infrastructures (Riccardo Murri)](https://www.youtube.com/watch?v=_jjzi43Bekg&feature=youtu.be)
 ### [Lecture08: Data Engineering and Data Science with Databricks and Apache Spark (Andy Konwinski)](https://www.youtube.com/edit?o=U&video_id=0pQYZMavB5s)   
-### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)]()
+### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)](https://www.youtube.com/watch?v=gAIXyT71Ja8&feature=youtu.be)
 ### [Lecture10: Looking Back/Looking Ahead (Donoho/Monajemi)](https://www.youtube.com/watch?v=e5dkUuY77JI&feature=youtu.be&app=desktop)
 
 

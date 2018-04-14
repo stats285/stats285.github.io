@@ -11,6 +11,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 * [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)  
 
 ## Data Science News
+* [Symposium for Data Science and Statistics by ASA, May 16-19, 2018](https://ww2.amstat.org/meetings/sdss/2018/)
 * [Envisioning the Data Science Discipline (NAS)](https://www.nap.edu/read/24886/chapter/1)
 * [The State of Data Science (Kaggle)](https://www.kaggle.com/surveys/2017)
 

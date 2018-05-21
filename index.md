@@ -11,8 +11,8 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 * [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)  
 
 ## Data Science News
-* [SDSS18: Painless Computing Models for Ambitious Data Science (Monajemi and coauthors)](assets/lectures/SDSS18_monajemi.pdf)
-* [SDSS18: A Paradigm for Research in Data Science (Papyan and coauthors)](assets/lectures/SDSS18_papyan.pdf)
+* [SDSS18 Lecture: Painless Computing Models for Ambitious Data Science (Monajemi and coauthors)](assets/lectures/SDSS18_monajemi.pdf)
+* [SDSS18 Lecture: A Paradigm for Research in Data Science (Papyan and coauthors)](assets/lectures/SDSS18_papyan.pdf)
 * [Symposium for Data Science and Statistics by ASA, May 16-19, 2018](https://ww2.amstat.org/meetings/sdss/2018/)
 * [Envisioning the Data Science Discipline (NAS)](https://www.nap.edu/read/24886/chapter/1)
 * [The State of Data Science (Kaggle)](https://www.kaggle.com/surveys/2017)

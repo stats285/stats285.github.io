@@ -7,8 +7,9 @@ layout: titlepage
 For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.stanford.edu/~monajemi/) (@monajemi on GitHub) or [David Donoho](https://profiles.stanford.edu/david-donoho). This course meets Mondays 3:00-4:20 PM at [Thornt110](https://campus-map.stanford.edu/?srch=Thornt110). If you are a guest speaker for this course, please read [travel section](#plan-your-visit) to plan your visit.     
 
 * [Follow Stat285 on Twitter](https://twitter.com/stats285?lang=en)  
-
 * [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)  
+
+## [Previous Iteration of Stats285 (Fall-2017)](2017)
 
 ## Data Science News
 * [SDSS18 Lecture: Painless Computing Models for Ambitious Data Science (Monajemi and coauthors)](assets/lectures/SDSS18_monajemi.pdf)
@@ -17,7 +18,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 * [Envisioning the Data Science Discipline (NAS)](https://www.nap.edu/read/24886/chapter/1)
 * [The State of Data Science (Kaggle)](https://www.kaggle.com/surveys/2017)
 
-## [Previous Iteration of Stats285 (Fall-2017)](2017/index)
+
 
 
 ## [](#guest_lectures) Guest Lectures

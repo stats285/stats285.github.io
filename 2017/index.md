@@ -1,5 +1,5 @@
 ---
-layout: titlepage
+layout: ../2017/_layouts/titlepage
 ---
 
 

@@ -8,33 +8,31 @@ layout: titlepage
 float: left;
 width: 50%;
 text-align: left;
-height:400px;
 }
 .column-right{
 float: right;
 width: 48%;
 text-align: right;
-height:400px;
 }
 </style>
 
 
 
 
-
+<div style="height:300px;">
 <div class="column-left">
 <h1>Logistics</h1>
 For questions, concerns or bug reports, please contact <a href="http://web.stanford.edu/~monajemi/"> Hatef Monajemi</a> (@monajemi) or <a href="https://profiles.stanford.edu/david-donoho"> David Donoho</a>. This course meets Mondays 3:00-4:20 PM at  <a href="https://campus-map.stanford.edu/?srch=Thornt110"> Thornt110</a>. If you are a guest speaker for this course, please read <a href="#plan-your-visit"> travel section </a> to plan your visit. 
-<h3><a href="https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly">Follow Stat285 on ResearchGate (videos)</a></h3>
-<h3><a href="https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly">Visit previous iteration of Stats285 (2017)</a></h3>
-
 </div>
 <div class="column-right">
-{% twitter https://twitter.com/stats285 maxwidth=500 maxheight=380 %}
+{% twitter https://twitter.com/stats285 maxheight=300 %}
+</div>
 </div>
 
+## [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)
 
-- - -
+## [Visit previous iteration of Stats285 (2017)](2017)
+
 
 ## Data Science News
 * [SDSS18 Lecture: Painless Computing Models for Ambitious Data Science (Monajemi and coauthors)](assets/lectures/SDSS18_monajemi.pdf)

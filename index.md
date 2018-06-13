@@ -4,27 +4,28 @@ layout: titlepage
 
 
 <style>
-.column-left{
-float: left;
-width: 50%;
-text-align: left;
+.items {
+display: flex;
+flex-wrap: wrap;
 }
-.column-right{
-float: right;
-width: 48%;
-text-align: right;
+.items .item {
+flex: 1 0 50%;
+box-sizing: border-box;
+background: #E5E4E2;
+color: #171e42;
+padding: 10px;
 }
 </style>
 
 
 
 
-<div style="height:300px;">
-<div class="column-left">
+<div class="items">
+<div class="item">
 <h1>Logistics</h1>
 For questions, concerns or bug reports, please contact <a href="http://web.stanford.edu/~monajemi/"> Hatef Monajemi</a> (@monajemi) or <a href="https://profiles.stanford.edu/david-donoho"> David Donoho</a>. This course meets Mondays 3:00-4:20 PM at  <a href="https://campus-map.stanford.edu/?srch=Thornt110"> Thornt110</a>. If you are a guest speaker for this course, please read <a href="#plan-your-visit"> travel section </a> to plan your visit. 
 </div>
-<div class="column-right">
+<div class="item">
 {% twitter https://twitter.com/stats285 maxheight=300 %}
 </div>
 </div>

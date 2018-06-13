@@ -10,11 +10,11 @@ flex-wrap: wrap;
 box-sizing: border-box;
 background: #E5E4E2;
 color: #171e42;
-padding: 10px;
 border-radius: 10px;
 }
 .items .item {
 flex: 1 0 50%;
+padding: 10px;
 }
 </style>
 

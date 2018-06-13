@@ -6,6 +6,6 @@ gems:
   - jekyll-mentions
 plugins:
   - jekyll-seo-tag 
-
+  - jekyll-twitter-plugin
 
   

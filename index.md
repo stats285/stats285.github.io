@@ -9,7 +9,7 @@ For questions/concerns/bug reports, please contact [Hatef Monajemi](http://web.s
 * [Follow Stat285 on Twitter](https://twitter.com/stats285?lang=en)  
 * [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)  
 
-## [Previous Iteration of Stats285 (Fall-2017)](2017)
+## [Visit previous iteration of Stats285 (Fall-2017)](2017)
 
 ## Data Science News
 * [SDSS18 Lecture: Painless Computing Models for Ambitious Data Science (Monajemi and coauthors)](assets/lectures/SDSS18_monajemi.pdf)

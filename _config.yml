@@ -1,0 +1,10 @@
+title: Massive Computational Experiments, Painlessly (STATS 285)
+show_downloads: false
+google_analytics:
+theme:
+plugins:
+  - jekyll-mentions
+  - jekyll-seo-tag 
+  - jekyll-twitter-plugin
+
+  

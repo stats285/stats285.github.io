@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 # Lecture slides for STATS285, Fall 2017
 
 

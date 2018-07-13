@@ -33,7 +33,7 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 
 ## [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)
 
-## [Visit previous iteration of Stats285 (2017)](2017)
+## [Stats285 Hackathon](.)
 
 
 ## Data Science News
@@ -47,6 +47,19 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 
 
 ## [](#guest_lectures) Guest Lectures
+---
+<div class="speaker-wrap">
+<div class="speakerphoto">
+<img src="assets/img/riccardo_murri.jpg">
+</div>
+<div class="card">
+<a class="talkdate" href="./murri_lecture"> --, 10/--/2018</a> <br>
+<span class="speaker">Riccardo Murri</span> <br>
+<span class="speakerposition">University of Zurich</span>
+</div>
+</div>
+---
+
 <!--
 ---
 <div class="speaker-wrap">
@@ -124,5 +137,7 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ## [Lecture slides](.)
 ## [Notes](notes)
 ## [Plan your visit](speaker_visit)
+## [Visit previous iteration of Stats285 (2017)](2017)
+
 
 

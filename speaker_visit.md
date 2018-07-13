@@ -1,10 +1,13 @@
+---
+layout : default
+---
+
 
 # These notes are intended for speakers
 
 
 ## Accommodations
-Department of Statisics will arrange your lodging. Please send an email to [Ms. Emily Lauderdale](https://statistics.stanford.edu/people/emily-lauderdale) at <elauderd@stanford.edu> with your desired dates of reservation and Emily will book you a hotel room in Palo Alto. 
-
+Department of Statisics will arrange your lodging. Please send an email to [Ms. Rita Gu](https://statistics.stanford.edu/people/rita-gu) at <gushujia@stanford.edu> with your desired dates of reservation and Emily will book you a hotel room in Palo Alto. 
 
 
 ## Instruction for reimbursement

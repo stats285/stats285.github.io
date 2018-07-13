@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Massive Computational Experiments, Painlessly (STATS 285) by </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+      <!-- CJ styles 
+	<link rel="stylesheet" type="text/css" href="assets/css/github.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/github2.css">
+		  -->
+		
+    <link rel="stylesheet" type="text/css" href="assets/css/cj.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	
+	
+	
+  </head>
+  <body>
+    <section class="page-header">   		  		  
+		      	<h1 class="project-name">Massive Computational Experiments, Painlessly (STATS 285)</h1>
+		      	<h2 class="project-tagline">Stanford University, Fall 2017</h2>
+		      <!--
+			  
+				-->  
+		      		  
+    </section>
+
+    <section class="main-content">
+      <p><em>This tutorial is contributed by Hatef Monajemi (<a href="https://github.com/monajemi" class="user-mention">@monajemi</a>)</em></p>
+
+<p>The following tutorial is intended to familiarize you with writing Bash scripts. 
+We will review the core elements of Bash scripting that you will be
+using frequently in this class.</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+  <li><a href="#bash-script">Bash script</a></li>
+  <li><a href="#variables">Variables</a></li>
+  <li><a href="#if-statement">If statement</a></li>
+  <li><a href="#loops">Loops</a></li>
+  <li>
+<a href="#file-manipulation">File manipulation</a>
+    <ul>
+      <li><a href="#readwrite">Read/Write</a></li>
+      <li><a href="#changing-file-content">Changing file content</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bash-script">Bash script</h2>
+
+<p>Bash scripting is a great way to automate your computational tasks
+and is used regularly by system admins, programmers, data scientists 
+and many others to reduce the pain of having to do certain tasks many times manually.</p>
+
+<p>Here is how a Bash script may look like:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c"># File: bashMain.sh</span>
+<span class="c"># STATS 285, 2017</span>
+
+<span class="c"># Write some commands to be executed</span>
+<span class="nb">echo</span> <span class="s2">"BASH SCRIPTING"</span>
+<span class="nb">echo</span> <span class="s2">"CURRENTLY IN:"</span>
+<span class="nb">pwd
+echo</span> <span class="s2">"Here is a list of the contents of this directory:"</span>
+<span class="nb">ls</span> <span class="nt">-lt</span>
+</code></pre></div></div>
+
+<p>As you may have noticed, you may already be familiar with these commands and perhaps have typed 
+them in your terminal before. A bash script is just a text file (<code class="highlighter-rouge">bashMain.sh</code> in this example) that contains these commands so you don’t have to type them each time. Instead, you just execute all the commands at once by writing <code class="highlighter-rouge">./bashMain.sh</code> or <code class="highlighter-rouge">bash bashMain.sh</code> in a terminal.</p>
+
+<h2 id="variables">Variables</h2>
+
+<p>You can define variables in bash by assigning a value to its reference:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">STR</span><span class="o">=</span><span class="s2">"The value of a bash variable can be any data type."</span><span class="p">;</span>
+<span class="nb">printf</span> <span class="s2">"%s</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$STR</span><span class="s2">"</span>
+</code></pre></div></div>
+<p>Here, we have defined a bash variable named STR, which contains <em>“The value of a bash variable”</em> as its value. We can use this variable by attaching a <code class="highlighter-rouge">$</code> to the beginning of it, hence in the second line <code class="highlighter-rouge">$STR</code> will be replaced by the value of STR variable.<br>
+Note that we have used <code class="highlighter-rouge">printf</code> function instead of <code class="highlighter-rouge">echo</code> to print. This is another way of prining in bash specially when you need a formatted output.</p>
+
+<h2 id="if-statement">If statement</h2>
+<p>Often times, one needs to check that certain criteria are valid before proceeding; for example, you may want to check whether certain directory or file exists before creating a new one. Bash conditional statement can handle such tasks. The following sturtures are availble in Bash:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> condition <span class="o">]</span><span class="p">;</span> <span class="k">then
+        </span>excecute some expression
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> condition <span class="o">]</span><span class="p">;</span> <span class="k">then
+        </span>excecute expression 1
+<span class="k">else
+        </span>excecute expression 2
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> condition 1 <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span>excecute expression 1
+<span class="k">else if</span> <span class="o">[</span> condition 2 <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span>excecute expression 2
+<span class="k">else
+    </span>excecute expression 3
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<p>Note that we have placed a <code class="highlighter-rouge">space</code> after <code class="highlighter-rouge">[</code> and before <code class="highlighter-rouge">]</code>. If you do not add this space, bash will produce an error.</p>
+
+<p>As an example, I can check whether the file <code class="highlighter-rouge">bashMain.sh</code> exist.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">FILE</span><span class="o">=</span><span class="s2">"bashMain.sh"</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nt">-f</span>  <span class="nv">$FILE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then  
+    </span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$FILE</span><span class="s2"> exists."</span>  
+<span class="k">else  
+    </span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$FILE</span><span class="s2"> does not exist."</span>  
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<h2 id="loops">Loops</h2>
+<p>Bash uses the following syntax for the <code class="highlighter-rouge">for</code> and <code class="highlighter-rouge">while</code> loops:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">EMAIL_LIST</span><span class="o">=(</span>
+<span class="s1">'Stats285 Stanford &lt;stats285.stanford@gmail.com&gt;'</span>
+<span class="s1">'Hatef Monajemi &lt;monajemi@stanfxxx.edu&gt;'</span>
+<span class="s1">'David Donoho &lt;donoho@stanfxxx.edu&gt;'</span>
+<span class="s1">'Vardan Papayan &lt;vardanp91@gmail.com&gt;'</span>
+<span class="o">)</span>
+
+<span class="k">for </span>EMAIL <span class="k">in</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EMAIL_LIST</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span> <span class="p">;</span> <span class="k">do
+</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$EMAIL</span><span class="s2">"</span>
+<span class="k">done</span><span class="p">;</span>
+
+
+<span class="nv">COUNTER</span><span class="o">=</span>0<span class="p">;</span>
+<span class="k">while</span> <span class="o">[</span> <span class="nv">$COUNTER</span> <span class="nt">-lt</span> 3 <span class="o">]</span> <span class="p">;</span> <span class="k">do
+</span><span class="nb">echo</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EMAIL_LIST</span><span class="p">[</span><span class="nv">$COUNTER</span><span class="p">]</span><span class="k">}</span><span class="s2">"</span>
+<span class="nb">let </span>COUNTER+<span class="o">=</span>1<span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<h2 id="file-manipulation">File manipulation</h2>
+<p>Bash provides many tools to manipulate files. Here we review how you can read, modify and write files.</p>
+
+<h3 id="readwrite">Read/Write</h3>
+
+<h3 id="changing-file-content">Changing file content</h3>
+
+<p><a href="../notes">back</a></p>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>

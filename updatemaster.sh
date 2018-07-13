@@ -1,4 +1,4 @@
-
+rm -rf .tweet-cache/*
 git checkout master
 
 if [ $? -eq 0 ]; then

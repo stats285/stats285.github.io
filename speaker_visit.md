@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 # These notes are intended for speakers
 

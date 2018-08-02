@@ -7,6 +7,7 @@ echo "ON MASTER"
 cp -r _site/* .
 # add html files only
 git add *.html
+git add assets/*
 git commit -am "updated the website"
 
 

@@ -50,23 +50,23 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ---
 <div class="speaker-wrap">
 <div class="speakerphoto">
+<img src="assets/img/greg.jpeg">
+</div>
+<div class="card">
+<a class="talkdate" href="./kurtzer_lecture"> Tue, 09/--/2018</a> <br>
+<span class="speaker">Gregory Kurtzer</span> <br>
+<span class="speakerposition">Sylabs</span>
+</div>
+</div>
+---
+<div class="speaker-wrap">
+<div class="speakerphoto">
 <img src="assets/img/riccardo_murri.jpg">
 </div>
 <div class="card">
 <a class="talkdate" href="./murri_lecture"> Tue, 10/--/2018</a> <br>
 <span class="speaker">Riccardo Murri</span> <br>
 <span class="speakerposition">University of Zurich</span>
-</div>
-</div>
----
-<div class="speaker-wrap">
-<div class="speakerphoto">
-<img src="assets/img/greg.jpeg">
-</div>
-<div class="card">
-<a class="talkdate" href="./kurtzer_lecture"> Tue, 10/--/2018</a> <br>
-<span class="speaker">Gregory Kurtzer</span> <br>
-<span class="speakerposition">Sylabs</span>
 </div>
 </div>
 ---

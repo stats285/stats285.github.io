@@ -21,9 +21,9 @@ to <stats285.stanford@gmail.com>
 # Meet Hackathon Mentors 
 
 
-<img src="../img/vardan_happy.jpeg" width="140" height="140" /> |  <img src="../img/alon_kipnis.jpg" width="140" height="140" /> | <img src="" width="140" height="140" />
+<img src="../img/vardan_happy.jpeg" width="140" height="140" /> |  <img src="../img/alon_kipnis.jpg" width="140" height="140" /> | <img src="../img/Yaniv_Romano.png" width="140" height="140" />
 :-------------------------:|:-------------------------:|:-------------------------:
-Vardan Papyan         |  [Alon Kipnis](https://web.stanford.edu/~kipnisal/)       |  TBD
+Vardan Papyan         |  [Alon Kipnis](https://web.stanford.edu/~kipnisal/)       |  [Yaniv Romano](https://sites.google.com/view/yaniv-romano/home)
 
 
 

@@ -45,3 +45,5 @@ Each group must prepare a 10 min presentation about the challanges and the solut
 * We would like to thank [Google Cloud Platform Education Grants](https://cloud.google.com/edu/) Team for their generosity and kindness in providing Stats285 course with cloud computing grant.
 * We would like to thank [ElastiCluster](http://elasticluster.readthedocs.io/en/latest/) team especially [Dr. Riccardo Murri](https://www.gc3.uzh.ch/people/rm/) for their help and collaboration on this project.
 
+
+[Back to Stats285 Home](../../index)

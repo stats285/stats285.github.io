@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-# Stats285 Hackathon 2018
+# Stats285 Data Science Hackathon 2018
 
 Participation in this two-day hands-on hackathon **is required for students who are taking this course**. 
 If you are sitting in on this course and would like to take part in this hackathon, please send us an email

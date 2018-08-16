@@ -50,6 +50,17 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ---
 <div class="speaker-wrap">
 <div class="speakerphoto">
+<img src="assets/img/mark_piercy_profilepic.jpg">
+</div>
+<div class="card">
+<a class="talkdate" href="./piercy_lecture"> Tue, 09/--/2018</a> <br>
+<span class="speaker">Mark Piercy</span> <br>
+<span class="speakerposition">Stanford (SRCC)</span>
+</div>
+</div>
+---
+<div class="speaker-wrap">
+<div class="speakerphoto">
 <img src="assets/img/greg.jpeg">
 </div>
 <div class="card">

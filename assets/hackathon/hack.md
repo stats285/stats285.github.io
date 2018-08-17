@@ -11,7 +11,8 @@ to <stats285.stanford@gmail.com>
 
 1. [Meet Hackathon Mentors](#meet-hackathon-mentors)      
 1. [Time and Venue](#time-and-venue)      
-1. [Structure of the Hackathon](#structure-of-the-hackathon)      
+1. [Structure of the Hackathon](#structure-of-the-hackathon)   
+1. [Challanges](#challanges)
 1. [Presentation and Prize](#presentation-and-prize)
 1. [Acknowledgements](#acknowledgements)
 
@@ -33,6 +34,10 @@ iCME corner [ADD MORE INFO].
 
 ## Structure of the Hackathon
 You will be divided into working groups of 5 people. Each group will have an external mentor (assigned by the instructors). Your mentors are experienced participants who will faciliate the collaboration and provide insights and guidance when needed.   
+
+
+## Challanges
+Please use the passcode you receive on canvas from your instructor to log into [Challanges Page](https://stats285.gitlab.io/hack2018/index.html).
 
 
 ## Presentation and Prize

@@ -72,10 +72,21 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ---
 <div class="speaker-wrap">
 <div class="speakerphoto">
+<img src="assets/img/Wes.jpg">
+</div>
+<div class="card">
+<a class="talkdate" href="./mckinney_lecture"> Tue, 11/13/2018</a> <br>
+<span class="speaker">Wes McKinney</span> <br>
+<span class="speakerposition">Ursa Labs</span>
+</div>
+</div>
+---
+<div class="speaker-wrap">
+<div class="speakerphoto">
 <img src="assets/img/riccardo_murri.jpg">
 </div>
 <div class="card">
-<a class="talkdate" href="./murri_lecture"> Tue, 10/--/2018</a> <br>
+<a class="talkdate" href="./murri_lecture"> Tue, 11/--/2018</a> <br>
 <span class="speaker">Riccardo Murri</span> <br>
 <span class="speakerposition">University of Zurich</span>
 </div>

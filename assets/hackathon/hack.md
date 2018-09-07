@@ -28,8 +28,7 @@ Vardan Papyan         |  [Alon Kipnis](https://web.stanford.edu/~kipnisal/)     
 
 
 ## Time and Venue 
-The hackathon starts at 9:00 AM on Nov 16 and ends at midnight on Nov 17. The event takes place at 
-iCME corner [ADD MORE INFO]. 
+The hackathon starts at 9:00 AM on Nov 17 and ends at midnight on Nov 18. The event takes place at [ADD MORE INFO]. 
 
 
 ## Structure of the Hackathon

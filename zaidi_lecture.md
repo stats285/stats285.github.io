@@ -11,11 +11,9 @@ TBD
 
 <p><strong>Date</strong>: 10/02/2018</p>
 
-<strong>Additional Info</strong>
+<strong>Additional Readings</strong>
 <p align="justify">
-<a href="https://www.sherlock.stanford.edu/">Sherlock's Webpage</a>
-<br />
-<a href="https://srcc.stanford.edu/">SRCC</a>
+
 </p>
 
 </div>

@@ -9,7 +9,7 @@ layout: default
 TBD
 </p>
 
-<p><strong>Date</strong>: 10/02/2018</p>
+<p><strong>Date</strong>: 10/23/2018</p>
 
 <strong>Additional Readings</strong>
 <p align="justify">

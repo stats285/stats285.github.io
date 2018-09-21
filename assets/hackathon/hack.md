@@ -28,11 +28,11 @@ Vardan Papyan         |  [Alon Kipnis](https://web.stanford.edu/~kipnisal/)     
 
 
 ## Time and Venue 
-The hackathon starts at 9:00 AM on Nov 17 and ends at midnight on Nov 18. The event takes place at [ADD MORE INFO]. 
+The hackathon starts at 8:00 AM on Nov 17 and ends at midnight on Nov 18. The event takes place at [Wallenberg Hall-Building 160](https://campus-map.stanford.edu/?id=01-160&lat=37.42826985&lng=-122.16901666&zoom=17&srch=01-160). 
 
 
 ## Structure of the Hackathon
-You will be divided into working groups of 5 people. Each group will have an external mentor (assigned by the instructors). Your mentors are experienced participants who will faciliate the collaboration and provide insights and guidance when needed.   
+You will be divided into working groups of 4 people. Each group will have an external mentor (assigned by the instructors). Your mentors are experienced participants who will faciliate the collaboration and provide insights and guidance when needed.   
 
 
 ## Challanges

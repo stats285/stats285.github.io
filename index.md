@@ -72,6 +72,17 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ---
 <div class="speaker-wrap">
 <div class="speakerphoto">
+<img src="assets/img/johnc.jpg">
+</div>
+<div class="card">
+<a class="talkdate" href="./chambers_lecture"> Tue, 10/30/2018</a> <br>
+<span class="speaker">John Chambers</span> <br>
+<span class="speakerposition">Stanford</span>
+</div>
+</div>
+---
+<div class="speaker-wrap">
+<div class="speakerphoto">
 <img src="assets/img/greg.jpeg">
 </div>
 <div class="card">
@@ -167,7 +178,7 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 
 -->
 
-## [Assignments](.)
+## [Assignments](./assets/assignments/01/assignment1)
 ## [Lecture slides](./lecture_slides)
 ## [Notes](notes)
 ## [Plan your visit](speaker_visit)

@@ -31,97 +31,40 @@
     <section class="main-content">
       <h1 id="assignment-01">Assignment 01</h1>
 
-<p>In this assignment, you will be implementing the ElastiCluster-ClusterJob model of computing. 
-Each of you will build <strong>your own personal SLURM cluster</strong> on Google Compute Engine (GCE) using <a href="https://gc3-uzh-ch.github.io/elasticluster/">elasticluster</a>
-and then run massive computational experiments using <a href="http://clusterjob.org">clusterjob</a>.</p>
+<p>In this assignment, you will learn how to run deep learning experiments using the <strong>ElastiCluster-ClusterJob</strong> computing model. In particular, each of you will build <strong>your own personal SLURM cluster</strong> on Google Compute Engine (GCE) using <a href="https://gc3-uzh-ch.github.io/elasticluster/">elasticluster</a> and then run massive computational experiments using <a href="http://clusterjob.org">clusterjob</a>.</p>
 
 <p>Please follow the following steps to setup your cluster and run experiments. This documents only contains the detail of setting up your cluster and testing that it works properly with GPUs. Once these steps are completed, you should conduct your experiments as assigned to you on Canvas. The details of the experiment will <strong>only</strong> be available via Stanford Canvas website to students who are taking this course for credit.</p>
 
 <h1 id="acknowledgements">Acknowledgements</h1>
 <ul>
   <li>We would like to thank <a href="https://cloud.google.com/edu/">Google Cloud Platform Education Grants</a> Team for their generosity and kindness in providing Stats285 course with cloud computing grant.</li>
-  <li>We would like to thank <a href="http://elasticluster.readthedocs.io/en/latest/">ElastiCluster</a> team especially <a href="https://www.gc3.uzh.ch/people/rm/">Dr. Riccardo Murri</a> for their help and collaboration on this exercise.</li>
+  <li>We would like to thank <a href="http://elasticluster.readthedocs.io/en/latest/">ElastiCluster</a> team especially <a href="https://www.gc3.uzh.ch/people/rm/">Dr. Riccardo Murri</a> for their help and collaboration on this project.</li>
 </ul>
 
 <h1 id="faq">FAQ</h1>
 <p>Please visit the <a href="faq">frequently asked questions</a> before you submit a question on our <a href="https://groups.google.com/forum/#!forum/clusterjob">Google group</a>.</p>
 
-<h1 id="elasticluster-clusterjob-model">ElastiCluster-ClusterJob model</h1>
+<h1 id="elasticluster-clusterjob-computing-model">ElastiCluster-ClusterJob Computing Model</h1>
 
 <ol>
-  <li><a href="#part-1-setup-clusterjob">Install ClusterJob</a></li>
-  <li><a href="#part-2-build-your-own-cluster-on-google-cloud">Build Your own Cluster on Google Cloud Using ElastiCluster</a></li>
-  <li><a href="#part-3-test-your-cluster-with-clusterjob">Test your cluster with ClusterJob</a></li>
-  <li><a href="#part-4-run-your-assigned-experiments-and-upload-cj-package-to-canvas">Run your assigned experiments and upload CJ package to canvas</a></li>
+  <li><a href="#part-1-claim-your-google-cloud-credit">Claim Your Google Cloud Credit</a></li>
+  <li><a href="#part-2-implement-elasticluster-clusterjob-model">Implement ElastiCluster-ClusterJob model</a></li>
+  <li><a href="#part-3-run-your-experiment-and-submit-cj-package-to-canvas">Run Your Experiment and Submit CJ Package to Canvas</a></li>
 </ol>
 
-<h2 id="part-1-setup-clusterjob">Part-1: Setup ClusterJob</h2>
-<ul>
-  <li>Follow instructions given in <a href="http://clusterjob.org/documentation/">CJ Book</a> to install CJ on your laptop and making sure that it works properly. You may test running example scripts on Stanford <code class="highlighter-rouge">rice</code> or <code class="highlighter-rouge">sherlock</code> cluster.</li>
-</ul>
-
-<h2 id="part-2-build-your-own-cluster-on-google-cloud-using-elasticluster">Part-2: Build Your Own Cluster on Google Cloud using ElastiCluster</h2>
+<h2 id="part-1-claim-your-google-cloud-credit">Part-1: Claim Your Google Cloud Credit</h2>
 
 <ul>
-  <li>Claim your $300 Google Compute <a href="https://canvas.stanford.edu/courses/89001/discussion_topics/277314">Credit</a>. You will also get $300 free credit from Google Cloud as a first time user by setting up your <a href="https://console.cloud.google.com/billing">Billing Account</a>. However, these 300$ allows only very limited CPU-only computations.
-    <blockquote>
-      <p>Please make sure to use your GMAIL account to claim the credit.</p>
-    </blockquote>
-  </li>
-  <li>Follow the instruction at <a href="https://monajemi.github.io/datascience/pages/painless-computing-models">Painless Computing Models for Ambitious Data Science</a> to build your own clusters on Google Cloud.</li>
+  <li>Claim your <a href="https://canvas.stanford.edu/courses/89001/discussion_topics/277314">$300 Google Compute Credit</a>. You will also get $300 free credit from Google Cloud as a first time user by setting up your <a href="https://console.cloud.google.com/billing">Billing Account</a>. However, these 300$ allows only very limited CPU-only computation.</li>
 </ul>
 
-<h2 id="part-3-test-your-cluster-with-clusterjob">Part-3: Test your cluster with ClusterJob</h2>
-<p>After you have launched your cluster successfully, it is time to test it by running a small job
-using <strong>ClusterJob</strong> on it. Follow the instructions below to test your cluster:</p>
+<h2 id="part-2-implement-elasticluster-clusterjob-model">Part-2 Implement ElastiCluster-ClusterJob Model</h2>
 
-<ul>
-  <li>
-    <p>add your cluster info to <code class="highlighter-rouge">~/CJ_install/ssh_config</code>. Here is an example:</p>
+<p>Follow instructions at <a href="https://monajemi.github.io/datascience/pages/painless-computing-models">Painless Computing Models for Ambitious Data Science</a> to implement the ElastiCluster-ClusterJob model.</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [gce]
-  Host	        35.199.171.137
-  User		hatefmonajemi
-  Bqs		SLURM
-  Repo		/home/hatefmonajemi/CJRepo_Remote
-  MAT           ""
-  MATlib	""
-  Python	python3.4
-  Pythonlib	pytorch:torchvision:cuda80:pandas:matplotlib:-c soumith
-  [gce]
-	
-</code></pre></div>    </div>
-    <blockquote>
-      <p>note that <code class="highlighter-rouge">Host</code> is the IP address of your frontend node (e.g., <code class="highlighter-rouge">35.199.171.137</code>)</p>
-    </blockquote>
-  </li>
-  <li>
-    <p>go to <code class="highlighter-rouge">~/CJ_install/example/Python</code> and run <code class="highlighter-rouge">simpleExample</code> on your cluster:</p>
+<h2 id="run-your-experiment-and-submit-cj-package-to-canvas">Run Your Experiment and Submit CJ Package to Canvas</h2>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  # update cj
-  cj update
-  # install conda
-  cj install miniconda gce
-  # test CJ run
-  cj run simpleExample.py gce -m "Python on CPU test"
-  cj state
-  cj ls
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>go to <code class="highlighter-rouge">~/CJ_install/example/Python/pytorch/mnist</code> and run <code class="highlighter-rouge">mnist.py</code> on your cluster using GPU:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   cj run mnist.py gce -alloc "--gres=gpu:1" -m "Pytorch on GPU test"
-   cj state
-   # get a summary of all jobs on your cluster
-   cj summary gce
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h2 id="part-4-run-your-assigned-experiments-and-upload-cj-package-to-canvas">Part-4: Run your assigned experiments and upload CJ package to canvas</h2>
-
-<p>If everything makes sense, move on to running your assigned Deep Learning experiments.</p>
+<p>Please run the Deep Learning experiment assigned to you and submit the reproducible CJ package on Canvas.</p>
 
 <p><a href="../../../assignments">Go back</a></p>
 

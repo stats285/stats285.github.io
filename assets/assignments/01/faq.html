@@ -33,22 +33,6 @@
 
 <ol>
   <li>
-    <p><strong>I do not know how to stop my <code class="highlighter-rouge">gce</code> cluster now that I accidentally closed the terminal with the original docker container.</strong></p>
-
-    <p>When you close the terminal, the docker container is still running in the background. There are two ways you can stop your cluster:</p>
-
-    <ul>
-      <li>re-attach docker container to your terminal:
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # find your container-id    
- docker ps -a    
- docker start -a -i &lt;container-id&gt;   
- elasticluster stop gce
-</code></pre></div>        </div>
-      </li>
-      <li>login to <a href="https://console.cloud.google.com/compute">google compute consol</a> and delete your instances.</li>
-    </ul>
-  </li>
-  <li>
     <p><strong>I have set up my cluster, but there is no GPU accelators that I can use.</strong></p>
 
     <p>Perhaps you did not edit your GCE qouta for GPU. You need to request an increase in GPU quota as stated in 

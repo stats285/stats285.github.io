@@ -25,12 +25,17 @@ and using them.
 docker images 
 ```
 
+* To get into a docker image (say `riccardomurri/elasticluster`) that may have a different entrypoint that bash
+```bash
+docker run -it --entrypoint /bin/bash riccardomurri/elasticluster
+```
+
 * To see a list of your containers:
 ```bash
 docker ps -a 
 ```
 
-* To reattach your exited conatainer: 
+* To reattach your exited container: 
 ```bash
 docker start  <IMAGE_ID>
 docker attach <IMAGE_ID>
@@ -40,6 +45,8 @@ or simply,
 docker start -a -i <IMAGE_ID>
 ```
 > This is a great command to remember, since you may exit your terminal, but this command allows you to start the exited containers and attach to the terminal again. 
+
+
 
 
 [back](../notes)

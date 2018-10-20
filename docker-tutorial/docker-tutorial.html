@@ -54,27 +54,93 @@ and using them.</p>
 <div class="highlight"><pre class="highlight"><code>docker images 
 </code></pre></div>    </div>
   </li>
-  <li>To see a list of your containers:
+</ul>
+
+<p>«««&lt; HEAD</p>
+<ul>
+  <li>To get into a docker image (say <code class="highlighter-rouge">riccardomurri/elasticluster</code>) that may have a different entrypoint that bash
     <div class="language-bash highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>docker ps <span class="nt">-a</span> 
+<div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-it</span> <span class="nt">--entrypoint</span> /bin/bash riccardomurri/elasticluster
 </code></pre></div>    </div>
   </li>
+</ul>
+
+<p>=======</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>5dad09847643936282debaa064fdf0ef85b388a7</p>
+              <ul>
+                <li>To see a list of your containers:
+                  <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker ps <span class="nt">-a</span> 
+</code></pre></div>                  </div>
+                </li>
+              </ul>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>«««&lt; HEAD</p>
+<ul>
+  <li>
+    <h1 id="to-reattach-your-exited-container">To reattach your exited container:</h1>
+  </li>
   <li>To reattach your exited conatainer:
-    <div class="language-bash highlighter-rouge">
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>5dad09847643936282debaa064fdf0ef85b388a7</p>
+                  <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>docker start  &lt;IMAGE_ID&gt;
 docker attach &lt;IMAGE_ID&gt;
-</code></pre></div>    </div>
-    <p>or simply,</p>
-    <div class="language-bash highlighter-rouge">
+</code></pre></div>                  </div>
+                  <p>or simply,</p>
+                  <div class="language-bash highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>docker start <span class="nt">-a</span> <span class="nt">-i</span> &lt;IMAGE_ID&gt;
-</code></pre></div>    </div>
-    <blockquote>
-      <p>This is a great command to remember, since you may exit your terminal, but this command allows you to start the exited containers and attach to the terminal again.</p>
+</code></pre></div>                  </div>
+                  <p>This is a great command to remember, since you may exit your terminal, but this command allows you to start the exited containers and attach to the terminal again.</p>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
     </blockquote>
   </li>
 </ul>
 
-<p><a href="../notes">back</a></p>
+<p>«««&lt; HEAD</p>
+
+<p>=======</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>5dad09847643936282debaa064fdf0ef85b388a7
+<a href="../notes">back</a></p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
 
 
       <footer class="site-footer">

@@ -178,7 +178,11 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 
 -->
 
+<<<<<<< HEAD
 ## [Assignments](./assignments)
+=======
+## [Assignments](.)
+>>>>>>> 5dad09847643936282debaa064fdf0ef85b388a7
 ## [Lecture slides](./lecture_slides)
 ## [Notes](notes)
 ## [Plan your visit](speaker_visit)

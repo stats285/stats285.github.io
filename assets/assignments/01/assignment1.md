@@ -41,6 +41,7 @@ Follow instructions at [Painless Computing Models for Ambitious Data Science](ht
 
 ## Run Your Experiment and Submit CJ Package to Canvas
 
-Please run the Deep Learning experiment assigned to you on Canvas and submit the reproducible CJ package on Canvas.
+
+Please run the Deep Learning experiment assigned to you and submit the reproducible CJ package on Canvas.
 
 [Go back](../../../assignments)

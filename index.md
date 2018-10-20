@@ -178,7 +178,6 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 
 -->
 
-
 ## [Assignments](./assignments)
 ## [Lecture slides](./lecture_slides)
 ## [Notes](notes)

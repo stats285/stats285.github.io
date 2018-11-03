@@ -61,17 +61,6 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ---
 <div class="speaker-wrap">
 <div class="speakerphoto">
-<img src="assets/img/azthinksR.jpg">
-</div>
-<div class="card">
-<a class="talkdate" href="./zaidi_lecture"> Tue, 10/23/2018</a> <br>
-<span class="speaker">Ali Zaidi</span> <br>
-<span class="speakerposition">Microsoft</span>
-</div>
-</div>
----
-<div class="speaker-wrap">
-<div class="speakerphoto">
 <img src="assets/img/johnc.jpg">
 </div>
 <div class="card">
@@ -105,16 +94,15 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ---
 <div class="speaker-wrap">
 <div class="speakerphoto">
-<img src="assets/img/Wes.jpg">
+<img src="assets/img/azthinksR.jpg">
 </div>
 <div class="card">
-<a class="talkdate" href="./mckinney_lecture"> Tue, 11/27/2018</a> <br>
-<span class="speaker">Wes McKinney</span> <br>
-<span class="speakerposition">Ursa Labs</span>
+<a class="talkdate" href="./zaidi_lecture"> Tue, 11/27/2018</a> <br>
+<span class="speaker">Ali Zaidi</span> <br>
+<span class="speakerposition">Microsoft</span>
 </div>
 </div>
 ---
-
 
 
 <!--

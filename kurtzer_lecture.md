@@ -20,3 +20,4 @@ Containers have changed the way we package up our applications, environments, en
 
 Gregory Kurtzer is a highly sought after speaker and well known leader in open source, computing, and founder of several well known projects such as CentOS Linux, Warewulf, and most recently, Singularity. Greg worked for almost 20 years as an HPC Systems Architect for Lawrence Berkeley National Labs and now is the CEO of a new corporation called [Sylabs Inc](https://www.sylabs.io/). 
 
+[Back to Stats285 Home](./index)

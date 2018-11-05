@@ -34,6 +34,7 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ## [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)
 
 ## [Stats285 Hackathon](assets/hackathon/hack)
+<a href="https://www.youtube.com/watch?v=twGjvNNKTcM&feature=youtu.be"><img src="./assets/img/hack-thumbnail.png" width="400"></a>
 
 
 ## Data Science News

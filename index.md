@@ -34,8 +34,10 @@ For questions, concerns or bug reports, please contact <a href="http://web.stanf
 ## [Follow Stat285 on ResearchGate (videos)](https://www.researchgate.net/project/Massive-Computational-Experiments-Painlessly)
 
 ## [Stats285 Hackathon](assets/hackathon/hack)
-<a href="https://www.youtube.com/watch?v=twGjvNNKTcM&feature=youtu.be"><img src="./assets/img/hack-thumbnail.png" width="400"></a>
+<!-- <a href="https://www.youtube.com/watch?v=twGjvNNKTcM&feature=youtu.be"><img src="./assets/img/hack-thumbnail.png" width="400"></a> 
+ -->
 
+<a href="https://www.youtube.com/watch?v=7AkjNSDaR5M&feature=youtu.be"><img src="./assets/img/hack-thumbnail2.png" width="400"></a> 
 
 ## Data Science News
 * [SDSS18 Lecture: Painless Computing Models for Ambitious Data Science (Monajemi and coauthors)](assets/lectures/SDSS18_monajemi.pdf)

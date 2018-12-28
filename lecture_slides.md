@@ -10,7 +10,7 @@ layout: default
 ### [Lecture04: XYZ Studies/Science In the Cloud (Papyan/Monajemi)](./assets/lectures18/Lecture04.pdf)
 ### [Lecture06: Some Reflections about Data Science (John Chambers)](./assets/lectures18/JohnChambers_lecture06.pdf)
 ### [Lecture07: An introduction to containers, Singularity and use cases (Greg Kurtzer)](./assets/lectures18/Containers101_GregKurtzer.pdf)
-### [Lecture08: IT infrastructure for research: a ongoing journey (R.~Murri)](./assets/lectures18/Lecture08.pdf)
+### [Lecture08: IT infrastructure for research: an ongoing journey (R. Murri)](./assets/lectures18/murri2018.pdf)
 ### [Lecture09: Distributed Tools for Statisticians (Ali Zaidi)](./assets/lectures18/ali_zaidi_stats285.pdf)
 
 

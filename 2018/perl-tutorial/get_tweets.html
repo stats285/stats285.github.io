@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Massive Computational Experiments, Painlessly (STATS 285) by </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+      <!-- CJ styles 
+	<link rel="stylesheet" type="text/css" href="assets/css/github.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/github2.css">
+		  -->
+		
+    <link rel="stylesheet" type="text/css" href="assets/css/cj.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	
+	
+	
+  </head>
+  <body>
+    <section class="page-header">   		  		  
+		      	<h1 class="project-name">Massive Computational Experiments, Painlessly (STATS 285)</h1>
+		      	<h2 class="project-tagline">Stanford University, Fall 2018</h2>
+		      <!--
+			  
+				-->  
+		      		  
+    </section>
+
+    <section class="main-content">
+      <p>Please report bugs to <a href="https://github.com/monajemi" class="user-mention">@monajemi</a> or <a href="mailto:monajemi@stanford.edu">monajemi@stanford.edu</a></p>
+
+<div class="language-perl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/perl</span>
+<span class="c1"># usage:</span>
+<span class="c1">#        perl get_tweets.pl &lt;screen_name&gt; [number_tweets]</span>
+<span class="c1"># ex.</span>
+<span class="c1">#        perl get_tweets.pl realDonaldTrump</span>
+<span class="c1">#        perl get_tweets.pl realDonaldTrump  10</span>
+<span class="c1">#</span>
+<span class="c1">#  This will produce a TXT file &lt;screen_name&gt;_tweets.txt containing</span>
+<span class="c1">#        "id"      "datetime"    "screen_name" "text"</span>
+<span class="c1"># Copyright (c) 2017 STATS 285 (stats285.stanford@gmail.com)</span>
+<span class="c1"># visit http://stats285.github.io</span>
+<span class="c1">#</span>
+<span class="c1">###################################################################################</span>
+<span class="c1">#  NOTES:</span>
+<span class="c1">#  Produced TXT file can be read in R for analysis:</span>
+<span class="c1">#       &gt; data = read.table("realDonaldTrump_tweets.txt", header=TRUE,</span>
+<span class="c1">#                            sep="\t", encoding="UTF-8", quote="", colClasses = "character")</span>
+<span class="c1">#</span>
+<span class="c1">#  To convert twitter datetime column to that of R:</span>
+<span class="c1">#       &gt; data$datetime &lt;- strptime(data$datetime, "%a %b %d %H:%M:%S %z %Y")</span>
+<span class="c1">###################################################################################</span>
+<span class="k">use</span> <span class="nv">strict</span><span class="p">;</span>
+<span class="k">use</span> <span class="nv">warnings</span><span class="p">;</span>
+<span class="k">use</span> <span class="nv">utf8</span><span class="p">;</span>               <span class="c1"># For wide characters: for STDOUT use 'perl -CS *.pl'</span>
+<span class="k">use</span> <span class="nn">Net::</span><span class="nv">Twitter</span><span class="p">;</span>
+<span class="k">use</span> <span class="nn">Data::</span><span class="nv">Dumper</span><span class="p">;</span>
+
+
+
+<span class="c1"># Read command line arguments</span>
+<span class="k">my</span> <span class="nv">$screen_name</span><span class="o">=</span><span class="nv">$ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="sr">//</span> <span class="nb">exit</span> <span class="mi">0</span><span class="p">;</span>        <span class="c1"># default to exit 0;</span>
+<span class="k">my</span> <span class="nv">$number_of_tweets</span><span class="o">=</span> <span class="nv">$ARGV</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="sr">//</span> <span class="mi">3200</span><span class="p">;</span>    <span class="c1"># default to 3200</span>
+
+
+<span class="c1"># Define credentials from https://apps.twitter.com</span>
+<span class="k">my</span> <span class="nv">$twitter</span> <span class="o">=</span> <span class="nn">Net::</span><span class="nv">Twitter</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">(</span>
+    <span class="nv">traits</span>   <span class="o">=&gt;</span> <span class="p">[</span><span class="sx">qw/API::RESTv1_1/</span><span class="p">],</span>
+    <span class="nv">consumer_key</span>        <span class="o">=&gt;</span> <span class="s">'***************'</span><span class="p">,</span>
+    <span class="nv">consumer_secret</span>     <span class="o">=&gt;</span> <span class="s">'***************'</span><span class="p">,</span>
+    <span class="nv">access_token</span>        <span class="o">=&gt;</span> <span class="s">'***************'</span><span class="p">,</span>
+    <span class="nv">access_token_secret</span> <span class="o">=&gt;</span> <span class="s">'***************'</span>
+<span class="p">);</span>
+
+
+
+<span class="c1"># use method user_timeline and</span>
+<span class="c1"># loop until you get all 3200 tweets allowed</span>
+<span class="k">my</span> <span class="nv">@all_tweets</span><span class="p">;</span>
+<span class="k">my</span> <span class="nv">$count</span>       <span class="o">=</span> <span class="nv">$number_of_tweets</span> <span class="o">&lt;</span> <span class="mi">200</span> <span class="p">?</span>  <span class="nv">$number_of_tweets</span> <span class="p">:</span> <span class="mi">200</span><span class="p">;</span>
+<span class="k">my</span> <span class="nv">$tweets</span>      <span class="o">=</span> <span class="nv">$twitter</span><span class="o">-&gt;</span><span class="nv">user_timeline</span><span class="p">({</span><span class="s">'screen_name'</span><span class="o">=&gt;</span><span class="nv">$screen_name</span> <span class="p">,</span> <span class="s">'count'</span> <span class="o">=&gt;</span> <span class="nv">$count</span><span class="p">});</span>  <span class="c1">#arrayRef</span>
+<span class="k">while</span><span class="p">(</span> <span class="p">(</span><span class="nv">$#</span><span class="p">{</span><span class="nv">$tweets</span><span class="p">}</span> <span class="ow">ge</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span>  <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="nv">$#all_tweets</span><span class="p">)</span><span class="o">&lt;</span><span class="nv">$number_of_tweets</span> <span class="p">){</span>
+    <span class="nb">push</span> <span class="nv">@all_tweets</span><span class="p">,</span> <span class="nv">@$tweets</span><span class="p">;</span>
+    <span class="nb">printf</span> <span class="s">"%-5s tweets downloaded...\n"</span><span class="p">,</span> <span class="mi">1</span><span class="o">+</span><span class="nv">$#all_tweets</span> <span class="p">;</span>
+    <span class="k">my</span> <span class="nv">$oldest</span> <span class="o">=</span> <span class="nv">@$tweets</span><span class="p">[</span><span class="nv">$#</span><span class="p">{</span><span class="nv">$tweets</span><span class="p">}]</span><span class="o">-&gt;</span><span class="p">{</span><span class="s">'id'</span><span class="p">}</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="nv">$tweets</span>      <span class="o">=</span> <span class="nv">$twitter</span><span class="o">-&gt;</span><span class="nv">user_timeline</span><span class="p">({</span><span class="s">'screen_name'</span><span class="o">=&gt;</span><span class="nv">$screen_name</span> <span class="p">,</span> <span class="s">'count'</span> <span class="o">=&gt;</span> <span class="nv">$count</span> <span class="p">,</span> <span class="s">'max_id'</span><span class="o">=&gt;</span><span class="nv">$oldest</span><span class="p">});</span>
+<span class="p">}</span>
+
+
+
+<span class="c1"># print to a tab-separated TXT file with UTF-8 encoding for non-ascii characters</span>
+<span class="k">my</span> <span class="nv">$filepath</span> <span class="o">=</span> <span class="s">"${screen_name}_tweets.txt"</span><span class="p">;</span>
+<span class="nb">open</span><span class="p">(</span><span class="k">my</span> <span class="nv">$fh</span><span class="p">,</span> <span class="s">'&gt;:encoding(UTF-8)'</span> <span class="p">,</span> <span class="s">"$filepath"</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">die</span> <span class="s">"can't create file $filepath $!"</span><span class="p">;</span>
+<span class="c1"># write header</span>
+<span class="k">my</span> <span class="nv">$header</span> <span class="o">=</span> <span class="nb">join</span> <span class="s">"\t"</span> <span class="p">,</span> <span class="p">(</span><span class="s">"id"</span><span class="p">,</span><span class="s">"datetime"</span><span class="p">,</span><span class="s">"screen_name"</span><span class="p">,</span><span class="s">"text"</span><span class="p">);</span>
+<span class="k">print</span> <span class="nv">$fh</span> <span class="s">"$header\n"</span><span class="p">;</span>
+
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">@all_tweets</span><span class="p">){</span>
+    <span class="k">my</span> <span class="nv">$created_at</span>      <span class="o">=</span> <span class="nv">$_</span><span class="o">-&gt;</span><span class="p">{</span><span class="s">'created_at'</span><span class="p">};</span>
+    <span class="k">my</span> <span class="nv">$id</span>              <span class="o">=</span> <span class="nv">$_</span><span class="o">-&gt;</span><span class="p">{</span><span class="s">'id'</span><span class="p">};</span>
+    <span class="k">my</span> <span class="nv">$user_screenname</span> <span class="o">=</span> <span class="nv">$_</span><span class="o">-&gt;</span><span class="p">{</span><span class="s">'user'</span><span class="p">}{</span><span class="s">'screen_name'</span><span class="p">};</span>
+    <span class="k">my</span> <span class="nv">$text</span>            <span class="o">=</span> <span class="nv">$_</span><span class="o">-&gt;</span><span class="p">{</span><span class="s">'text'</span><span class="p">};</span>
+    <span class="nv">$text</span> <span class="o">=~</span> <span class="sr">s/[\n\r\t]/ /g</span><span class="p">;</span>                  <span class="c1">#replace new lines/tabs in text with space.</span>
+    <span class="k">my</span> <span class="nv">$record</span> <span class="o">=</span> <span class="nb">join</span> <span class="s">"\t"</span> <span class="p">,</span> <span class="p">(</span><span class="nv">$id</span><span class="p">,</span><span class="nv">$created_at</span><span class="p">,</span><span class="nv">$user_screenname</span><span class="p">,</span><span class="nv">$text</span><span class="p">);</span>
+    <span class="k">print</span> <span class="nv">$fh</span> <span class="s">"$record\n"</span><span class="p">;</span>    <span class="c1"># print to $fh</span>
+<span class="p">}</span>
+
+<span class="nb">close</span> <span class="nv">$fh</span><span class="p">;</span>
+
+<span class="mi">1</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p><a href="perl-tutorial-files/get_tweets.pl">Download this perl script</a><br>
+<a href="perl-tutorial">Back</a></p>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>

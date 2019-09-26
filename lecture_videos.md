@@ -1,0 +1,33 @@
+
+# Lecture videos for STATS285, Fall 2019
+
+### [Lecture01 (Papyan/Donoho)](https://www.youtube.com/watch?v=aEZEFoXGkZw)
+
+
+
+# Lecture videos for STATS385, Fall 2017
+
+### [Lecture01: Deep Learning Challenge. Is There Theory? (Donoho/Monajemi/Papyan)]( https://www.youtube.com/watch?v=KrTqxmS1-L4)
+
+### [Lecture01: Revolutions Everywhere (Donoho/Monajemi)](https://www.youtube.com/watch?v=RSyk87yG_4s)
+
+### [Lecture02: The Cluster Scaling Revolution, and ClusterJob (Monajemi/Donoho)](https://www.youtube.com/watch?v=AoTaqsNsjcc)
+
+### [Lecture03: Occupy The Cloud (Eric Jonas)](https://www.youtube.com/watch?v=MLjl1CjD2Qg)
+
+### [Lecture04: Reproducibility in Computational Science (Victoria Stodden)](https://www.youtube.com/watch?v=qWtT08QlwXo)
+
+### [Lecture05: CodaLab (Percy Liang)](https://www.youtube.com/watch?v=BPSoy9ZJbhU)
+
+### [Lecture06: Scaling Python to GPUs and clusters: Dask and Numba and ideas for future work (Travis Oliphant)](https://www.youtube.com/watch?v=bsbl70d2d1U)
+
+### [Lecture07: IT for research: a journey from in-house HPC clusters to public cloud infrastructures (Riccardo Murri)](https://www.youtube.com/watch?v=_jjzi43Bekg)
+
+### [Lecture08: Data Engineering and Data Science with Databricks and Apache Spark (Andy Konwinski)](https://www.youtube.com/edit?o=U&amp;video_id=0pQYZMavB5s)
+
+### [Lecture09: Push-button Deep Learning on the Cloud (Monajemi/Donoho)](https://www.youtube.com/watch?v=gAIXyT71Ja8)
+
+### [Lecture10: Looking Back/Looking Ahead (Donoho/Monajemi)](https://www.youtube.com/watch?v=e5dkUuY77JI)
+
+[back](./)
+

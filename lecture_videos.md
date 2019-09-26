@@ -1,7 +1,18 @@
-
 # Lecture videos for STATS285, Fall 2019
 
 ### [Lecture01 (Papyan/Donoho)](https://www.youtube.com/watch?v=aEZEFoXGkZw)
+
+
+
+# Lecture videos for STATS285, Fall 2018
+
+### [Lecture01 (Donoho)](https://www.youtube.com/watch?v=1-cAT73NRwM)
+### [Lecture02 (Piercy)](https://www.youtube.com/watch?v=xQeIvKdKO0A)
+### [Lecture03 (Monajemi)](https://www.youtube.com/watch?v=ock3-evBS2I)
+### [Lecture04 (Papyan/Monajemi)](https://www.youtube.com/watch?v=0KvawdmFgR4)
+### [Lecture07 (Kurtzer)](https://www.youtube.com/watch?v=Kxkz4oegrpA)
+### [Lecture08 (Murri)](https://www.youtube.com/watch?v=Ru2YjUw5cTw)
+### [Lecture09 (Zaidi)](https://www.youtube.com/watch?v=TeJUQA0gw4s)
 
 
 

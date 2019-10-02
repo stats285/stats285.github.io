@@ -1,6 +1,7 @@
 # Lecture videos for STATS285, Fall 2019
 
 ### [Lecture01 (Papyan/Donoho)](https://www.youtube.com/watch?v=aEZEFoXGkZw)
+### [Lecture02 (Mark Piercy)](https://www.youtube.com/watch?v=V-MDq_eQScA&feature=youtu.be)
 
 
 

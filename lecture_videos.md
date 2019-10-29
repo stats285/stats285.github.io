@@ -4,6 +4,7 @@
 ### [Lecture02 (Mark Piercy)](https://www.youtube.com/watch?v=V-MDq_eQScA&feature=youtu.be)
 ### [Lecture03 (XY Han)](https://www.youtube.com/watch?v=7hzwu1Y8SHg&feature=youtu.be)
 ### [Lecture05 (Percy liang)](https://www.youtube.com/watch?v=vPPudba7iHY&feature=youtu.be)
+### [Lecture06 (Orhan Firat)](https://www.youtube.com/watch?v=7H0S0d-nB0U&feature=youtu.be)
 
 # Lecture videos for STATS285, Fall 2018
 

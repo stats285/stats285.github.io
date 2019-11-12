@@ -6,6 +6,9 @@
 ### [Lecture05 (Percy liang)](https://www.youtube.com/watch?v=vPPudba7iHY&feature=youtu.be)
 ### [Lecture06 (Orhan Firat)](https://www.youtube.com/watch?v=7H0S0d-nB0U&feature=youtu.be)
 ### [Lecture07 (Vardan Papyan)](https://www.youtube.com/watch?v=gC-a_aqQelI&feature=youtu.be)
+### [Lecture08 (Leland Wilkinson)](https://www.youtube.com/watch?v=0hHGeCencAM&feature=youtu.be)
+
+
 # Lecture videos for STATS285, Fall 2018
 
 ### [Lecture01 (Donoho)](https://www.youtube.com/watch?v=1-cAT73NRwM)

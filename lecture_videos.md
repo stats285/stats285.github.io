@@ -7,6 +7,8 @@
 ### [Lecture06 (Orhan Firat)](https://www.youtube.com/watch?v=7H0S0d-nB0U&feature=youtu.be)
 ### [Lecture07 (Vardan Papyan)](https://www.youtube.com/watch?v=gC-a_aqQelI&feature=youtu.be)
 ### [Lecture08 (Leland Wilkinson)](https://www.youtube.com/watch?v=0hHGeCencAM&feature=youtu.be)
+### [Lecture09 (Han Liu)](https://www.youtube.com/watch?v=OKIi9THabK4&feature=youtu.be)
+
 
 
 # Lecture videos for STATS285, Fall 2018

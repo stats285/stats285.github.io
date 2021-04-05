@@ -1,7 +1,7 @@
-# Elasticluster and Clusterjob Tutorial
+# ElastiCluster and Clusterjob Tutorial
 Painless computing requires one to find tools to help with the job at hand. This class starts with two older but stable tools used in statistics research today -- [Elasticluster](https://elasticluster.readthedocs.io/en/latest/) and [ClusterJob](https://clusterjob.org). The other pattern we will observe is that painless computing depends upon running many virtual operating system images. In this class we will mostly use the 2018 LTS version of Ubuntu Linux. (LTS means it has Long Term Support. In other words, there should be few to no surprises for the unwary scientist. This is a Good Thing™.) Ubuntu Linux is one of several options that are widely deployed on most clouds. We do not believe that there is much to be gained from exposing you to pointless variation in OS choice. Hence, we will always launch our jobs from a virtual image on your laptop/desktop computer. This allows you to experiment without potentially misconfiguring your host machine. Stanford recommends that you use [VirtualBox from Oracle Systems](https://www.virtualbox.org). Because "… a foolish consistency is the hobgoblin of little minds …" applies with a fearsome regularity to computer systems, we recommend that you use the server version of the [Ubuntu OS](https://releases.ubuntu.com/18.04/). It allows you to become familiar with the computing environment upon which your experiments will run. 
 ## The "Big Picture"
-Your experiment will run on a cluster of computers defined by you, either on the Stanford Sherlock Cluster or on the Google Compute Engine. Our initial experiment is based upon a simple research problem created by Mahsa Lofti to calculate a phase transition. It will use two large high memory machines to do the experimental calculation and a single, smaller frontend/coordination system. In future work, we can start to require access to high performance GPUs or other hardware. As you add specialized hardware, the cost and competition for access increases.
+Your experiment will run on a cluster of computers defined by you, either on the Stanford Sherlock Cluster or on the Google Compute Engine. Our initial experiment is based upon a simple research problem created by Mahsa Lofti to calculate a phase transition. It will use four standard sized machines to do the experimental calculation and a frontend/coordination system. In future work, we can start to require access to high performance GPUs or other hardware. As you add specialized hardware, the cost and competition for access increases.
 
 One piece of advice, you should read through this tutorial once before trying the commands yourself. Like any construction process, knowing where you're going and how you're going to get there really helps you along the way. 
 
@@ -17,6 +17,7 @@ This tutorial is broken up into several phases:
 	- Use CJ status commands to see the state of the calculation.
 	- SSH into the compute nodes to see how much CPU is being used.
 - Gather all of the computed results and share them with your instructors.
+
 ### Install Ubuntu on VirtualBox
 - Download both VirtualBox and Ubuntu 18.04 LTS.
 - Install VirtualBox in the standard way.

@@ -46,10 +46,12 @@ Any unique email address can get a [$300 credit toward Google Compute Engine tim
 	- Select your Google Cloud project.
 	- Click Create credentials.
 		- Click "OAuth client ID".
-		- In the "Create client ID" page, for Application type, select "Desktop".
+		- In the "Create client ID" page, for Application type, select "`Desktop`".
 		- Copy the "Client ID" and "Client Secret". These will be required later for Elasticluster to create the cluster. As these credentials control access to your account, treat them with care; your budget may be at risk. (You can get them again if you lose them. Do not share them with classmates.)
+			- Sample Client ID: "`308342824695-eimtr7e8bqo7lotqlumj5mfmta1co8o4.apps.googleusercontent.com`"
+			- Sample Client Secret: "`_IdXWkmrunCuSLmPhL0ouaeV`"
 
-Now that Google is ready, you need to create some SSH keys for secure communication with their servers. Execute the following:
+Now that Google is ready, you need to create some SSH keys for secure communication with their servers. Execute the following on your Ubuntu OS:
 ```
 gcloud init
 gcloud compute config-ssh
@@ -113,17 +115,13 @@ security_group=default
 image_id=ubuntu-1804-bionic-v20210315a
 flavor=n1-standard-4
 frontend_nodes=1
-compute_nodes=2
+compute_nodes=4
 ssh_to=frontend
 boot_disk_type=pd-ssd
 boot_disk_size=50
 
 [cluster/gce/frontend]
-flavor=n1-standard-4
 boot_disk_size=100
-
-[cluster/gce/compute]
-flavor=n1-standard-4
 
 ##########
 
@@ -150,7 +148,7 @@ One creates a cluster, unsurprisingly, with a "`start`" command:
 ```
 elasticluster start gce
 ```
-The `start` command provisions the nodes using Compute Engine. It configures the nodes by using the Ansible playbooks included in the Elasticluster source. Setup can take some time, depending on configuration. You will know when configuration is done when the output stops and you see the ending banner containing: "`Your cluster is ready!`" It is required practice that you update your `gcloud` keys after bringing up a new cluster using:
+The `start` command provisions the nodes using Compute Engine and will take between 20-30 minutes. It configures the nodes by using the Ansible playbooks included in the Elasticluster source. Setup can take some time, depending on configuration. You will know when configuration is done when the output stops and you see the ending banner containing: "`Your cluster is ready!`" It is required practice that you update your `gcloud` keys after bringing up a new cluster using:
 ```
 gcloud compute config-ssh
 ```
@@ -163,6 +161,8 @@ Or any of the nodes using:
 ssh gce-frontend001.us-central1-a.superb-garden-303018
 ssh gce-compute001.us-central1-a.superb-garden-303018
 ssh gce-compute002.us-central1-a.superb-garden-303018
+ssh gce-compute003.us-central1-a.superb-garden-303018
+ssh gce-compute004.us-central1-a.superb-garden-303018
 ```
 These node names are important and they are created from information in your config file. Each node name contains your cluster, role, and number, e.g. "`gce-frontend001`" or "`gce-high-mem-compute002`". Followed by a zone/region designator, e.g. "`us-central1-a`". Finally, your project ID, "`superb-garden-303018`" is concatenated to make a fully qualified node name. The node name of the frontend will be needed for ClusterJob.
 ### Destroy the cluster.
@@ -197,12 +197,14 @@ alias cj='perl ~/CJ_install/src/CJ.pl';
 ```
 We are not yet done. We need to create two configuration files. For the first, we need to get a tracking token from the ClusterJob servers. All this token is used for is to allow the ClusterJob creators to brag about how many jobs have been run using ClusterJob. Your tutorial author does not believe any other data is collected but those of you interested in privacy issues should ask questions during class. One registers for a [ClusterJob account here](https://clusterjob.org/register.php). And you will edit your information into the file "`~/CJ_install/cj_config`". Here's a sample:
 ```
-CJID	<REPLACE>
-CJKEY	<REPLACE>
+CJID	moosh
+CJKEY	eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhZG1pbiI6MCwiZCI6eyJ1aWQiOiJtb29zaCIsImNqcGFzc2NvZGUiOiIwN2Q3MDMwNmE3ODA1YzUyOWIxZTljYjE0ZTZmNWZhYSJ9fQ.vY1HodLgrW1V_yNWiLzB1O8eDWsWxA6NVJllWuXGFFoFfAbM9PQkYcYJbn9JtQenwlkJMpMwucPGy68sSQqdZCBXwNnsERY1e7X067uTtg_7NY_qlcFI0WDtNxib81DF3w02Ate0_m-xZVu2JUztrjWAMaIBAXHkG2Ja284RkZmj4QymXtb2cMSexP79WFsqSfiglp0HUaHyAJZwRYJUy3LittaS5jqSyEFcMy4mirTGpcueNuO8WJzqBlk-f3lzAt5VE8jBeQHGFX49lR5binYotS4TqJccqJfHAE_BDnwRp1kUrqKT_brS4FN8Zk2Osz3tLhUR0HlCKQt7gPu25A
 SYNC_TYPE	manual	
 SYNC_INTERVAL	300
 ```
-The second config file, "`~/CJ_install/ssh_config`" connects ClusterJob to the Elasticluster you built above. It is important to copy the details exactly between the two computational systems.
+Replace the "`CJID`" "`moosh`" with your ID. And replace the "`CJKEY`" string beginning with "`eyJ0`" with your key.
+
+The second config file, "`~/CJ_install/ssh_config`" connects ClusterJob to the Elasticluster you built above. It is important to copy the details exactly between the two computational systems. You now know the drill, replace the strings beginning with "`<REPLACE_WITH_YOUR_`" with the appropriate string from your ElastiCluster configuration.
 ```
 [gce]
 host	gce-frontend001.us-central1-a.<REPLACE_WITH_YOUR_GCE_PROJECT_ID>
@@ -238,13 +240,36 @@ The output should have been obviously correct or you have a problem. Research so
 
 Now let us start a high memory cluster and run some trivial Python on it. Then we will move on to the phase transition code.
 ```
-elasticluster start gce-high-mem
+elasticluster start gce
 # After the cluster is ready.
 gcloud compute config-ssh
 
 # Run simpleExample.py
 cd ~/CJ_install/example/Python/
 # When you run the next line, CJ will ask you to install miniconda, say yes.
-cj run simpleExample.py gce-high-mem -m "Python."
+cj run simpleExample.py gce -m "Python."
 cj state
 ```
+### Use Clusterjob to Start the Phase Transition Code.
+Whew, that doesn't seem so painless now does it? Yes, it frequently seems that you have to invest too much time in arbitrary tools when you are looking at simple problems. Yet, we want to run 1 million CPU hours before you graduate. If you do the arithmetic, you need to get over a hundred CPUs running your jobs for over a year, 1**6/8,760 hours => 114 CPUs running every hour of every day. We just spun up two CPUs. Coordinating those CPUs/tasks is a huge amount of bookkeeping. Also, your dissertation committee wants you to extract science too? 
+
+Now we are going to calculate a phase transition code. Mahsa Lofti will describe the details of the code and what it is calculating in class. This tutorial will show you how to run it. First, get the code:
+```
+cd ~
+git clone https://github.com/stats285/ExamplePhaseTransition ~/ExamplePhaseTransition
+cd ~/ExamplePhaseTransition/
+```
+Now we are going to execute this task in parallel on the gce cluster and include the dependent code.
+```
+cj parrun main_func.py gce -dep Dependents -m "Phase Transition"
+```
+Now that it is running, you can check the state of the code utilizing:
+```
+cj state
+```
+When the job has completed, after about 3 hours, you will then need to get your results from the cluster by first `reducing` them and then `getting` them onto your local Ubuntu image. Because you may have many different jobs running, you will need to tell CJ which job to reduce and get. the `cj state` command also tells you the `PID`, process identifier, to allow you to reduce the right data. In the below example, `ff1cf89ab2f4c51800a900704dda041f637ca620` is a sample `PID`; yours will be different.
+```
+cj reduce final_results.txt ff1cf89ab2f4c51800a900704dda041f637ca620
+cj get ff1cf89ab2f4c51800a900704dda041f637ca620
+```
+Now you get the scientific joy of determining what you just calculated and what it all means. Mazeltov. Dr. Lofti will reveal all. Please copy your shell results to Stanford's Canvas system to get credit for performing this tutorial.

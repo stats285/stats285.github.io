@@ -254,7 +254,7 @@ cj state
 ### Use Clusterjob to Start the Phase Transition Code.
 Whew, that doesn't seem so painless now does it? Yes, it frequently seems that you have to invest too much time in arbitrary tools when you are looking at simple problems. Yet, we want to run 1 million CPU hours before you graduate. If you do the arithmetic, you need to get over a hundred CPUs running your jobs for over a year, 1**6/8,760 hours => 114 CPUs running every hour of every day. We just spun up two CPUs. Coordinating those CPUs/tasks is a huge amount of bookkeeping. Also, your dissertation committee wants you to extract science too? 
 
-Now we are going to calculate a phase transition code. Mahsa Lofti will describe the details of the code and what it is calculating in class. This tutorial will show you how to run it. First, get the code:
+Now we are going to calculate a phase transition code. Mahsa Lotfi will describe the details of the code and what it is calculating in class. This tutorial will show you how to run it. First, get the code:
 ```
 cd ~
 git clone https://github.com/stats285/ExamplePhaseTransition ~/ExamplePhaseTransition
@@ -273,4 +273,4 @@ When the job has completed, after about 3 hours, you will then need to get your 
 cj reduce final_results.txt ff1cf89ab2f4c51800a900704dda041f637ca620
 cj get ff1cf89ab2f4c51800a900704dda041f637ca620
 ```
-Now you get the scientific joy of determining what you just calculated and what it all means. Mazeltov. Dr. Lofti will reveal all. Please copy your shell results to Stanford's Canvas system to get credit for performing this tutorial.
+Now you get the scientific joy of determining what you just calculated and what it all means. Mazeltov. Dr. Lotfi will reveal all. Please copy your shell results to Stanford's Canvas system to get credit for performing this tutorial.

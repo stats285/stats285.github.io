@@ -3,3 +3,4 @@ Gemfile.lock
 updatemaster.sh
 .tweet-cache/
 
+assets/.DS_Store

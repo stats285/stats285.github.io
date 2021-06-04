@@ -1,12 +1,12 @@
 sudo apt update
 sudo apt upgrade -y
-sudo apt install gcc g++ git libc6-dev libffi-dev libssl-dev python3-dev virtualenv
+sudo apt install gcc g++ git libc6-dev libffi-dev libssl-dev python3-dev virtualenv | yes
 
 # Initialize gcloud. This is the only part of the script that requires interaction.
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get install apt-transport-https ca-certificates gnupg
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-sudo apt-get update && sudo apt-get install google-cloud-sdk
+sudo apt-get update && sudo apt-get install google-cloud-sdk | yes
 
 gcloud init
 gcloud compute config-ssh
@@ -34,9 +34,9 @@ sed -i "s/<YOUR_GOOGLE_PROJECT_ID>/$GCE_PROJECT_ID/g" ~/.elasticluster/config
 sed -i "s/<YOUR_PREFERRED_GOOGLE_ZONE>/$GCE_ZONE/g" ~/.elasticluster/config
 
 # Install perl package management prerequisites.
-sudo apt install build-essential
-sudo apt-get install libnet-ssleay-perl # required for cpan -i Net::SSLeay
-sudo apt-get install libcrypt-ssleay-perl # required for cpan -i Net::SSLeay
+sudo apt install build-essential | yes
+sudo apt-get install libnet-ssleay-perl | yes # required for cpan -i Net::SSLeay
+sudo apt-get install libcrypt-ssleay-perl | yes # required for cpan -i Net::SSLeay
 sudo cpan install CPAN
 
 # Install ClusterJob prerequisites.
@@ -52,7 +52,7 @@ sudo cpan -i Moo HTTP::Thin HTTP::Request::Common URI
 cd ~
 git clone https://github.com/adonoho/clusterjob.git ~/CJ_install
 echo "alias cj='perl ~/CJ_install/src/CJ.pl'" >> ~/.bashrc
-source ~/.bashrc
+cd ~ && source ~/.bashrc
 
 # Do CJ config and SSH #########################
 cp ~/stats285.github.io/elasticluster_tutorial/sample_cj_config ~/CJ_install/cj_config

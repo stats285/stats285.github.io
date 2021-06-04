@@ -97,15 +97,13 @@ Ubuntu Virtualboxes have known issues with clipboard sharing between host and gu
 - In VirtualBox, go to your VM's Settings >> Network >> Adapter 1 >> Advanced >> Port Forwarding
 - Add a new port-forwarding rule with Name: SSH, Protocol: TCP, Host IP: 127.0.0.1, Host Port: 2222, Guest IP: blank, Guest Port: 22.
 
-After starting the Ubuntu VM again, you should be able to ssh into it directly from your HOST machine (laptop) via `ssh YOUR_USERNAME@127.0.0.1 -p 2222`
+After starting the Ubuntu VM again, you should be able to ssh into it directly from your HOST machine (laptop) via `ssh YOUR_UBUNTU_USERNAME@127.0.0.1 -p 2222`
 
 # Step 4: Install elasticluster and clusterjob
 
 SSH into your your running VM from a terminal on your HOST (laptop), then run the following commands, replacing the necesesary Google and Clusterjob variables that were determined when you signed up for them:
 
 ```
-git clone https://github.com/motiwari/stats285.github.io.git
-
 echo "export GCE_USERNAME=<YOUR_GOOGLE_USERNAME_OR_EMAIL>" >> ~/.bashrc
 echo "export GCE_ZONE=<YOUR_PREFERRED_GOOGLE_ZONE>" >> ~/.bashrc
 echo "export GCE_PROJECT_ID=<YOUR_GOOGLE_PROJECT_ID>" >> ~/.bashrc
@@ -117,10 +115,13 @@ echo "export CJKEY=<YOUR_CJKEY>" >> ~/.bashrc
 
 source ~/.bashrc
 
+git clone https://github.com/motiwari/stats285.github.io.git
 cd stats285.github.io/elasticluster_tutorial/
 chmod +x setup.sh
 ./setup.sh
 ```
+
+The script `setup.sh` will require initial user interaction to pass a Google authentication challenge; everything afterwards is automatic. It will take some time to complete (~20 minutes).
 
 # Step 5: Test elasticluster
 

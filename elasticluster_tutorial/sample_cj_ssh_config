@@ -1,0 +1,23 @@
+[gce]
+host	gce-frontend001.<YOUR_PREFERRED_GOOGLE_ZONE>.<YOUR_GOOGLE_PROJECT_ID>
+user	<YOUR_GOOGLE_USERNAME_OR_EMAIL>
+Bqs	SLURM
+Repo	/home/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/CJRepo_Remote
+MAT     	matlab/R2019a
+MATlib		~/cvx:~/mosek/9.2/toolbox/r2015a:~/yalmip:/share/software/modules/math/gurobi
+Python		python/3.8.8
+Pythonlib	IPython:pandas:numpy:libgcc:scipy:matplotlib:cvxpy:-c conda-forge
+Alloc		--time UNLIMITED
+[gce]
+
+[gce-high-mem]
+host	gce-high-mem-frontend001.<YOUR_PREFERRED_GOOGLE_ZONE>.<YOUR_GOOGLE_PROJECT_ID>
+user	<YOUR_GOOGLE_USERNAME_OR_EMAIL>
+Bqs	SLURM
+Repo	/home/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/CJRepo_Remote
+MAT     	matlab/R2019a
+MATlib		~/cvx:~/mosek/9.2/toolbox/r2015a:~/yalmip:/share/software/modules/math/gurobi
+Python		python/3.8.8
+Pythonlib	IPython:pandas:numpy:libgcc:scipy:matplotlib:cvxpy:-c conda-forge
+Alloc		--time UNLIMITED
+[gce-high-mem]

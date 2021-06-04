@@ -26,15 +26,15 @@ This tutorial is broken up into several steps:
 Any unique email address can get a [$300 credit toward Google Compute Engine time](https://cloud.google.com/free). Google provides a good overview of their system for technical computing [here](https://cloud.google.com/solutions/using-clusters-for-large-scale-technical-computing). This part of the tutorial has been cribbed from the Google authored tutorial to run "[R at Scale](https://cloud.google.com/solutions/running-r-at-scale)". Basically, you are going to create an project and credentials using the Google Compute Engine dashboard. Those credentials will be used by Elasticluster to instantiate the cluster. Because the Stanford cluster, Sherlock, uses SLURM to configure the nodes, we will use SLURM on GCE too. We are going to follow the modernized instructions from the "[R at Scale](https://cloud.google.com/solutions/running-r-at-scale)" page.
 - Sign up for a [free Google Cloud account](https://cloud.google.com/free).
 - Start at [GCP Dashboard](https://console.cloud.google.com/)
-- Create a project from "IAM & Admin" menu choose "Create a Project".
-	- This project name is typically a combination of two random words and a number, e.g. "`superb-garden-303018`". Take note of this project name.
+- Select the 3 bars in the top left >> IAM & Admin >> Create a Project. Choose a project name and take note of it.
 - Make sure that billing is [configured for your account](https://cloud.google.com/billing/docs/how-to/modify-project).
-- Enable Compute Engine API and Firebase API in "[APIs & Services](https://console.cloud.google.com/apis)"
-- Enable Project Credentials in the [Credentials menu](https://console.cloud.google.com/apis/credentials) on the "[APIs & Services](https://console.cloud.google.com/apis)" dashboard.
-	- Select your Google Cloud project.
+- In the search bar at the top, search for "Compute Engine API" and enable it. Similarly, enable "Cloud Storage for Firebase API"
+- Navigate to the [APIs & Services](https://console.cloud.google.com/apis) dashboard and click "Credentials".
+	- Ensure your Google Cloud project is selected at the top.
 	- Click Create credentials.
 		- Click "OAuth client ID".
-		- In the "Create client ID" page, for Application type, select "`Desktop`".
+		- If you need to configure the OAuth Consent Screen, choose "External", any App Name, and your email for "User Support Email" and Developer Contact Information.
+		- In the "Create client ID" page, for Application type, select "`Desktop app`".
 		- Take note of the "Client ID" and "Client Secret". These will be required later for Elasticluster to create the cluster. As these credentials control access to your account, treat them with care; your budget may be at risk. (You can get them again if you lose them. Do not share them with classmates.)
 			- Example Client ID: "`308342824695-eimtr7e8bqo7lotqlumj5mfmta1co8o4.apps.googleusercontent.com`"
 			- Example Client Secret: "`_IdXWkmrunCuSLmPhL0ouaeV`"
@@ -63,12 +63,12 @@ First, we create a blank VM with no OS installed:
 
 Now, we install Ubuntu on the blank VM:
 - Download the Ubuntu 18.04.5 LTS (Bionic Beaver) Server install image from https://releases.ubuntu.com/18.04/
-- Right click the new VM and click "Settings"
-- Click on "Storage", and under "Controller: IDE" click on "Adds optical drive." (the blue circle with the green plus on it)
+- Right click the new VM in VirtualBox and click "Settings"
+- Click on "Storage", and next to "Controller: IDE" click on "Adds optical drive." (the blue circle with the green plus on it)
 - Click "Add" again and choose the Ubuntu .iso downloaded above
 - Press "OK" and Start the VM
 
-The VM should begin booting up from the Ubuntu installation image and begin prompting you for installation choices. If you need to navigate away from the VM, press one of your modifier keys (command on Mac) to release the mouse from the VM.
+The VM should begin booting up from the Ubuntu installation image and prompt you for installation choices. If you need to navigate away from the VM, press one of your modifier keys (command on Mac) to release the mouse from the VM.
 
 When installing Ubuntu:
 - Choose your language of choice
@@ -86,7 +86,7 @@ Afterwards, the Ubuntu installation should complete in 5-10 minutes. Then choose
 
 # Step 2.A: Miscellaneous Bugs on Ubuntu
 
-- If you're running into issues with random characters (like newlines) being inserted in your shell session, run the command `setterm -repeat off`
+- If you're running into issues with random characters (like newlines) being inserted in your shell session, start the VM and run the command `setterm -repeat off`
 - If you're having trouble running `apt`, run the following command in your VM to set your nameserver in `/etc/resolv.conf`(some ISP's forwarding rules don't support DNS on your VM): `echo "sudo sed -i 's/nameserver.*/nameserver 8.8.8.8/g' /etc/resolv.conf" >> ~/.bashrc && source ~/.bashrc`
 
 # Step 3: Enable SSH on your Ubuntu VM

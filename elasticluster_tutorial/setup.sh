@@ -1,12 +1,12 @@
-sudo apt update
+sudo apt update -y
 sudo apt upgrade -y
-sudo apt install gcc g++ git libc6-dev libffi-dev libssl-dev python3-dev virtualenv | yes
+sudo apt install -y gcc g++ git libc6-dev libffi-dev libssl-dev python3-dev virtualenv
 
 # Initialize gcloud. This is the only part of the script that requires interaction.
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get install apt-transport-https ca-certificates gnupg
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-sudo apt-get update && sudo apt-get install google-cloud-sdk | yes
+sudo apt-get update -y && sudo apt-get install -y google-cloud-sdk
 
 gcloud init
 gcloud compute config-ssh
@@ -14,7 +14,7 @@ gcloud compute config-ssh
 # Create elasticluster virtual environment.
 cd ~
 virtualenv --python=python3 elasticluster
-echo ". elasticluster/bin/activate" >> ~/.bashrc
+echo "source ~/elasticluster/bin/activate" >> ~/.bashrc
 source ~/.bashrc
 pip3 install --upgrade 'pip>=9.0.0'
 cd elasticluster/

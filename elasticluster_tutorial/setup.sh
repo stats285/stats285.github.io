@@ -73,3 +73,5 @@ sed -i "s/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/$GCE_USERNAME/g" ~/CJ_install/ssh_conf
 # Initialize CJ
 cj init
 cj who
+
+echo "Setup complete! Don't forget to run `elasticluster start <cluster name>` and `gcloud compute config-ssh`"

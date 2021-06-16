@@ -72,6 +72,7 @@ The VM should begin booting up from the Ubuntu installation image and prompt you
 
 When installing Ubuntu:
 - Choose your language of choice
+- Do not update installer (if prompted)
 - Choose your keyboard configuration
 - Choose the default network connections
 - Leave proxy blank
@@ -81,6 +82,7 @@ When installing Ubuntu:
 - Press continue
 - Set up your personal name, your server's name (machine name), your username on that machine, and the password for your username
 - Check "Install OpenSSH server", do not import SSH identity
+- Do not install any Featured Snaps (if prompted)
 
 Afterwards, the Ubuntu installation should complete in 5-10 minutes. Then choose "Reboot" and press enter.
 

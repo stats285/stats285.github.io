@@ -63,3 +63,22 @@ boot_disk_size=100
 [cluster/gce-high-mem/compute]
 flavor=n2-highmem-4
 boot_disk_size=50
+
+
+############### For Assignment 2
+[cluster/gce-gpu]
+cloud=google
+login=google
+setup=ansible-slurm
+security_group=default
+image_id=ubuntu-1804-bionic-v20210315a
+flavor=n1-standard-2
+frontend_nodes=1
+compute_nodes=2
+ssh_to=frontend
+boot_disk_type=pd-standard
+boot_disk_size=100
+
+[cluster/gce-gpu/compute]
+flavor=n1-highmem-4
+boot_disk_size=50

@@ -55,6 +55,11 @@ git clone https://github.com/adonoho/clusterjob.git ~/CJ_install
 echo "alias cj='perl ~/CJ_install/src/CJ.pl'" >> ~/.bashrc
 cd ~ && source ~/.bashrc
 
+# Download Alpha for Assignment 2
+cd ~
+git clone https://github.com/stats285/Alpha
+cd ~
+
 # Do CJ config and SSH #########################
 cp ~/stats285.github.io/elasticluster_tutorial/sample_cj_config ~/CJ_install/cj_config
 sed -i "s/<YOUR_CJID>/$CJID/g" ~/CJ_install/cj_config

@@ -126,7 +126,7 @@ The script `setup.sh` will require initial user interaction to pass a Google aut
 # Step 5: Test elasticluster
 
 At this point, all the dependencies for elasticluster and clusterjob have been installed. To create a small memory cluster and establish communication to each node, run:
-``elasticluster start gce```
+```elasticluster start gce```
 The `start` command provisions the nodes using Compute Engine and will take between 20-30 minutes. It configures the nodes by using the Ansible playbooks included in the Elasticluster source. Setup can take some time, depending on configuration. You will know when configuration is done when the output stops and you see the ending banner containing: "`Your cluster is ready!`" It is required practice that you update your `gcloud` keys after bringing up a new cluster using:
 ```
 gcloud compute config-ssh

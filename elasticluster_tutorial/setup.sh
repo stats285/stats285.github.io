@@ -4,7 +4,7 @@ sudo apt install -y gcc g++ git libc6-dev libffi-dev libssl-dev python3-dev virt
 
 # Initialize gcloud. This is the only part of the script that requires interaction.
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-sudo apt-get install apt-transport-https ca-certificates gnupg
+sudo apt-get install -y apt-transport-https ca-certificates gnupg
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-get update -y && sudo apt-get install -y google-cloud-sdk
 
@@ -28,16 +28,17 @@ pip install -e .
 cd ~
 mkdir .elasticluster
 cp ~/stats285.github.io/elasticluster_tutorial/sample_elasticluster_config ~/.elasticluster/config
+sed -i "s/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/$GCE_USERNAME/g" ~/.elasticluster/config
 sed -i "s/<YOUR_GOOGLE_CLIENT_ID>/$GCE_CLIENT_ID/g" ~/.elasticluster/config
 sed -i "s/<YOUR_GOOGLE_CLIENT_SECRET>/$GCE_CLIENT_SECRET/g" ~/.elasticluster/config
 sed -i "s/<YOUR_GOOGLE_PROJECT_ID>/$GCE_PROJECT_ID/g" ~/.elasticluster/config
 sed -i "s/<YOUR_PREFERRED_GOOGLE_ZONE>/$GCE_ZONE/g" ~/.elasticluster/config
 
 # Install perl package management prerequisites.
-sudo apt install build-essential | yes
-sudo apt-get install libnet-ssleay-perl | yes # required for cpan -i Net::SSLeay
-sudo apt-get install libcrypt-ssleay-perl | yes # required for cpan -i Net::SSLeay
-sudo cpan install CPAN
+sudo apt install -y build-essential
+sudo apt-get install -y libnet-ssleay-perl # required for cpan -i Net::SSLeay
+sudo apt-get install -y libcrypt-ssleay-perl  # required for cpan -i Net::SSLeay
+sudo cpan install -y CPAN
 
 # Install ClusterJob prerequisites.
 sudo cpan -i DateTime Time::Local Time::Piece

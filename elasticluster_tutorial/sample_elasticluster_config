@@ -29,6 +29,10 @@ global_var_slurm_taskplugin=task/cgroup
 global_var_slurm_proctracktype=proctrack/cgroup
 global_var_slurm_jobacctgathertype=jobacct_gather/cgroup
 
+# Added by Mo to avoid "Shared connection to xxx.xxx.xxx.xxx closed" errors
+# See https://www.tecmint.com/fix-shared-connection-to-x-x-xx-closed-ansible-error/
+ansible_python_interpreter=/usr/bin/python3
+
 [cluster/gce]
 cloud=google
 login=google

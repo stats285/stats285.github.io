@@ -99,7 +99,7 @@ Ubuntu Virtualboxes have known issues with clipboard sharing between host and gu
 - In VirtualBox, go to your VM's Settings >> Network >> Adapter 1 >> Advanced >> Port Forwarding
 - Add a new port-forwarding rule with Name: SSH, Protocol: TCP, Host IP: 127.0.0.1, Host Port: 2222, Guest IP: blank, Guest Port: 22.
 
-After starting the Ubuntu VM again, you should be able to ssh into it directly from your HOST machine (laptop) via `ssh YOUR_UBUNTU_USERNAME@127.0.0.1 -p 2222`
+After starting the Ubuntu VM again, you should be able to ssh into it directly from your HOST machine (laptop) via `ssh YOUR_UBUNTU_USERNAME@127.0.0.1 -p 2222`.
 
 # Step 4: Install elasticluster and clusterjob
 
@@ -129,7 +129,9 @@ The script `setup.sh` will require initial user interaction to pass a Google aut
 
 At this point, all the dependencies for elasticluster and clusterjob have been installed. To create a small memory cluster and establish communication to each node, run:
 ```elasticluster start gce```
-The `start` command provisions the nodes using Compute Engine and will take between 20-30 minutes. It configures the nodes by using the Ansible playbooks included in the Elasticluster source. Setup can take some time, depending on configuration. You will know when configuration is done when the output stops and you see the ending banner containing: "`Your cluster is ready!`" It is required practice that you update your `gcloud` keys after bringing up a new cluster using:
+The `start` command provisions the nodes using Compute Engine and will take between 20-30 minutes. It configures the nodes by using the Ansible playbooks included in the Elasticluster source. Setup can take some time, depending on configuration. You will know when configuration is done when the output stops and you see the ending banner containing: "`Your cluster is ready!`"
+
+It is required practice that you update your `gcloud` keys after bringing up a new cluster using:
 ```
 gcloud compute config-ssh
 ```
@@ -152,6 +154,21 @@ One destroys a cluster, equally unsurprisingly, with a "`stop`" command:
 ```
 elasticluster stop gce
 ```
+
+## Step 5.a: Troubleshooting
+If the command `elasticluster start gce` produces any errors, ssh into your frontend node and run the following commands:
+
+```
+# Install slurm-drmaa
+sudo add-apt-repository ppa:natefoo/slurm-drmaa
+sudo apt-get update
+sudo apt-get install slurm-drmaa-dev
+
+# Install ansible
+
+```
+
+Then exit the frontend node and run `elasticluster setup gce`.
 
 # Step 6: Test clusterjob
 Now that we have a compute cluster, it is time to perform a calculation using it using ClusterJob. Like all research software, ClusterJob has [basic documentation](https://clusterjob.org/documentation/). This is augmented by a draft chapter of a [Data Science book by Hatef Monajemi](https://monajemi.github.io/datascience/pages/elasticluster-clusterjob-model). This tutorial is a distillation of these other works in the very pragmatic context of running a simple example for this class. Most users borrow an existing set of configuration files and call it a day. As we expand a cluster's hardware to include GPUs, the configuration files will evolve. Those extensions will be discussed in class.

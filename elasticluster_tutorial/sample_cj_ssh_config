@@ -6,7 +6,7 @@ Repo	/home/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/CJRepo_Remote
 MAT     	matlab/R2019a
 MATlib		~/cvx:~/mosek/9.2/toolbox/r2015a:~/yalmip:/share/software/modules/math/gurobi
 Python		python/3.8.8
-Pythonlib	IPython:pandas:numpy:libgcc:scipy:matplotlib:cvxpy:-c conda-forge
+Pythonlib	python3-pymysql:PyMySQL:IPython:pandas:numpy:libgcc:scipy:matplotlib:cvxpy:-c conda-forge
 Alloc		--time UNLIMITED
 [gce]
 
@@ -18,7 +18,7 @@ Repo	/home/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/CJRepo_Remote
 MAT     	matlab/R2019a
 MATlib		~/cvx:~/mosek/9.2/toolbox/r2015a:~/yalmip:/share/software/modules/math/gurobi
 Python		python/3.8.8
-Pythonlib	IPython:pandas:numpy:libgcc:scipy:matplotlib:cvxpy:-c conda-forge
+Pythonlib	python3-pymysql:PyMySQL:IPython:pandas:numpy:libgcc:scipy:matplotlib:cvxpy:-c conda-forge
 Alloc		--time UNLIMITED
 [gce-high-mem]
 
@@ -31,7 +31,7 @@ Repo	/home/<YOUR_GOOGLE_USERNAME_OR_EMAIL>/CJRepo_Remote
 MAT     	matlab/R2019a
 MATlib		~/cvx:~/mosek/9.2/toolbox/r2015a:~/yalmip:/share/software/modules/math/gurobi
 Python		python/3.8.8
-Pythonlib	pandas:requests:pytorch:torchvision:matplotlib
+Pythonlib	python3-pymysql:PyMySQL:pandas:requests:pytorch:torchvision:matplotlib
 R	        R
 Rlib	    ggplot2
 Alloc		--time UNLIMITED
